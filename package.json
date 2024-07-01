@@ -1,0 +1,54 @@
+{
+  "name": "rewy",
+  "private": true,
+  "description": "Gatsby React IT Startup & Technology Template",
+  "version": "2.2.0",
+  "author": "@envytheme",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "fslightbox-react": "^1.7.4",
+    "gatsby": "^5.8.1",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-manifest": "^5.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-json": "^5.9.0",
+    "gatsby-transformer-remark": "^6.9.0",
+    "gatsby-transformer-sharp": "^5.8.0",
+    "react": "^18.2.0",
+    "react-18-image-lightbox": "^5.1.4",
+    "react-accessible-accordion": "^5.0.0",
+    "react-dom": "^18.2.0",
+    "recoil": "^0.7.7",
+    "swiper": "^9.2.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.7"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.0.0"
+    }
+  }
+}
