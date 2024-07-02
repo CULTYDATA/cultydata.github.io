@@ -18,7 +18,7 @@ const HowItWork = () => {
               <img src={starIcon} alt="banner" />
               How It's Work
             </span>
-            <h2>The Data Science Process</h2>
+            <h2>Our 3-Phase Approach to Digital Success</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna.
@@ -32,7 +32,7 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process1} alt="banner" />
                 </div>
-                <h3>Frame the Problem</h3>
+                <h3>Needs Assessment & Strategic Planning</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
@@ -46,7 +46,7 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process2} alt="banner" />
                 </div>
-                <h3>Collect the Raw Data</h3>
+                <h3>Agile Development & Cloud-Native Implementation</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.
@@ -60,7 +60,7 @@ const HowItWork = () => {
                 <div className="image">
                   <img src={process3} alt="banner" />
                 </div>
-                <h3>Process the Data</h3>
+                <h3>Team Organization & Seamless Handover</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt.

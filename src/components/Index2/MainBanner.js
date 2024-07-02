@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import AOS from "aos";
+import AOS from "aos"
 import FsLightbox from "fslightbox-react"
 
 import { Link } from "gatsby"
@@ -21,8 +21,8 @@ const MainBanner = () => {
   const [toggler, setToggler] = useState(false)
 
   React.useEffect(() => {
-    AOS.init();
-  }, []);
+    AOS.init()
+  }, [])
 
   return (
     <>
@@ -36,25 +36,26 @@ const MainBanner = () => {
           <div className="row">
             <div className="col-lg-5 col-md-12">
               <div className="main-banner-content">
-                <h1 
+                <h2
                   data-aos="fade-right"
                   data-aos-duration="1200"
                   data-aos-delay="100"
                 >
-                  Data Science Consulting Services
-                </h1>
+                  Empowering Your Digital Vision: From Concept to Scale-Ready
+                  Platform
+                </h2>
 
-                <p 
+                <p
                   data-aos="fade-right"
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  Get professional & reliable research oriented solutions for
-                  Data Science and Machine Learning business needs. Enjoy stress
-                  free decesion making!
+                  Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+                  suspendisse.
                 </p>
 
-                <div 
+                <div
                   className="btn-box"
                   data-aos="fade-left"
                   data-aos-duration="1200"

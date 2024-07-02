@@ -16,10 +16,10 @@ const TeamMembers = () => {
               <img src={starIcon} alt="banner" />
               Team Members
             </span>
-            <h2>Our Data Scientist</h2>
+            <h2>Our Team Expertise</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Meet Our Full-Stack, Cross-Technology Experts with Entrepreneurial
+              Spirit
             </p>
           </div>
 

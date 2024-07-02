@@ -1,51 +1,45 @@
-import * as React from "react"
+import React from "react"
 import Layout from "../components/_App/layout"
 import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
-import Banner from "../components/Index/Banner"
-import OurSolutions from "../components/Index/OurSolutions"
-import OurServices from "../components/Index/OurServices"
-import OurFeatures from "../components/Index/OurFeatures"
-import TeamMember from "../components/Index/TeamMember" 
-import RecentProjects from "../components/Index/RecentProjects"
-import Pricing from "../components/Index/Pricing"
-import Testimonials from "../components/Index/Testimonials"
-import Partner from "../components/Index/Partner"
-import OurBlog from "../components/Index/OurBlog"
-import ProjectStartArea from "../components/Index/ProjectStartArea"
+import MainBanner from "../components/Index2/MainBanner"
+import OurSolutions from "../components/Index2/OurSolutions"
+import AboutUs from "../components/Index2/AboutUs"
+
+import OurApproach from "../components/Index2/OurApproach"
+
+import TeamMembers from "../components/Index2/TeamMembers"
+import Testimonials from "../components/Index2/Testimonials"
+import Partner from "../components/Index2/Partner"
+
+import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
 
-const IndexPage = () => (
-  <Layout>
+const DataScienceMlCompanyPage = () => {
+  return (
+    <Layout>
+      <Navbar />
 
-    <Navbar />
+      <MainBanner />
 
-    <Banner />
+      <OurSolutions />
 
-    <OurSolutions />
+      <AboutUs />
 
-    <OurServices />
+      <OurApproach />
 
-    <OurFeatures />
+      <TeamMembers />
 
-    <TeamMember />
+      <Testimonials />
 
-    <RecentProjects />
+      <Partner />
 
-    <Pricing />
+      <StartProject />
 
-    <Testimonials />
-
-    <Partner />
-
-    <OurBlog />
-
-    <ProjectStartArea />
-
-    <Footer />
-
-  </Layout>
-)
+      <Footer />
+    </Layout>
+  )
+}
 
 /**
  * Head export to define metadata for the page
@@ -54,4 +48,4 @@ const IndexPage = () => (
  */
 export const Head = () => <Seo title="Home" />
 
-export default IndexPage
+export default DataScienceMlCompanyPage

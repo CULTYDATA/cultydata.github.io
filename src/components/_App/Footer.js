@@ -13,7 +13,8 @@ const Footer = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="single-footer-widget">
               <Link to="/" className="logo">
-                <img src={logo} alt="logo" />
+                {/* <img src={logo} alt="logo" /> */}
+                <h2>CultyData</h2>
               </Link>
               <p>
                 Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
@@ -77,9 +78,7 @@ const Footer = () => {
                 <li>
                   <Link to="/about-us">About</Link>
                 </li>
-                <li>
-                  <Link to="/case-studies">Case Studies</Link>
-                </li>
+
                 <li>
                   <Link to="/blog">Our Blog</Link>
                 </li>
@@ -96,19 +95,13 @@ const Footer = () => {
 
               <ul className="footer-links-list">
                 <li>
-                  <Link to="/team">Our Scientists</Link>
-                </li>
-                <li>
                   <Link to="/services">Our Services</Link>
                 </li>
                 <li>
                   <Link to="/testimonials">Testimonials</Link>
                 </li>
                 <li>
-                  <Link to="/services">SaaS Solutions</Link>
-                </li>
-                <li>
-                  <Link to="/case-studies">Case Studies</Link>
+                  <Link to="/team">Team</Link>
                 </li>
               </ul>
             </div>
@@ -144,15 +137,8 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <p>
-                Copyright @{currentYear} <strong>Rewy</strong> All rights
+                Copyright @{currentYear} <strong>CultyData</strong> All rights
                 reserved{" "}
-                <a
-                  target="_blank"
-                  href="https://envytheme.com/"
-                  rel="noreferrer"
-                >
-                  EnvyTheme
-                </a>
               </p>
             </div>
 

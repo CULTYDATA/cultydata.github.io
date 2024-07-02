@@ -10,7 +10,7 @@ const OurSolutions = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="icon" />
-              Our Solutions
+              Our Core Services
             </span>
             <h2>We Different From Others Should Choose Us</h2>
             <p>
@@ -20,13 +20,15 @@ const OurSolutions = () => {
           </div>
 
           <div className="row">
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-3 col-sm-6">
               <div className="single-solutions-box">
                 <div className="icon">
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Startup Applications</Link>
+                  <Link to="/services/service-details">
+                    Tailored Digital Platform Development
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -34,19 +36,24 @@ const OurSolutions = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
                   View Details
                 </Link>
               </div>
             </div>
 
-            <div className="col-lg-4 col-sm-6">
+            <div className="col-lg-3 col-sm-6">
               <div className="single-solutions-box">
                 <div className="icon">
                   <i className="flaticon-laptop"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">SaaS Solutions</Link>
+                  <Link to="/services/service-details">
+                    Tech Team Building & Training
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -54,19 +61,24 @@ const OurSolutions = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
                   View Details
                 </Link>
               </div>
             </div>
 
-            <div className="col-lg-4 col-sm-6 offset-lg-0 offset-sm-3">
+            <div className="col-lg-3 col-sm-6 offset-lg-0 offset-sm-3">
               <div className="single-solutions-box">
                 <div className="icon">
                   <i className="flaticon-money"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">E-Commerce Platforms</Link>
+                  <Link to="/services/service-details">
+                    Cloud-Native Architecture Design
+                  </Link>
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -74,7 +86,34 @@ const OurSolutions = () => {
                   adipiscing aliqua.
                 </p>
 
-                <Link to="/services/service-details" className="view-details-btn">
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
+            <div className="col-lg-3 col-sm-6 offset-lg-0 offset-sm-3">
+              <div className="single-solutions-box">
+                <div className="icon">
+                  <i className="flaticon-money"></i>
+                </div>
+                <h3>
+                  <Link to="/services/service-details">
+                    Continuous Delivery Pipeline Setup
+                  </Link>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  adipiscing aliqua.
+                </p>
+
+                <Link
+                  to="/services/service-details"
+                  className="view-details-btn"
+                >
                   View Details
                 </Link>
               </div>
