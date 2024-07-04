@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
                 <div className="inner-box">
                   <div className="single-item">
                     <div className="count-box">1</div>
-                    <h3>Data for All Your People</h3>
+                    <h3>XX+ Years of Combined Cutting-Edge Tech Experience</h3>
                     <p>
                       Dolor sit amet consectetur elit eiusmod tempor incidi dunt
                       labore dolore magna aliqua enim.
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
                   </div>
                   <div className="single-item">
                     <div className="count-box">2</div>
-                    <h3>A New Breed of AI</h3>
+                    <h3>Cross-Disciplinary Skills Adaptable to Any Industry</h3>
                     <p>
                       Dolor sit amet consectetur elit eiusmod tempor incidi dunt
                       labore dolore magna aliqua enim.
@@ -38,7 +38,15 @@ const WhyChooseUs = () => {
                   </div>
                   <div className="single-item">
                     <div className="count-box">3</div>
-                    <h3>Analytics Business</h3>
+                    <h3>Result-Driven Culture at Your Service</h3>
+                    <p>
+                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
+                      labore dolore magna aliqua enim.
+                    </p>
+                  </div>
+                  <div className="single-item">
+                    <div className="count-box">4</div>
+                    <h3>Complementary Team with Proven Collaboration</h3>
                     <p>
                       Dolor sit amet consectetur elit eiusmod tempor incidi dunt
                       labore dolore magna aliqua enim.

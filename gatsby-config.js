@@ -9,16 +9,16 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Rewy - Gatsby React IT Startup & Technology Template`,
-    description: `Gatsby React IT Startup & Technology Template`,
-    author: `@envytheme`,
+    title: `CultyData`,
+    description: `CultyData`,
+    author: `@CultyData`,
     siteUrl: `https://rewy-gatsby.envytheme.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
     "gatsby-transformer-remark",
-		"gatsby-plugin-sharp",
-		"gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: `gatsby-source-filesystem`,
       options: {

@@ -1,9 +1,9 @@
 {
-  "name": "rewy",
+  "name": "cultydata",
   "private": true,
   "description": "Gatsby React IT Startup & Technology Template",
   "version": "2.2.0",
-  "author": "@envytheme",
+  "author": "@cultydata",
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",

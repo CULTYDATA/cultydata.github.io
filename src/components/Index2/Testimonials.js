@@ -2,8 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import starIcon from "../../images/star-icon.png"
 import client1 from "../../images/testimonials/client1.jpg"
-import client2 from "../../images/testimonials/client2.jpg"
-import client3 from "../../images/testimonials/client3.jpg"
+
 import shape from "../../images/shape/shape1.svg"
 
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -21,8 +20,8 @@ const Testimonials = () => {
             </span>
             <h2>What Our Clients are Saying?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Here's what our clients have to say about their experiences with
+              Cultydata Studio.
             </p>
           </div>
 
@@ -34,7 +33,7 @@ const Testimonials = () => {
                 slidesPerView: 1,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
               },
             }}
             autoplay={{
@@ -48,25 +47,23 @@ const Testimonials = () => {
             <SwiperSlide>
               <div className="single-testimonials-item">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna ali.
-                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                  maecenas accumsan lacus vel facilisis.
+                  Working with Cultydata Studio has been transformative for our
+                  business. Their expertise and dedication are unparalleled.
                 </p>
 
                 <div className="client-info">
                   <div className="d-flex justify-content-center align-items-center">
                     <img src={client1} alt="testimonial" />
                     <div className="title">
-                      <h3>Alex Maxwell</h3>
-                      <span>CEO at EnvyTheme</span>
+                      <h3>John Doe,</h3>
+                      <span>CEO of Tech Innovators</span>
                     </div>
                   </div>
                 </div>
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className="single-testimonials-item">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -105,7 +102,7 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
 
           <div className="testimonials-view-btn text-center">

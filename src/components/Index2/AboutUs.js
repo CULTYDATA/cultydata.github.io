@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 import img5 from "../../images/about/about-img5.png"
 import starIcon from "../../images/star-icon.png"
 import icon4 from "../../images/icons/icon4.png"
-import icon5 from "../../images/icons/icon5.png"
+
 import icon6 from "../../images/icons/icon6.png"
-import icon7 from "../../images/icons/icon7.png"
+
 import shape1 from "../../images/shape/circle-shape1.png"
 
 const AboutUs = () => {
@@ -27,23 +27,22 @@ const AboutUs = () => {
                     <img src={starIcon} alt="banner" />
                     About Us
                   </span>
-                  <h2>Drive Digital Revolution Through Data Science</h2>
+                  <h2>
+                    Cultydata Studio: Where Tech Expertise Meets Startup
+                    Acceleration
+                  </h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
+                    At Cultydata Studio, we are dedicated to turning your
+                    digital vision into reality. Our team of experts brings a
+                    wealth of experience and cross-disciplinary skills to
+                    deliver cutting-edge solutions.
                   </p>
 
                   <ul className="features-list">
                     <li>
                       <img src={icon4} alt="banner" />
-                      <h3>10 Years</h3>
-                      <p>On the market</p>
-                    </li>
-
-                    <li>
-                      <img src={icon5} alt="banner" />
-                      <h3>45+</h3>
-                      <p>Team members</p>
+                      <h3>50 Years</h3>
+                      <p>Combined experience</p>
                     </li>
 
                     <li>
@@ -51,17 +50,7 @@ const AboutUs = () => {
                       <h3>100%</h3>
                       <p>Satisfaction rate</p>
                     </li>
-
-                    <li>
-                      <img src={icon7} alt="banner" />
-                      <h3>80%</h3>
-                      <p>Senior scientist</p>
-                    </li>
                   </ul>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </p>
 
                   <Link to="/about-us" className="default-btn">
                     <i className="flaticon-right"></i>More About Us<span></span>

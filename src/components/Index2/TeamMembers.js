@@ -30,8 +30,8 @@ const TeamMembers = () => {
                   <img src={team1} alt="banner" />
                 </div>
                 <div className="content">
-                  <h3>Merv Adrian</h3>
-                  <span>Data Management</span>
+                  <h3>Sarah Chen </h3>
+                  <span>CEO</span>
 
                   <ul className="social">
                     <li>
@@ -85,8 +85,8 @@ const TeamMembers = () => {
                   <img src={team2} alt="banner" />
                 </div>
                 <div className="content">
-                  <h3>Kirk Borne</h3>
-                  <span>Data Scientist</span>
+                  <h3>Dr. Raj Patel</h3>
+                  <span>CTO</span>
 
                   <ul className="social">
                     <li>
@@ -140,8 +140,8 @@ const TeamMembers = () => {
                   <img src={team3} alt="banner" />
                 </div>
                 <div className="content">
-                  <h3>Carla Gentry</h3>
-                  <span>Analytical Solutions</span>
+                  <h3>Emma Larsson</h3>
+                  <span>Head of Product</span>
 
                   <ul className="social">
                     <li>
@@ -195,8 +195,8 @@ const TeamMembers = () => {
                   <img src={team4} alt="banner" />
                 </div>
                 <div className="content">
-                  <h3>Marie Curie</h3>
-                  <span>Data Scientist</span>
+                  <h3>Alex Nguyen</h3>
+                  <span>Lead Developer</span>
 
                   <ul className="social">
                     <li>

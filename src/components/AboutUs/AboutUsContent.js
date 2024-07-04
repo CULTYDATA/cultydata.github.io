@@ -73,7 +73,7 @@ const AboutUsContent = () => {
           <img src={shape1} alt="banner" />
         </div>
 
-        <div className="container">
+        {/* <div className="container">
           <div className="about-inner-area">
             <div className="row">
               <div className="col-lg-4 col-md-6 col-sm-6">
@@ -152,7 +152,7 @@ const AboutUsContent = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="circle-shape1">
           <img src={shape1} alt="banner" />

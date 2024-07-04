@@ -15,34 +15,42 @@ const HowItWork = () => {
                   <img src={StarIcon} alt="Icon" />
                   How It's Work
                 </span>
-                <h2>Our 3-Phase Approach to Digital Success</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
+                <h2>Our Proven Process: The Path to Digital Success</h2>
+
                 <div className="inner-box">
                   <div className="single-item">
                     <div className="count-box">1</div>
                     <h3>Needs Assessment & Strategic Planning</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      We begin by diving deep into your vision, market, and
+                      requirements. Our team conducts thorough analyses to craft
+                      a comprehensive strategy tailored to your unique needs.
+                      This phase sets the foundation for a successful project,
+                      aligning our efforts with your business goals.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">2</div>
                     <h3>Agile Development & Cloud-Native Implementation</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      Utilising agile methodologies, we bring your vision to
+                      life through iterative development cycles. Our
+                      cloud-native approach ensures that your platform is built
+                      for scalability and performance from the ground up.
+                      Regular check-ins and demonstrations keep you in the loop
+                      throughout the process.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">3</div>
                     <h3>Team Organization & Seamless Handover</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      As development progresses, we focus on building and
+                      training your internal team. We ensure a smooth transition
+                      of knowledge and capabilities, empowering your
+                      organisation to take full ownership of the platform. Our
+                      goal is to leave you with not just a product, but the
+                      skills and structure to drive ongoing success.
                     </p>
                   </div>
                 </div>

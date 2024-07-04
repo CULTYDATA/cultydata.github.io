@@ -1,49 +1,29 @@
-import React, { useState } from "react"
+import React from "react"
 import AOS from "aos"
-import FsLightbox from "fslightbox-react"
 
 import { Link } from "gatsby"
-import img1 from "../../images/main-banner/banner-one/banner-one-shape1.png"
-import img2 from "../../images/main-banner/banner-one/banner-one-shape2.png"
-import img3 from "../../images/main-banner/banner-one/banner-one-shape3.png"
-import img4 from "../../images/main-banner/banner-one/banner-one-shape4.png"
-import img5 from "../../images/main-banner/banner-one/banner-one-shape5.png"
-import img6 from "../../images/main-banner/banner-one/banner-one-shape6.png"
-import img7 from "../../images/main-banner/banner-one/banner-one-shape7.png"
-import img8 from "../../images/main-banner/banner-one/banner-one-shape8.png"
-import img9 from "../../images/main-banner/banner-one/banner-one-shape9.png"
-import img10 from "../../images/main-banner/banner-one/banner-one-shape10.png"
-import img11 from "../../images/main-banner/banner-one/banner-one-shape11.png"
-import img12 from "../../images/main-banner/banner-one/banner-one-shape12.png"
-import img13 from "../../images/main-banner/banner-one/banner-one-main-img.png"
+import img1 from "../../images/how-its-work.png"
 
 const MainBanner = () => {
-  const [toggler, setToggler] = useState(false)
-
   React.useEffect(() => {
     AOS.init()
   }, [])
 
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
       <div className="main-banner overflow-hidden">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-lg-5 col-md-12">
+            <div className="col-lg-6 col-md-12">
               <div className="main-banner-content">
-                <h2
+                <h1
                   data-aos="fade-right"
                   data-aos-duration="1200"
                   data-aos-delay="100"
                 >
                   Empowering Your Digital Vision: From Concept to Scale-Ready
                   Platform
-                </h2>
+                </h1>
 
                 <p
                   data-aos="fade-right"
@@ -62,96 +42,21 @@ const MainBanner = () => {
                   data-aos-delay="300"
                 >
                   <Link to="/about-us" className="default-btn">
-                    <i className="flaticon-structure"></i>
-                    About Us <span></span>
+                    <i className="flaticon-right"></i>
+                    Learn More <span></span>
                   </Link>
-
-                  <div
-                    onClick={() => setToggler(!toggler)}
-                    className="video-btn"
-                    aria-hidden="true"
-                  >
-                    <i className="flaticon-google-play"></i> Watch Video
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-7 col-md-12">
-              <div className="main-banner-animation-image">
-                <img
-                  src={img1}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img2}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img3}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img4}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img5}
-                  alt="banner"
-                  className="animate__animated animate__fadeInUp animate__delay-1s"
-                />
-
-                <img
-                  src={img6}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img7}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img8}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img9}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img10}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img11}
-                  alt="banner"
-                  className="animate__animated animate__fadeInDown animate__delay-1s"
-                />
-
-                <img
-                  src={img12}
-                  alt="banner"
-                  className="animate__animated animate__fadeInLeft animate__delay-1s"
-                />
-
-                <img src={img13} alt="banner" />
+            <div className="col-lg-6 col-md-12">
+              <div
+                className="main-banner-image"
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="400"
+              >
+                <img src={img1} alt="banner" />
               </div>
             </div>
           </div>

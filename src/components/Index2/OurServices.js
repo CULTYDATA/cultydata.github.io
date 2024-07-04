@@ -5,8 +5,7 @@ import icon1 from "../../images/services/service-icon1.png"
 import icon2 from "../../images/services/service-icon2.png"
 import icon3 from "../../images/services/service-icon3.png"
 import icon4 from "../../images/services/service-icon4.png"
-import icon5 from "../../images/services/service-icon5.png"
-import icon6 from "../../images/services/service-icon6.png"
+
 import shape2 from "../../images/shape/circle-shape2.png"
 
 const OurServices = () => {
@@ -17,27 +16,27 @@ const OurServices = () => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="banner" />
-              Our Services
+              Our Core Services
             </span>
-            <h2>We Offer Professional Solutions For Business</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
-            </p>
+            <h2>Empowering Your Digital Future with Tailored Solutions</h2>
           </div>
 
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-6">
+          <div className="row justify-content-center">
+            <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
                   <img src={icon1} alt="banner" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Data Analytics</Link>
+                  <Link to="/services/service-details">
+                    Tailored Digital Platform Development
+                  </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  We craft bespoke digital platforms that align perfectly with
+                  your vision and market needs. Our development process is
+                  iterative and collaborative, ensuring that the end product not
+                  only meets but exceeds your expectations.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">
@@ -46,17 +45,21 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
                   <img src={icon2} alt="banner" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">AI & ML Development</Link>
+                  <Link to="/services/service-details">
+                    Tech Team Building & Training
+                  </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  We don't just build products; we build teams. Our expertise
+                  extends to assembling and training high-performance tech teams
+                  that can drive your project forward long after our engagement
+                  ends.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">
@@ -65,17 +68,22 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
                   <img src={icon3} alt="banner" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Data Science</Link>
+                  <Link to="/services/service-details">
+                    {" "}
+                    Cloud-Native Architecture Design
+                  </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  Leverage the power of the cloud with our expertly designed
+                  cloud-native architectures. We ensure your platform is
+                  scalable, resilient, and optimised for performance from day
+                  one.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">
@@ -84,67 +92,24 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
                   <img src={icon4} alt="banner" />
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Predictive Analytics</Link>
+                  <Link to="/services/service-details">
+                    Continuous Delivery Pipeline Setup
+                  </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  We implement robust continuous delivery pipelines that
+                  streamline your development process, enabling rapid iterations
+                  and seamless deployments.
                 </p>
 
                 <Link to="/services/service-details" className="read-more-btn">
                   Read More <i className="flaticon-right"></i>
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-box">
-                <div className="icon">
-                  <img src={icon5} alt="banner" />
-                </div>
-                <h3>
-                  <Link to="/services/service-details">Software Development</Link>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
-
-                <Link to="/services/service-details" className="read-more-btn">
-                  Read More <i className="flaticon-right"></i>
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-services-box">
-                <div className="icon">
-                  <img src={icon6} alt="banner" />
-                </div>
-                <h3>
-                  <Link to="/services/service-details">Elastic Solutions</Link>
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
-                </p>
-
-                <Link to="/services/service-details" className="read-more-btn">
-                  Read More <i className="flaticon-right"></i>
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-12 col-md-12">
-              <div className="load-more-btn text-center">
-                <Link to="/services" className="default-btn">
-                  <i className="flaticon-refresh"></i> Load More <span></span>
                 </Link>
               </div>
             </div>
