@@ -3,29 +3,26 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
-import CaseStudiesDetailsContent from "../../components/CaseStudiesDetails/CaseStudiesDetailsContent"
+
 import RelatedProjects from "../../components/CaseStudiesDetails/RelatedProjects"
 import Footer from "../../components/_App/Footer"
+import CarbonplaceDetails from "../../components/CaseStudiesDetails/CarbonplaceDetails"
 
 const CaseDetailsPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
-        pageTitle="Case Studies Details"
-        homePageText="Home"
-        homePageUrl="/"
+        pageTitle="Carbonplace"
+        homePageText="Case Studies"
+        homePageUrl="/case-studies"
         activePageText="Case Studies Details"
       />
 
-      <CaseStudiesDetailsContent />
-
-      <RelatedProjects />
+      <CarbonplaceDetails />
 
       <Footer />
-
     </Layout>
   )
 }

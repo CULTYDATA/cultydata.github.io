@@ -11,6 +11,11 @@ const Navbar = () => {
     setCollapsed(!collapsed)
   }
 
+  const handleLogoClick = () => {
+    window.location.reload()
+    setCollapsed(true)
+  }
+
   React.useEffect(() => {
     let elementId = document.getElementById("navbar")
     document.addEventListener("scroll", () => {
@@ -35,11 +40,7 @@ const Navbar = () => {
         <div className="rewy-nav">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-lg navbar-light">
-              <Link
-                to="/"
-                onClick={() => setCollapsed(true)}
-                className="navbar-brand"
-              >
+              <Link href="/" onClick={handleLogoClick} className="navbar-brand">
                 <img src={logo} alt="logo" />
               </Link>
 
@@ -68,47 +69,13 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
+                      to="/about-us"
+                      activeClassName="active"
+                      onClick={() => setCollapsed(true)}
                       className="nav-link"
                     >
-                      About Us <i className="bx bx-chevron-down"></i>
+                      About Us
                     </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/about-us"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          About Us
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/testimonials"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Testimonials
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          to="/team"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Team
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
 
                   <li className="nav-item">
@@ -143,6 +110,11 @@ const Navbar = () => {
                         </Link>
                       </li>
                     </ul>
+                  </li>
+                  <li className="nav-item">
+                    <Link to="/case-studies" className="nav-link">
+                      Case Studies
+                    </Link>
                   </li>
 
                   {/* <li className="nav-item">

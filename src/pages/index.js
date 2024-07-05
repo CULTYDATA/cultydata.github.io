@@ -3,7 +3,7 @@ import Layout from "../components/_App/layout"
 import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import MainBanner from "../components/Index2/MainBanner"
-import OurProjects from "../components/Index2/OurProjects"
+
 import AboutUs from "../components/Index2/AboutUs"
 
 import OurApproach from "../components/Index2/OurApproach"
@@ -16,6 +16,7 @@ import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
 import OurServices from "../components/Index2/OurServices"
 import OurKeyValue from "../components/Index2/OurKeyValue"
+import OurProjects from "../components/index2/OurProjects"
 
 const DataScienceMlCompanyPage = () => {
   return (
@@ -31,7 +32,7 @@ const DataScienceMlCompanyPage = () => {
 
       <OurKeyValue />
 
-      <OurProjects />
+      <OurProjects showAll={false} />
 
       <Testimonials />
 

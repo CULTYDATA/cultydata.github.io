@@ -7,6 +7,8 @@ import AboutUsContent from "../components/AboutUs/AboutUsContent"
 
 import WhyChooseUs from "../components/AboutUs/WhyChooseUs"
 import HowItWork from "../components/AboutUs/HowItWork"
+import TeamMembers from "../components/Index2/TeamMembers"
+import Testimonials from "../components/Index2/Testimonials"
 
 import Footer from "../components/_App/Footer"
 
@@ -25,6 +27,10 @@ const AboutUsPage = () => {
       <AboutUsContent />
 
       <WhyChooseUs />
+
+      <Testimonials />
+
+      <TeamMembers />
 
       <Footer />
     </Layout>

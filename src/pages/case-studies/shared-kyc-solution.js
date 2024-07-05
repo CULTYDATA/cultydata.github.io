@@ -3,22 +3,23 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
-import OurProjects from "../../components/index2/OurProjects"
-import Footer from "../../components/_App/Footer"
 
-const CaseStudiesPage = () => {
+import Footer from "../../components/_App/Footer"
+import SharedKYCDetails from "../../components/CaseStudiesDetails/SharedKYCDetails"
+
+const CaseDetailsPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Case Studies"
-        homePageText="Home"
-        homePageUrl="/"
-        activePageText="Case Studies"
+        pageTitle="Shared KYC Solutions"
+        homePageText="Case Studies"
+        homePageUrl="/case-studies"
+        activePageText="Case Studies Details"
       />
 
-      <OurProjects showAll={true} />
+      <SharedKYCDetails />
 
       <Footer />
     </Layout>
@@ -30,6 +31,6 @@ const CaseStudiesPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Case Studies" />
+export const Head = () => <Seo title="Case Details" />
 
-export default CaseStudiesPage
+export default CaseDetailsPage
