@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
-import img5 from "../../images/about/about-img5.png"
+import img5 from "../../images/about/baneer2.png"
 import starIcon from "../../images/star-icon.png"
-import icon4 from "../../images/icons/icon4.png"
+import icon4 from "../../images/icons/12.png"
 
-import icon6 from "../../images/icons/icon6.png"
+import icon6 from "../../images/icons/thumbs.png"
 
 import shape1 from "../../images/shape/circle-shape1.png"
 
@@ -16,7 +16,7 @@ const AboutUs = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
-                <img src={img5} alt="banner" />
+                <img src={img5} alt="banner" Width="80%"/>
               </div>
             </div>
 
@@ -40,13 +40,13 @@ const AboutUs = () => {
 
                   <ul className="features-list">
                     <li>
-                      <img src={icon4} alt="banner" />
+                      <img src={icon4} alt="banner" width="20%" />
                       <h3>50 Years</h3>
                       <p>Combined experience</p>
                     </li>
 
                     <li>
-                      <img src={icon6} alt="banner" />
+                      <img src={icon6} alt="banner" width="20%"  />
                       <h3>100%</h3>
                       <p>Satisfaction rate</p>
                     </li>

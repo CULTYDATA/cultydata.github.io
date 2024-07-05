@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import starIcon from "../../images/star-icon.png"
 
-import project1 from "../../images/projects/project1.jpg"
-import project2 from "../../images/projects/project2.jpg"
+import project1 from "../../images/projects/trade.png"
+import project2 from "../../images/projects/kyc.png"
 
 const OurProjects = () => {
   return (
@@ -49,7 +49,7 @@ const OurProjects = () => {
             <div className="col-lg-4 col-md-6">
               <div className="single-projects-box">
                 <div className="image">
-                  <img src={project2} alt="Project" />
+                  <img src={project2} alt="Project" width="71%" />
 
                   <Link
                     to="/case-studies/case-studies-details"
