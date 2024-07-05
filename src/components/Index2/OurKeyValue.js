@@ -1,9 +1,9 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import process1 from "../../images/process/process1.png"
-import process2 from "../../images/process/process2.png"
-import process3 from "../../images/process/process3.png"
-import process4 from "../../images/process/process4.png"
+import process1 from "../../images/process/cloudinfrastructure.jpg"
+import process2 from "../../images/process/123.png"
+import process3 from "../../images/process/3.png"
+import process4 from "../../images/process/cloudsecurity.png"
 
 import shape from "../../images/shape/circle-shape1.png"
 
@@ -30,7 +30,7 @@ const OurKeyValue = () => {
               <div className="single-process-box">
                 <div className="number">1</div>
                 <div className="image">
-                  <img src={process1} alt="about" />
+                  <img src={process1} alt="about" width="40%" />
                 </div>
                 <h3>Pay-as-you-go Cloud Infrastructure</h3>
                 <p>
@@ -45,7 +45,7 @@ const OurKeyValue = () => {
               <div className="single-process-box">
                 <div className="number">2</div>
                 <div className="image">
-                  <img src={process2} alt="about" />
+                  <img src={process2} alt="about" width="60%"/>
                 </div>
                 <h3>Fault-Tolerant Architecture</h3>
                 <p>
@@ -60,7 +60,7 @@ const OurKeyValue = () => {
               <div className="single-process-box">
                 <div className="number">3</div>
                 <div className="image">
-                  <img src={process3} alt="about" />
+                  <img src={process3} alt="about" width="40%" />
                 </div>
                 <h3>Scalability Built-In from Day One</h3>
                 <p>
@@ -75,7 +75,7 @@ const OurKeyValue = () => {
               <div className="single-process-box ">
                 <div className="number">4</div>
                 <div className="image">
-                  <img src={process4} alt="about" />
+                  <img src={process4} alt="about" width="40%" />
                 </div>
                 <h3>Security-First Approach</h3>
                 <p>

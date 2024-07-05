@@ -1,10 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import starIcon from "../../images/star-icon.png"
-import icon1 from "../../images/services/service-icon1.png"
-import icon2 from "../../images/services/service-icon2.png"
-import icon3 from "../../images/services/service-icon3.png"
-import icon4 from "../../images/services/service-icon4.png"
+import icon1 from "../../images/services/TDPD.png"
+import icon2 from "../../images/services/ttbt.png"
+import icon3 from "../../images/services/cna.png"
+import icon4 from "../../images/services/flexibility.png"
 
 import shape2 from "../../images/shape/circle-shape2.png"
 
@@ -25,7 +25,7 @@ const OurServices = () => {
             <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
-                  <img src={icon1} alt="banner" />
+                  <img src={icon1} alt="banner" width="20%"/>
                 </div>
                 <h3>
                   <Link to="/services/service-details">
@@ -48,7 +48,7 @@ const OurServices = () => {
             <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
-                  <img src={icon2} alt="banner" />
+                  <img src={icon2} alt="banner" width="20%" />
                 </div>
                 <h3>
                   <Link to="/services/service-details">
@@ -71,7 +71,7 @@ const OurServices = () => {
             <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
-                  <img src={icon3} alt="banner" />
+                  <img src={icon3} alt="banner" width="20%" />
                 </div>
                 <h3>
                   <Link to="/services/service-details">
@@ -95,7 +95,7 @@ const OurServices = () => {
             <div className="col-lg-5 col-md-6 col-sm-6">
               <div className="single-services-box">
                 <div className="icon">
-                  <img src={icon4} alt="banner" />
+                  <img src={icon4} alt="banner" width="20%" />
                 </div>
                 <h3>
                   <Link to="/services/service-details">

@@ -1,7 +1,7 @@
 import React from "react"
 
 import StarIcon from "../../images/star-icon.png"
-import HowitsWork from "../../images/how-its-work.png"
+import HowitsWork from "../../images/main2.png"
 
 const HowItWork = () => {
   return (

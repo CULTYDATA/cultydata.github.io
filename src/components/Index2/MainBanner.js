@@ -2,7 +2,7 @@ import React from "react"
 import AOS from "aos"
 
 import { Link } from "gatsby"
-import img1 from "../../images/how-its-work.png"
+import img1 from "../../images/banner11.png"
 
 const MainBanner = () => {
   React.useEffect(() => {
@@ -56,7 +56,7 @@ const MainBanner = () => {
                 data-aos-duration="1200"
                 data-aos-delay="400"
               >
-                <img src={img1} alt="banner" />
+                <img src={img1} alt="banner" width="80%" />
               </div>
             </div>
           </div>
