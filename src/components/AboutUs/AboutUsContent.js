@@ -1,76 +1,76 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import aboutImage from "../../images/about/about-img5.png"
 import starIcon from "../../images/star-icon.png"
-import icon4 from "../../images/icons/icon4.png"
-import icon5 from "../../images/icons/icon5.png"
-import icon6 from "../../images/icons/icon6.png"
-import icon7 from "../../images/icons/icon7.png"
-import shape1 from "../../images/shape/circle-shape1.png"
 
 const AboutUsContent = () => {
   return (
     <>
       <section className="about-area ptb-100">
         <div className="container-fluid">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-md-12">
-              <div className="about-image">
-                <img src={aboutImage} alt="banner" />
+          <div className="overview-box">
+            <div className="overview-image">
+              <div className="image">
+                <img src={aboutImage} alt="features" />
               </div>
             </div>
 
-            <div className="col-lg-6 col-md-12">
-              <div className="about-content">
-                <div className="content">
-                  <span className="sub-title">
-                    <img src={starIcon} alt="banner" />
-                    About Us
-                  </span>
-                  <h2>Drive Digital Revolution Through Data Science</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </p>
+            <div className="overview-content">
+              <div className="content right-content">
+                <span className="sub-title">
+                  <img src={starIcon} alt="banner" />
+                  About Us
+                </span>
 
-                  <ul className="features-list">
-                    <li>
-                      <img src={icon4} alt="banner" />
-                      <h3>10 Years</h3>
-                      <p>On the market</p>
-                    </li>
-                    <li>
-                      <img src={icon5} alt="banner" />
-                      <h3>45+</h3>
-                      <p>Team members</p>
-                    </li>
-                    <li>
-                      <img src={icon6} alt="banner" />
-                      <h3>100%</h3>
-                      <p>Satisfaction rate</p>
-                    </li>
-                    <li>
-                      <img src={icon7} alt="banner" />
-                      <h3>80%</h3>
-                      <p>Senior scientist</p>
-                    </li>
-                  </ul>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna.
-                  </p>
+                <h2>
+                  Welcome to Cultydata Studio: Your Partner in Digital
+                  Transformation
+                </h2>
+                <p>
+                  Welcome to Cultydata Studio, where we transform your digital
+                  aspirations into tangible, scalable realities. As a premier
+                  incubator-style agency, we specialize in guiding startups
+                  through the intricate journey of digital product development.
+                  Our mission is to bridge the gap between innovative concepts
+                  and market-ready platforms, leveraging our extensive tech
+                  expertise and startup acceleration know-how.
+                </p>
 
-                  <Link to="/about-us" className="default-btn">
-                    <i className="flaticon-right"></i>More About Us<span></span>
-                  </Link>
-                </div>
+                <ul className="features-list">
+                  <li>
+                    <span>
+                      <i className="bx bx-check"></i> Transforming Aspirations
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="bx bx-check"></i> Incubator-Style Agency
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="bx bx-check"></i> Bridging the Gap
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="bx bx-check"></i> Cultivating Ecosystems
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="bx bx-check"></i> Expert Guidance
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="bx bx-check"></i> Strategic Partnerships
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="circle-shape1">
-          <img src={shape1} alt="banner" />
         </div>
 
         {/* <div className="container">
@@ -153,10 +153,6 @@ const AboutUsContent = () => {
             </div>
           </div>
         </div> */}
-
-        <div className="circle-shape1">
-          <img src={shape1} alt="banner" />
-        </div>
       </section>
     </>
   )

@@ -11,7 +11,7 @@ import shape2 from "../../images/shape/circle-shape2.png"
 const OurServices = () => {
   return (
     <>
-      <section className="services-area ptb-100 bg-f1f8fb">
+      <section className="services-area ptb-100 bg-fefbf1">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">
@@ -116,9 +116,9 @@ const OurServices = () => {
           </div>
         </div>
 
-        <div className="circle-shape2">
+        {/* <div className="circle-shape2">
           <img src={shape2} alt="banner" />
-        </div>
+        </div> */}
         <div className="lines">
           <div className="line"></div>
           <div className="line"></div>

@@ -9,9 +9,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `CultyData`,
-    description: `CultyData`,
-    author: `@CultyData`,
+    title: `Cultydata`,
+    description: `Cultydata`,
+    author: `@Cultydata`,
     siteUrl: `https://rewy-gatsby.envytheme.com`,
   },
   plugins: [

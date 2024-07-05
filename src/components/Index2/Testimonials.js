@@ -11,7 +11,7 @@ import { Navigation, Autoplay } from "swiper"
 const Testimonials = () => {
   return (
     <>
-      <div className="testimonials-area bg-f1f8fb">
+      <div className="testimonials-area bg-fefbf1 pt-70">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">
@@ -105,12 +105,12 @@ const Testimonials = () => {
             </SwiperSlide> */}
           </Swiper>
 
-          <div className="testimonials-view-btn text-center">
+          {/* <div className="testimonials-view-btn text-center">
             <Link to="/testimonials" className="default-btn">
               <i className="flaticon-view"></i>
               Check Out All Reviews <span></span>
             </Link>
-          </div>
+          </div> */}
         </div>
 
         <div className="shape-img1">

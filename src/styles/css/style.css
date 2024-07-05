@@ -163,9 +163,16 @@ a:hover {
 .bg-e3fbff {
   background-color: #e3fbff;
 }
-
 .bg-f1f8fb {
   background-color: #f1f8fb;
+}
+
+.bg-fefbf1 {
+  background-color: #fefbf1;
+}
+
+.bg-fdf7e4 {
+  background-color: #fdf7e4;
 }
 
 .bg-fffbf5 {
@@ -3911,7 +3918,9 @@ How It's Work Area CSS
   font-style: italic;
 }
 .single-process-box:hover {
-  border-color: #35796a;
+  border-color: #e2ac54;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+  transform: translateY(-10px);
 }
 .single-process-box:hover .number {
   transform: translateX(10px) rotate(5deg);
@@ -5143,7 +5152,7 @@ Projects Area CSS
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #35796a;
+  background-color: #fdce74;
   border-radius: 5px;
   z-index: 1;
   opacity: 0;
@@ -5454,7 +5463,7 @@ Scientist Area CSS
   bottom: 0;
   z-index: -1;
   right: 0;
-  background-color: #f1f8fb;
+  background-color: #fefbf1;
   height: 247px;
 }
 
@@ -5873,7 +5882,7 @@ Overview Area CSS
 }
 .overview-box .overview-content .content .features-list li {
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 40%;
   margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -5897,7 +5906,7 @@ Overview Area CSS
   width: 0;
   height: 100%;
   border-radius: 5px;
-  background-color: #35796a;
+  background-color: #fdce74;
   z-index: -1;
   transition: 0.5s;
 }
@@ -5916,9 +5925,9 @@ Overview Area CSS
   top: 50%;
   transform: translateY(-50%);
 }
-.overview-box .overview-content .content .features-list li span:hover {
+/* .overview-box .overview-content .content .features-list li span:hover {
   color: #ffffff;
-}
+} */
 .overview-box .overview-content .content .features-list li span:hover::before {
   width: 100%;
 }

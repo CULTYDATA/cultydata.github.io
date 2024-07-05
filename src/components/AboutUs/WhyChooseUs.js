@@ -16,40 +16,50 @@ const WhyChooseUs = () => {
                 </span>
                 <h2>Why Choose Us?</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                  With decades of combined tech experience, adaptable
+                  cross-disciplinary skills, a result-driven culture, and a
+                  proven collaborative team, we ensure your project's success.
                 </p>
                 <div className="inner-box">
                   <div className="single-item">
                     <div className="count-box">1</div>
                     <h3>XX+ Years of Combined Cutting-Edge Tech Experience</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      At Cultydata Studio, we bring together a powerhouse of
+                      tech savvy and entrepreneurial spirit. Our team boasts
+                      over 50 years of combined experience in cutting-edge
+                      technologies, ensuring that your project benefits from the
+                      latest innovations and best practices in the digital
+                      realm.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">2</div>
                     <h3>Cross-Disciplinary Skills Adaptable to Any Industry</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      We pride ourselves on our versatility. Our
+                      cross-disciplinary skills allow us to adapt seamlessly to
+                      any industry, bringing fresh perspectives and innovative
+                      solutions to your unique challenges. From fintech to e-
+                      commerce, we've got you covered.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">3</div>
                     <h3>Result-Driven Culture at Your Service</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      Our commitment to your success is unwavering. We foster a
+                      results- driven culture that prioritises tangible outcomes
+                      and measurable growth. Your goals become our mission, and
+                      we work tirelessly to exceed expectations at every turn.
                     </p>
                   </div>
                   <div className="single-item">
                     <div className="count-box">4</div>
                     <h3>Complementary Team with Proven Collaboration</h3>
                     <p>
-                      Dolor sit amet consectetur elit eiusmod tempor incidi dunt
-                      labore dolore magna aliqua enim.
+                      Our cohesive team excels in working together, combining
+                      strengths to drive success.
                     </p>
                   </div>
                 </div>

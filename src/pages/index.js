@@ -28,14 +28,14 @@ const DataScienceMlCompanyPage = () => {
       <OurServices />
 
       <OurApproach />
-      <OurKeyValue />
-      <OurProjects />
 
-      <TeamMembers />
+      <OurKeyValue />
+
+      <OurProjects />
 
       <Testimonials />
 
-      <Partner />
+      <TeamMembers />
 
       <StartProject />
 

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.png"
+import logo from "../../images/full-logo.svg"
 import footerMap from "../../images/footer-map.png"
 
 const Footer = () => {
@@ -13,13 +13,11 @@ const Footer = () => {
           <div className="col-lg-4 col-sm-6">
             <div className="single-footer-widget">
               <Link to="/" className="logo">
-                {/* <img src={logo} alt="logo" /> */}
-                <h2>CultyData</h2>
+                <img src={logo} alt="logo" />
               </Link>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                suspendisse.
+                Cultydata Studio: Where Tech Expertise Meets Startup
+                Acceleration
               </p>
 
               <ul className="social-link">
@@ -137,7 +135,7 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <p>
-                Copyright @{currentYear} <strong>CultyData</strong> All rights
+                Copyright @{currentYear} <strong>Cultydata</strong> All rights
                 reserved{" "}
               </p>
             </div>
@@ -147,9 +145,9 @@ const Footer = () => {
                 <li>
                   <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/terms-of-service">Terms & Conditions</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

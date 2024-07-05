@@ -26,8 +26,6 @@ const AboutUsPage = () => {
 
       <WhyChooseUs />
 
-      <HowItWork />
-
       <Footer />
     </Layout>
   )
