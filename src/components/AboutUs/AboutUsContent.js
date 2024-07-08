@@ -1,6 +1,6 @@
 import React from "react"
 
-import aboutImage from "../../images/about/about-img5.png"
+import aboutImage from "../../images/about/aboutus.png"
 import starIcon from "../../images/star-icon.png"
 
 const AboutUsContent = () => {
@@ -11,7 +11,7 @@ const AboutUsContent = () => {
           <div className="overview-box">
             <div className="overview-image">
               <div className="image">
-                <img src={aboutImage} alt="features" />
+                <img src={aboutImage} alt="features"  width ="80%"/>
               </div>
             </div>
 
