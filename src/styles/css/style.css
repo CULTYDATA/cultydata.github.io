@@ -3282,6 +3282,9 @@ Services Area CSS
 }
 
 .single-services-box-item {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
   background-color: #fafafb;
   position: relative;
   z-index: 1;
@@ -3295,7 +3298,7 @@ Services Area CSS
   height: 90px;
   text-align: center;
   position: relative;
-  background-color: #80c54d;
+
   border-radius: 5px;
   text-align: center;
   margin-bottom: 30px;
@@ -9326,7 +9329,7 @@ Page Title Area CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background: transparent url(../../images/page-title-bg.jpg) right top
+  background: transparent url(../../images/projects/casestudies2.png) right top
     no-repeat;
   border-bottom: 1px solid #fafafa;
   padding-top: 200px;
