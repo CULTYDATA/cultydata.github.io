@@ -6,7 +6,7 @@ import PageBanner from "../components/Common/PageBanner"
 import AboutUsContent from "../components/AboutUs/AboutUsContent"
 
 import Footer from "../components/_App/Footer"
-import FeaturedServices from "../components/AboutUs/WhyChooseUs"
+import WhyChooseUs from "../components/AboutUs/WhyChooseUs"
 import OurValueProposition from "../components/AboutUs/OurValueProposition"
 
 const AboutUsPage = () => {
@@ -22,7 +22,7 @@ const AboutUsPage = () => {
       />
 
       <AboutUsContent />
-      <FeaturedServices />
+      <WhyChooseUs />
       <OurValueProposition />
       <Footer />
     </Layout>

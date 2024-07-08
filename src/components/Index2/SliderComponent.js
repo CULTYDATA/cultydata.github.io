@@ -26,7 +26,7 @@ const SliderComponent = ({ slidesData }) => {
               </div>
               <div className="overview-content">
                 <div className="content right-content">
-                  <h1>{slide.heading}</h1>
+                  <h3>{slide.heading}</h3>
                   <p>{slide.content}</p>
                 </div>
               </div>

@@ -17,6 +17,7 @@ import Footer from "../components/_App/Footer"
 import OurServices from "../components/Index2/OurServices"
 import OurKeyValue from "../components/Index2/OurKeyValue"
 import OurProjects from "../components/index2/OurProjects"
+import OurKeyServices from "../components/Index2/OurKeyServices"
 
 const IndexPage = () => {
   return (
@@ -27,6 +28,8 @@ const IndexPage = () => {
       <AboutUs />
 
       <OurServices />
+
+      <OurKeyServices />
 
       <OurApproach />
 

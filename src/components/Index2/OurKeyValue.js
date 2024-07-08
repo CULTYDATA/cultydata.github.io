@@ -9,17 +9,16 @@ import SliderComponent from "./SliderComponent"
 
 const slidesData = [
   {
-    heading: "Delivering Unique Value: Our Key Differentiators",
+    heading: "Pay-as-you-go Cloud Infrastructure",
     content:
-      "We take pride in our ability to deliver unique value through our projects. Here are some of the key value additions we bring to each project",
-
+      "We implement cost-effective cloud solutions that scale with your needs, ensuring you only pay for what you use. This approach maximises your resources and minimises upfront costs.",
     image: process1,
   },
 
   {
     heading: "Fault-Tolerant Architecture",
     content:
-      " Our designs prioritise resilience, incorporating redundancies and fail-safes to ensure your platform remains operational even in the face of unexpected challenges.",
+      "Our designs prioritise resilience, incorporating redundancies and fail-safes to ensure your platform remains operational even in the face of unexpected challenges.",
     image: process2,
   },
 
