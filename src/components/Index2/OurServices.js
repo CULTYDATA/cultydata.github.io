@@ -108,7 +108,7 @@ const OurServices = () => {
                 </p>
                 <Link to="/services/service-details" className="learn-more-btn">
                   <i className="flaticon-right"></i>
-                  Rearn More
+                  Read More
                 </Link>
             
               </div>
