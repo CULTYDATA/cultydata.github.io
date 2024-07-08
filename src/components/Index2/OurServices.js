@@ -122,7 +122,7 @@ const OurServices = () => {
                   className="learn-more-btn"
                 >
                   <i className="flaticon-right"></i>
-                  Rearn More
+                  Read More
                 </Link>
               </div>
             </div>
