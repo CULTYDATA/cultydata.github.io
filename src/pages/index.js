@@ -18,7 +18,7 @@ import OurServices from "../components/Index2/OurServices"
 import OurKeyValue from "../components/Index2/OurKeyValue"
 import OurProjects from "../components/index2/OurProjects"
 
-const DataScienceMlCompanyPage = () => {
+const IndexPage = () => {
   return (
     <Layout>
       <Navbar />
@@ -52,4 +52,4 @@ const DataScienceMlCompanyPage = () => {
  */
 export const Head = () => <Seo title="Home" />
 
-export default DataScienceMlCompanyPage
+export default IndexPage

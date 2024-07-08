@@ -69,13 +69,35 @@ const Navbar = () => {
 
                   <li className="nav-item">
                     <Link
-                      to="/about-us"
-                      activeClassName="active"
-                      onClick={() => setCollapsed(true)}
+                      to="#"
+                      onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      About Us
+                      About Us <i className="bx bx-chevron-down"></i>
                     </Link>
+                    <ul className="dropdown-menu">
+                      <li className="nav-item">
+                        <Link
+                          to="/about-us"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          About Us
+                        </Link>
+                      </li>
+
+                      <li className="nav-item">
+                        <Link
+                          to="/team"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Team
+                        </Link>
+                      </li>
+                    </ul>
                   </li>
 
                   <li className="nav-item">
@@ -90,23 +112,43 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link
-                          to="/services"
+                          to="/services/tailored-digital-platform-development"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Services
+                          Tailored Digital Platform Development
                         </Link>
                       </li>
 
                       <li className="nav-item">
                         <Link
-                          to="/services/service-details"
+                          to="/services/tech-team-building-training"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Service Details
+                          Tech Team Building & Training
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/cloud-native-architecture-design"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Cloud-Native Architecture Design
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link
+                          to="/services/continuous-delivery-pipeline-setup"
+                          activeClassName="active"
+                          onClick={() => setCollapsed(true)}
+                          className="nav-link"
+                        >
+                          Continuous Delivery Pipeline Setup
                         </Link>
                       </li>
                     </ul>

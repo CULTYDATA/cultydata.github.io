@@ -5,12 +5,9 @@ import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import AboutUsContent from "../components/AboutUs/AboutUsContent"
 
-import WhyChooseUs from "../components/AboutUs/WhyChooseUs"
-import HowItWork from "../components/AboutUs/HowItWork"
-import TeamMembers from "../components/Index2/TeamMembers"
-import Testimonials from "../components/Index2/Testimonials"
-
 import Footer from "../components/_App/Footer"
+import FeaturedServices from "../components/AboutUs/WhyChooseUs"
+import OurValueProposition from "../components/AboutUs/OurValueProposition"
 
 const AboutUsPage = () => {
   return (
@@ -25,13 +22,8 @@ const AboutUsPage = () => {
       />
 
       <AboutUsContent />
-
-      <WhyChooseUs />
-
-      <Testimonials />
-
-      <TeamMembers />
-
+      <FeaturedServices />
+      <OurValueProposition />
       <Footer />
     </Layout>
   )

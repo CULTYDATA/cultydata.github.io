@@ -3,11 +3,11 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
-import ServiceDetailsContent from "../../components/ServiceDetails/ServiceDetailsContent"
+import TechTeamBuildingTraining from "../../components/ServiceDetails/TechTeamBuildingTraining"
 import RelatedServices from "../../components/ServiceDetails/RelatedServices"
 import Footer from "../../components/_App/Footer"
 
-const ServiceDetailsPage = () => {
+const TechTeamBuildingAndTrainingPage = () => {
   return (
     <Layout>
       <Navbar />
@@ -19,7 +19,7 @@ const ServiceDetailsPage = () => {
         activePageText="Service Details"
       />
 
-      <ServiceDetailsContent />
+      <TechTeamBuildingTraining />
 
       <RelatedServices />
 
@@ -33,6 +33,6 @@ const ServiceDetailsPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Service Details" />
+export const Head = () => <Seo title="Tech Team Building And Training" />
 
-export default ServiceDetailsPage
+export default TechTeamBuildingAndTrainingPage

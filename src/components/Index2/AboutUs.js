@@ -6,8 +6,6 @@ import icon4 from "../../images/icons/12.png"
 
 import icon6 from "../../images/icons/thumbs.png"
 
-import shape1 from "../../images/shape/circle-shape1.png"
-
 const AboutUs = () => {
   return (
     <>
@@ -16,7 +14,7 @@ const AboutUs = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
-                <img src={img5} alt="banner" Width="80%"/>
+                <img src={img5} alt="banner" Width="80%" />
               </div>
             </div>
 
@@ -46,7 +44,7 @@ const AboutUs = () => {
                     </li>
 
                     <li>
-                      <img src={icon6} alt="banner" width="20%"  />
+                      <img src={icon6} alt="banner" width="20%" />
                       <h3>100%</h3>
                       <p>Satisfaction rate</p>
                     </li>
@@ -59,10 +57,6 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="circle-shape1">
-          <img src={shape1} alt="banner" />
         </div>
       </section>
     </>

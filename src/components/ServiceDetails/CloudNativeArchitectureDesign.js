@@ -4,7 +4,7 @@ import details1 from "../../images/services/services-details1.jpg"
 import project2 from "../../images/projects/project2.jpg"
 import charts from "../../images/services/charts.jpg"
 
-const ServiceDetailsContent = () => {
+const CloudNativeArchitectureDesign = () => {
   return (
     <>
       <section className="services-details-area ptb-100">
@@ -160,4 +160,4 @@ const ServiceDetailsContent = () => {
   )
 }
 
-export default ServiceDetailsContent
+export default CloudNativeArchitectureDesign

@@ -4,7 +4,6 @@ import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
 
-import RelatedProjects from "../../components/CaseStudiesDetails/RelatedProjects"
 import Footer from "../../components/_App/Footer"
 import CarbonplaceDetails from "../../components/CaseStudiesDetails/CarbonplaceDetails"
 

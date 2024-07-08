@@ -7,40 +7,38 @@ const ServiceSidebar = () => {
       <div className="services-details-info">
         <ul className="services-list">
           <li>
-            <Link to="/services/service-details" className="active">
-              AI & ML Development
+            <Link
+              to="/services/tailored-digital-platform-development"
+              className="active"
+            >
+              Tailored Digital Platform Development
             </Link>
           </li>
           <li>
-            <Link to="/services/service-details">Data Analytics</Link>
+            <Link
+              to="/services/tech-team-building-training"
+              activeClassName="active"
+            >
+              Tech Team Building & Training
+            </Link>
           </li>
           <li>
-            <Link to="/services/service-details">Data Science</Link>
+            <Link
+              to="/services/cloud-native-architecture-design"
+              activeClassName="active"
+            >
+              Cloud-Native Architecture Design
+            </Link>
           </li>
           <li>
-            <Link to="/services/service-details">Artificial Intelligence</Link>
-          </li>
-          <li>
-            <Link to="/services/service-details">Data Visualization</Link>
+            <Link
+              to="/services/continuous-delivery-pipeline-setup"
+              activeClassName="active"
+            >
+              Continuous Delivery Pipeline Setup
+            </Link>
           </li>
         </ul>
-
-        <div className="download-file">
-          <h3>Brochures</h3>
-
-          <ul>
-            <li>
-              <Link to="#">
-                PDF Download <i className="bx bxs-file-pdf"></i>
-              </Link>
-            </li>
-            <li>
-              <Link to="#">
-                Services Details.txt <i className="bx bxs-file-txt"></i>
-              </Link>
-            </li>
-          </ul>
-        </div>
 
         <div className="services-contact-info">
           <h3>Contact Info</h3>

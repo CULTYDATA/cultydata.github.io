@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 import starIcon from "../../images/star-icon.png"
 
 import project1 from "../../images/projects/trade.png"

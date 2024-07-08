@@ -4,25 +4,25 @@ import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
 
-import StartProject from "../../components/Index2/StartProject"
+import RelatedServices from "../../components/ServiceDetails/RelatedServices"
 import Footer from "../../components/_App/Footer"
-import OurServices from "../../components/Index2/OurServices"
+import TailoredDigitalPlatformDevelopment from "../../components/ServiceDetails/TailoredDigitalPlatformDevelopment"
 
-const ServicesPage = () => {
+const TailoredDigitalPlatformDevelopmentPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Services"
+        pageTitle="Tailored Digital Platform Development"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Services"
+        activePageText="Tailored Digital Platform Development"
       />
 
-      <OurServices />
+      <TailoredDigitalPlatformDevelopment />
 
-      <StartProject />
+      <RelatedServices />
 
       <Footer />
     </Layout>
@@ -34,6 +34,6 @@ const ServicesPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Services" />
+export const Head = () => <Seo title="Tailored Digital Platform Development" />
 
-export default ServicesPage
+export default TailoredDigitalPlatformDevelopmentPage
