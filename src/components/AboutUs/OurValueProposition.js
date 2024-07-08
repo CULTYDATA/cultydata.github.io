@@ -1,10 +1,10 @@
 import React from "react"
 
-import serviceIcon1 from "../../images/services/service-icon1.png"
-import serviceIcon2 from "../../images/services/service-icon2.png"
-import serviceIcon3 from "../../images/services/service-icon3.png"
-import serviceIcon4 from "../../images/services/service-icon4.png"
-import serviceIcon5 from "../../images/services/service-icon5.png"
+import serviceIcon1 from "../../images/services/prop1.png"
+import serviceIcon2 from "../../images/services/prop2.png"
+import serviceIcon3 from "../../images/services/prop3.png"
+import serviceIcon4 from "../../images/services/prop4.png"
+import serviceIcon5 from "../../images/services/prop5.png"
 
 const OurValueProposition = () => {
   return (
@@ -19,7 +19,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon1} alt="feature" />
+                  <img src={serviceIcon1} alt="feature" width="20%"/>
                 </div>
                 <h3>High-Performance Teams</h3>
                 <p>
@@ -33,7 +33,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon2} alt="feature" />
+                  <img src={serviceIcon2} alt="feature" width="20%" />
                 </div>
                 <h3>Synergy with Cultydata Academy</h3>
                 <p>
@@ -46,7 +46,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon3} alt="feature" />
+                  <img src={serviceIcon3} alt="feature"  width="20%" />
                 </div>
                 <h3>Holacratic Organization</h3>
                 <p>
@@ -60,7 +60,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon4} alt="feature" />
+                  <img src={serviceIcon4} alt="feature" width="20%" />
                 </div>
                 <h3>Cost Efficiency</h3>
                 <p>
@@ -74,7 +74,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon5} alt="feature" />
+                  <img src={serviceIcon5} alt="feature" width="20%" />
                 </div>
                 <h3>Entrepreneurial Promotion</h3>
                 <p>
