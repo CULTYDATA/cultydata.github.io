@@ -1,7 +1,6 @@
 import React from "react"
 
 import aboutImage from "../../images/about/aboutus.png"
-import starIcon from "../../images/star-icon.png"
 
 const AboutUsContent = () => {
   return (

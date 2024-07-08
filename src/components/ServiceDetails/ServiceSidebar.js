@@ -9,7 +9,7 @@ const ServiceSidebar = () => {
           <li>
             <Link
               to="/services/tailored-digital-platform-development"
-              className="active"
+              activeClassName="active"
             >
               Tailored Digital Platform Development
             </Link>

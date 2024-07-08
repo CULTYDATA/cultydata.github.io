@@ -39,7 +39,7 @@ const slidesData = [
 const OurKeyValue = () => {
   return (
     <>
-      <section className="process-area pb-70">
+      <section className="process-area ptb-70">
         <div className="container">
           <div className="section-title">
             <h2>Delivering Unique Value: Our Key Differentiators</h2>

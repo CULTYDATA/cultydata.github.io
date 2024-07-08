@@ -3307,6 +3307,11 @@ Services Area CSS
   -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
   clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
+.single-services-box-item:hover {
+  border-color: #35796a;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.01);
+  transform: translateY(-10px);
+}
 .single-services-box-item .icon {
   width: 90px;
   height: 90px;
@@ -3324,6 +3329,9 @@ Services Area CSS
   top: 50%;
   transform: translateY(-50%);
   margin: auto;
+}
+.single-services-box-item:hover .icon {
+  animation: bounce 2s;
 }
 .single-services-box-item h3 {
   margin-bottom: 12px;
