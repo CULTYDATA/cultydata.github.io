@@ -3825,7 +3825,7 @@ Featured Services Area CSS
   padding-right: 15px;
 }
 .single-featured-services-box .icon {
-  background-color: #35796a;
+  background-color: #fdce74;
   color: #ffffff;
   width: 80px;
   height: 80px;
@@ -3874,7 +3874,7 @@ Featured Services Area CSS
   top: 4.5px;
 }
 .single-featured-services-box:hover .icon {
-  background-color: #03271f !important;
+  background-color: #004c3f !important;
   color: #ffffff !important;
 }
 
@@ -3887,11 +3887,11 @@ Featured Services Area CSS
   margin-top: 30px;
 }
 .col-lg-4:nth-child(2) .single-featured-services-box .icon {
-  background-color: #01b882;
+  background-color: #37786a;
   color: #ffffff;
 }
 .col-lg-4:nth-child(3) .single-featured-services-box .icon {
-  background-color: #bb005c;
+  background-color: #fdce74;
   color: #ffffff;
 }
 .col-lg-4:nth-child(1) .single-featured-services-box {
