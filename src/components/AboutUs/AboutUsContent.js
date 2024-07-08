@@ -1,8 +1,8 @@
 import React from "react"
-
+ 
 import aboutImage from "../../images/about/aboutus.png"
 import starIcon from "../../images/star-icon.png"
-
+ 
 const AboutUsContent = () => {
   return (
     <>
@@ -14,14 +14,14 @@ const AboutUsContent = () => {
                 <img src={aboutImage} alt="features"  width ="80%"/>
               </div>
             </div>
-
+ 
             <div className="overview-content">
               <div className="content right-content">
                 <span className="sub-title">
                   <img src={starIcon} alt="banner" />
                   About Us
                 </span>
-
+ 
                 <h2>
                   Welcome to Cultydata Studio: Your Partner in Digital
                   Transformation
@@ -35,7 +35,7 @@ const AboutUsContent = () => {
                   and market-ready platforms, leveraging our extensive tech
                   expertise and startup acceleration know-how.
                 </p>
-
+ 
                 <ul className="features-list">
                   <li>
                     <span>
@@ -72,7 +72,7 @@ const AboutUsContent = () => {
             </div>
           </div>
         </div>
-
+ 
         {/* <div className="container">
           <div className="about-inner-area">
             <div className="row">
@@ -83,7 +83,7 @@ const AboutUsContent = () => {
                     Real innovations and a positive customer experience are the
                     heart of successful communication.
                   </p>
-
+ 
                   <ul className="features-list">
                     <li>
                       <i className="flaticon-tick"></i> Activate Listening
@@ -100,7 +100,7 @@ const AboutUsContent = () => {
                   </ul>
                 </div>
               </div>
-
+ 
               <div className="col-lg-4 col-md-6 col-sm-6">
                 <div className="about-text">
                   <h3>Our Mission</h3>
@@ -108,7 +108,7 @@ const AboutUsContent = () => {
                     Real innovations and a positive customer experience are the
                     heart of successful communication.
                   </p>
-
+ 
                   <ul className="features-list">
                     <li>
                       <i className="flaticon-tick"></i> Creating. Results.
@@ -125,7 +125,7 @@ const AboutUsContent = () => {
                   </ul>
                 </div>
               </div>
-
+ 
               <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
                 <div className="about-text">
                   <h3>Who we are</h3>
@@ -133,7 +133,7 @@ const AboutUsContent = () => {
                     Real innovations and a positive customer experience are the
                     heart of successful communication.
                   </p>
-
+ 
                   <ul className="features-list">
                     <li>
                       <i className="flaticon-tick"></i> Stay real. Always.
@@ -157,5 +157,5 @@ const AboutUsContent = () => {
     </>
   )
 }
-
+ 
 export default AboutUsContent
