@@ -1,5 +1,9 @@
 import React from "react"
 
+import serviceIcon1 from "../../images/services/future.png"
+import serviceIcon2 from "../../images/services/intellectual.png"
+import serviceIcon3 from "../../images/services/projecthandover.png"
+
 const OurKeyServices = () => {
   return (
     <>
@@ -13,7 +17,8 @@ const OurKeyServices = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-featured-services-box">
                 <div className="icon">
-                  <i className="flaticon-analysis"></i>
+                  
+                  <img src={serviceIcon1} alt="feature" width = "80%" />
                 </div>
                 <h3>Agile Feature Teams</h3>
                 <div className="content">
@@ -42,7 +47,8 @@ const OurKeyServices = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-featured-services-box">
                 <div className="icon">
-                  <i className="flaticon-structure"></i>
+                <img src={serviceIcon2} alt="feature" width = "80%"/>
+                 
                 </div>
                 <h3>Intellectual Property (IP) Management</h3>
                 <div className="content">
@@ -64,7 +70,8 @@ const OurKeyServices = () => {
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
               <div className="single-featured-services-box">
                 <div className="icon">
-                  <i className="flaticon-idea"></i>
+              
+                  <img src={serviceIcon3} alt="feature" width = "80%" />
                 </div>
                 <h3>Project Handover</h3>
                 <div className="content">
