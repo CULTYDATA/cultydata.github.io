@@ -5,6 +5,7 @@ import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import TeamStyleOne from "../components/Team/TeamStyleOne"
 import Footer from "../components/_App/Footer"
+import NewTeam from "../components/Index2/newteam"
 
 const TeamPage = () => {
   return (
@@ -18,7 +19,7 @@ const TeamPage = () => {
         activePageText="Team"
       />
 
-      <TeamStyleOne />
+      <NewTeam />
 
       <Footer />
     </Layout>

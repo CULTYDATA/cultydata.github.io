@@ -11008,3 +11008,101 @@ Go Top CSS
 .swiper-pagination-bullet-active {
   background:#35796a !important ;
 }
+
+/*================================================
+New Team css
+=================================================*/
+
+
+/* NewTeam.css */
+
+.scientist-area {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.sub-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sub-title img {
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.single-scientist-item-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.single-scientist-item-box .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.single-scientist-item-box .image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.single-scientist-item-box .hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(246, 240, 240, 0.921); /* Adjusted for better contrast */
+  color: #fff; /* Adjusted for better contrast */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.single-scientist-item-box:hover .hover-content {
+  opacity: 1;
+}
+
+.hover-content p {
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.social {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social li {
+  margin: 0 5px;
+}
+
+.social li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+}
+

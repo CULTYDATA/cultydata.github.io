@@ -1,8 +1,8 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import history1 from "../../images/history/history1.jpg"
-import history2 from "../../images/history/history2.jpg"
-import history3 from "../../images/history/history3.jpg"
+import history1 from "../../images/history/1.png"
+import history2 from "../../images/history/2.png"
+import history3 from "../../images/history/3.png"
 
 const OurProvenProcess = () => {
   return (
@@ -27,7 +27,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history1} alt="about" />
+                      <img src={history1} alt="about" width = "95%"/>
                     </div>
                   </div>
 
@@ -58,7 +58,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history2} alt="about" />
+                      <img src={history2} alt="about" width = "95%" />
                     </div>
                   </div>
 
@@ -88,7 +88,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history3} alt="about" />
+                      <img src={history3} alt="about" width = "95%"/>
                     </div>
                   </div>
 
