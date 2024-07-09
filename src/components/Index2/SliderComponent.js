@@ -3,7 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
-import { Navigation, Pagination } from "swiper"
+import "swiper/css/autoplay"
+import { Navigation, Pagination, Autoplay } from "swiper"
 
 const SliderComponent = ({ slidesData }) => {
   return (
@@ -12,7 +13,8 @@ const SliderComponent = ({ slidesData }) => {
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, Autoplay]}
+      autoplay={{ delay: 3000, disableOnInteraction: false }}
       className="pt-40"
     >
       {slidesData.map((slide, index) => (

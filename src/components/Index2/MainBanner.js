@@ -3,6 +3,10 @@ import AOS from "aos"
 
 import { Link } from "gatsby"
 import img1 from "../../images/banner11.png"
+import shape1 from "../../images/shape/cube.png"
+import shape2 from "../../images/shape/shape2.png"
+import shape3 from "../../images/shape/star-01.svg"
+// import shape3 from "../../images/shape/shape3.png"
 
 const MainBanner = () => {
   React.useEffect(() => {
@@ -30,9 +34,10 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-                  suspendisse.
+                  Welcome to Cultydata Studio, where we transform digital
+                  aspirations into scalable realities, guiding startups from
+                  innovative concepts to market-ready platforms with
+                  unparalleled expertise.
                 </p>
 
                 <div
@@ -60,6 +65,15 @@ const MainBanner = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="cube-img1">
+          <img src={shape3} alt="shape" />
+        </div>
+        <div className="cube-img2">
+          <img src={shape3} alt="shape" />
+        </div>
+        <div className="shape-img22">
+          <img src={shape2} alt="shape" />
         </div>
       </div>
     </>

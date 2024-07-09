@@ -1455,15 +1455,13 @@ textarea.form-control {
 }
 /* Main Banner Area CSS */
 .main-banner {
+  background: transparent url(../../images/banner1.png) 0 0 no-repeat;
+
+  padding-bottom: 150px;
+  padding-top: 210px;
   position: relative;
   z-index: 1;
-  background-color: #ffffff;
-  background-image: url(../../images/main-banner/main-banner-bg1.png);
-  background-position: bottom center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 240px;
-  padding-bottom: 210px;
+  margin-bottom: 50px;
 }
 .main-banner .container-fluid {
   max-width: 1360px;
@@ -3323,7 +3321,7 @@ Services Area CSS
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fafafb;
+  background-color: #fefbf1;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -3847,6 +3845,7 @@ Featured Services Area CSS
   margin-bottom: 30px;
   position: relative;
   padding-right: 15px;
+  padding: 30px;
 }
 .single-featured-services-box .icon {
   background-color: #fdce74;
@@ -3901,6 +3900,11 @@ Featured Services Area CSS
   background-color: #004c3f !important;
   color: #ffffff !important;
 }
+.single-featured-services-box:hover {
+  background-color: #fefbf1 !important;
+  border-radius: 20px;
+  transition: height 0.3s ease;
+}
 
 .col-lg-4:nth-child(2) .single-featured-services-item .shape {
   transform: scaleY(-1);
@@ -3931,14 +3935,13 @@ How It's Work Area CSS
 }
 
 .single-process-box {
-  height: 90%;
   margin-bottom: 30px;
   background-color: #ffffff;
   transition: 0.5s;
-  border: 1px solid #f5f3f2;
-  border-radius: 5px;
-  padding: 50px 20px;
-  text-align: center;
+  border: 2px solid #f5f3f2;
+  border-radius: 20px;
+  padding: 50px 30px;
+  text-align: left;
   position: relative;
   z-index: 1;
 }
@@ -3967,8 +3970,7 @@ How It's Work Area CSS
   font-style: italic;
 }
 .single-process-box:hover {
-  border-color: #e2ac54;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 10px 20px rgba(226, 172, 84, 0.2);
   transform: translateY(-10px);
 }
 .single-process-box:hover .number {
@@ -8341,6 +8343,30 @@ Testimonials Area CSS
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.cube-img1 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  z-index: -1;
+}
+.cube-img2 {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  z-index: -1;
+}
+.cube-img1 img {
+  animation-name: rotateme;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cube-img2 img {
+  animation-name: rotateme;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
 /*================================================
 Partner Area CSS
@@ -9377,10 +9403,9 @@ Page Title Area CSS
 .page-title-area {
   position: relative;
   z-index: 1;
-  background: transparent url(../../images/page-title-bg.jpg) right top
-    no-repeat;
+  background: transparent url(../../images/page-banner.png) right top no-repeat;
   border-bottom: 1px solid #fafafa;
-  padding-top: 200px;
+  padding-top: 120px;
   padding-bottom: 100px;
 }
 .page-title-area .shape-img1 {
@@ -9442,6 +9467,14 @@ Page Title Area CSS
   bottom: 10%;
   z-index: -1;
   right: 30px;
+  animation: rotate3d 4s linear infinite;
+  opacity: 0.25;
+}
+
+.shape-img22 {
+  position: absolute;
+
+  z-index: -1;
   animation: rotate3d 4s linear infinite;
   opacity: 0.25;
 }
@@ -11006,7 +11039,39 @@ Go Top CSS
 }
 
 .swiper-pagination-bullet-active {
-  background:#35796a !important ;
+  background: #35796a !important ;
+}
+
+.choose-area .position-relative > img {
+  position: absolute;
+  z-index: -1;
+}
+@media (max-width: 1199.98px) {
+  .choose-area.section-pb-80 {
+    padding-bottom: 50px;
+  }
+}
+.choose__item {
+  padding: 48px 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -o-border-radius: 24px;
+  -ms-border-radius: 24px;
+  border-radius: 24px;
+  box-shadow: 0 3px 8px -1px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 1199.98px) {
+  .choose__item-lists > * {
+    margin: 0 0 30px;
+  }
+}
+.choose__item-lists > *:nth-child(even) {
+  margin-top: 48px;
+}
+@media (max-width: 1199.98px) {
+  .choose__item-lists > *:nth-child(even) {
+    margin: 0 0 30px;
+  }
 }
 
 /*================================================

@@ -47,6 +47,11 @@ const PageBanner = ({
       <div className="shape-img3">
         <img src={shape3} alt="shape" />
       </div>
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
     </div>
   )
 }
