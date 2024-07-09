@@ -1,7 +1,7 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
 import history1 from "../../images/history/1.png"
-import history2 from "../../images/history/2.png"
+import history2 from "../../images/history/2.0.png"
 import history3 from "../../images/history/3.png"
 
 const OurProvenProcess = () => {
