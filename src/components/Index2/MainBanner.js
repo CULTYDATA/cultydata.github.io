@@ -3,10 +3,9 @@ import AOS from "aos"
 
 import { Link } from "gatsby"
 import img1 from "../../images/banner11.png"
-import shape1 from "../../images/shape/cube.png"
+
 import shape2 from "../../images/shape/shape2.png"
 import shape3 from "../../images/shape/star-01.svg"
-// import shape3 from "../../images/shape/shape3.png"
 
 const MainBanner = () => {
   React.useEffect(() => {

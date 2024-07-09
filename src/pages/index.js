@@ -6,9 +6,6 @@ import MainBanner from "../components/Index2/MainBanner"
 
 import AboutUs from "../components/Index2/AboutUs"
 
-import OurApproach from "../components/Index2/OurApproach"
-
-import TeamMembers from "../components/Index2/TeamMembers"
 import Testimonials from "../components/Index2/Testimonials"
 import Partner from "../components/Index2/Partner"
 
@@ -41,8 +38,8 @@ const IndexPage = () => {
 
       <Testimonials />
       {/* <Partner /> */}
-      
-      <NewTeam/>
+
+      <NewTeam />
 
       <StartProject />
 

@@ -1,9 +1,6 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import process1 from "../../images/process/process1.png"
-import process2 from "../../images/process/process2.png"
-import process3 from "../../images/process/process3.png"
-import process4 from "../../images/process/process4.png"
+
 import keyValue1 from "../../images/services/TDPD.png"
 
 const OurKeyValue = () => {
