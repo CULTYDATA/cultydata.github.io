@@ -18,6 +18,7 @@ import OurServices from "../components/Index2/OurServices"
 import OurKeyValue from "../components/Index2/OurKeyValue"
 import OurProjects from "../components/index2/OurProjects"
 import OurKeyServices from "../components/Index2/OurKeyServices"
+import OurProvenProcess from "../components/Index2/OurProvenProcess"
 
 const IndexPage = () => {
   return (
@@ -31,14 +32,14 @@ const IndexPage = () => {
 
       <OurKeyServices />
 
-      <OurApproach />
+      <OurProvenProcess />
 
       <OurKeyValue />
 
       <OurProjects showAll={false} />
 
       <Testimonials />
-
+      {/* <Partner /> */}
       <TeamMembers />
 
       <StartProject />

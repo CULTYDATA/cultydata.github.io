@@ -3043,6 +3043,29 @@ History Area CSS
   height: 10px;
   border-radius: 50%;
 }
+.timeline-icon {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  line-height: 65px;
+  text-align: center;
+  color: #35796a;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: rgb(237, 241, 254) 0px 0px 0px 7px;
+  font-size: 30px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.number-badge {
+  font-size: 24px;
+  font-weight: bold;
+  color: #35796a;
+}
+
 .history-timeline .timeline-block .timeline-content {
   background-color: #ffffff;
   padding: 30px;
@@ -3062,7 +3085,7 @@ History Area CSS
 }
 .history-timeline.history-timeline-style-two .timeline-block {
   padding-left: 0;
-  padding-right: 165px;
+  padding-right: 180px;
 }
 .history-timeline.history-timeline-style-two .timeline-block::before {
   left: auto;
@@ -3075,10 +3098,11 @@ History Area CSS
 }
 .history-timeline.history-timeline-style-two .timeline-block .timeline-icon {
   left: auto;
-  right: 125px;
+  right: 100px;
 }
 .history-timeline.history-timeline-style-two .timeline-block .timeline-content {
-  background-color: #f7faff;
+  /* background-color: #fbebbc; */
+  background-color: #fefbf1;
 }
 .history-timeline.history-timeline-style-two
   .timeline-block
@@ -10974,4 +10998,13 @@ Go Top CSS
 .fixed-size-image {
   width: 100%;
   height: 250px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #35796a !important;
+}
+
+.swiper-pagination-bullet-active {
+  background:#35796a !important ;
 }

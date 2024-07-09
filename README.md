@@ -1,6 +1,6 @@
 <p align="center">
   <a href="/">
-    <img alt="Cultydata" src="src/images/logo.svg" width="230" />
+    <img alt="Cultydata" src="src/images/full-logo.svg" width="230" />
   </a>
 </p>
 

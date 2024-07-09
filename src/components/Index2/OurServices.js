@@ -7,7 +7,6 @@ import starIcon from "../../images/star-icon.png"
 import serviceIcon10 from "../../images/services/cna.png"
 
 import serviceIcon12 from "../../images/services/flexibility.png"
-import serviceShape4 from "../../images/services/service-shape4.png"
 
 const OurServices = () => {
   return (
