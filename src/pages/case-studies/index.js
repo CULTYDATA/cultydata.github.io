@@ -3,7 +3,7 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
-import OurProjects from "../../components/index2/OurProjects"
+import OurProjects from "../../components/Index2/OurProjects"
 import Footer from "../../components/_App/Footer"
 
 const CaseStudiesPage = () => {
