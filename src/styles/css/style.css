@@ -11204,3 +11204,7 @@ New Team css
 .timeline-block:hover .number-badge {
   color: #ffffff;
 }
+
+.bold-text {
+  color: #e2ac54;
+}

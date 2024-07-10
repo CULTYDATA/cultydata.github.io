@@ -23,7 +23,7 @@ const OurKeyServices = () => {
                 <div className="content">
                   <ul>
                     <li>
-                      Multidisciplinary teams oriented towards "Time To Market.
+                      Multidisciplinary teams oriented towards "Time To Market".
                     </li>
                     <li>
                       {" "}

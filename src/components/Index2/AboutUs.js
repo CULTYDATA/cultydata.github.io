@@ -30,10 +30,10 @@ const AboutUs = () => {
                     Acceleration
                   </h2>
                   <p>
-                    At Cultydata Studio, we are dedicated to turning your
-                    digital vision into reality. Our team of experts brings a
-                    wealth of experience and cross-disciplinary skills to
-                    deliver cutting-edge solutions.
+                    At <b className="bold-text">Cultydata Studio</b>, we are
+                    dedicated to turning your digital vision into reality. Our
+                    team of experts brings a wealth of experience and
+                    cross-disciplinary skills to deliver cutting-edge solutions.
                   </p>
 
                   <ul className="features-list">

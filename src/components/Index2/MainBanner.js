@@ -33,10 +33,10 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  Welcome to Cultydata Studio, where we transform digital
-                  aspirations into scalable realities, guiding startups from
-                  innovative concepts to market-ready platforms with
-                  unparalleled expertise.
+                  Welcome to <b className="bold-text">Cultydata Studio</b>,
+                  where we transform digital aspirations into scalable
+                  realities, guiding startups from innovative concepts to
+                  market-ready platforms with unparalleled expertise.
                 </p>
 
                 <div
