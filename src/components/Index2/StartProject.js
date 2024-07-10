@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import start1 from "../../images/journey1.png"
-import shape1 from "../../images/shape/circle-shape1.png"
 
 const StartProject = () => {
   return (
@@ -28,10 +27,6 @@ const StartProject = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="circle-shape1">
-          <img src={shape1} alt="banner" />
         </div>
       </section>
     </>

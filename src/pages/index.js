@@ -13,10 +13,11 @@ import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
 import OurServices from "../components/Index2/OurServices"
 import OurKeyValue from "../components/Index2/OurKeyValue"
-import OurProjects from "../components/index2/OurProjects"
+
 import OurKeyServices from "../components/Index2/OurKeyServices"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
 import NewTeam from "../components/Index2/newteam"
+import OurProjects from "../components/Index2/OurProjects"
 
 const IndexPage = () => {
   return (
@@ -33,7 +34,6 @@ const IndexPage = () => {
       <OurProvenProcess />
 
       <OurKeyValue />
-
       <OurProjects showAll={false} />
 
       <Testimonials />

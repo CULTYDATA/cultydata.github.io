@@ -862,7 +862,8 @@
     padding: 30px 20px 35px;
     -webkit-clip-path: unset;
     clip-path: unset;
-    border-top: 1px solid #eeeeee;
+    margin: 12px;
+    border-radius: 12px;
   }
   .single-services-box-item .icon {
     width: 65px;

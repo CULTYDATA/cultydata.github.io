@@ -4,7 +4,7 @@ import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
 import ContinuousDeliveryPipelineSetup from "../../components/ServiceDetails/ContinuousDeliveryPipelineSetup"
-import RelatedServices from "../../components/ServiceDetails/RelatedServices"
+
 import Footer from "../../components/_App/Footer"
 
 const ContinuousDeliveryPipelineSetupPage = () => {
@@ -20,8 +20,6 @@ const ContinuousDeliveryPipelineSetupPage = () => {
       />
 
       <ContinuousDeliveryPipelineSetup />
-
-      <RelatedServices />
 
       <Footer />
     </Layout>

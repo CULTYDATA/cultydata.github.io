@@ -7,7 +7,7 @@ import serviceIcon3 from "../../images/services/projecthandover.png"
 const OurKeyServices = () => {
   return (
     <>
-      <section className="featured-services-area pt-100 pb-70">
+      <section className="featured-services-area  pb-70">
         <div className="container">
           <div className="section-title">
             <h2>Our Key services</h2>
@@ -17,8 +17,7 @@ const OurKeyServices = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-featured-services-box">
                 <div className="icon">
-                  
-                  <img src={serviceIcon1} alt="feature" width = "80%" />
+                  <img src={serviceIcon1} alt="feature" width="80%" />
                 </div>
                 <h3>Agile Feature Teams</h3>
                 <div className="content">
@@ -47,8 +46,7 @@ const OurKeyServices = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-featured-services-box">
                 <div className="icon">
-                <img src={serviceIcon2} alt="feature" width = "80%"/>
-                 
+                  <img src={serviceIcon2} alt="feature" width="80%" />
                 </div>
                 <h3>Intellectual Property (IP) Management</h3>
                 <div className="content">
@@ -70,8 +68,7 @@ const OurKeyServices = () => {
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
               <div className="single-featured-services-box">
                 <div className="icon">
-              
-                  <img src={serviceIcon3} alt="feature" width = "80%" />
+                  <img src={serviceIcon3} alt="feature" width="80%" />
                 </div>
                 <h3>Project Handover</h3>
                 <div className="content">

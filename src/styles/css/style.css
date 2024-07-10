@@ -3059,7 +3059,7 @@ History Area CSS
 }
 
 .number-badge {
-  font-size: 24px;
+  font-size: 38px;
   font-weight: bold;
   color: #35796a;
 }
@@ -3846,6 +3846,8 @@ Featured Services Area CSS
   position: relative;
   padding-right: 15px;
   padding: 30px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .single-featured-services-box .icon {
   background-color: #fdce74;
@@ -3900,10 +3902,30 @@ Featured Services Area CSS
   background-color: #004c3f !important;
   color: #ffffff !important;
 }
+
+.single-featured-services-box::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fefbf1;
+  transition: top 0.5s;
+  z-index: 0;
+}
+
+.single-featured-services-box:hover::before {
+  top: 0;
+}
+
 .single-featured-services-box:hover {
-  background-color: #fefbf1 !important;
-  border-radius: 20px;
-  transition: height 0.3s ease;
+  border: 1px solid #e2ac54;
+}
+
+.single-featured-services-box * {
+  position: relative;
+  z-index: 1;
 }
 
 .col-lg-4:nth-child(2) .single-featured-services-item .shape {
@@ -11078,7 +11100,6 @@ Go Top CSS
 New Team css
 =================================================*/
 
-
 /* NewTeam.css */
 
 .scientist-area {
@@ -11131,7 +11152,12 @@ New Team css
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(246, 240, 240, 0.921); /* Adjusted for better contrast */
+  background-color: rgba(
+    246,
+    240,
+    240,
+    0.921
+  ); /* Adjusted for better contrast */
   color: #fff; /* Adjusted for better contrast */
   display: flex;
   flex-direction: column;
@@ -11171,12 +11197,10 @@ New Team css
   font-size: 18px;
 }
 
-
-.timeline-block:hover .timeline-icon{
-  background-color: #37786a; 
+.timeline-block:hover .timeline-icon {
+  background-color: #37786a;
 }
 
 .timeline-block:hover .number-badge {
-  color: #ffffff; 
+  color: #ffffff;
 }
-

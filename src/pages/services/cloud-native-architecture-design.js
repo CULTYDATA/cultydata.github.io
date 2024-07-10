@@ -4,7 +4,7 @@ import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
 import CloudNativeArchitectureDesign from "../../components/ServiceDetails/CloudNativeArchitectureDesign"
-import RelatedServices from "../../components/ServiceDetails/RelatedServices"
+
 import Footer from "../../components/_App/Footer"
 
 const CloudNativeArchitectureDesignPage = () => {
@@ -20,8 +20,6 @@ const CloudNativeArchitectureDesignPage = () => {
       />
 
       <CloudNativeArchitectureDesign />
-
-      <RelatedServices />
 
       <Footer />
     </Layout>

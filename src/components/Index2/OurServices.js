@@ -11,7 +11,7 @@ import serviceIcon12 from "../../images/services/flexibility.png"
 const OurServices = () => {
   return (
     <>
-      <section className="services-area ptb-100">
+      <section className="services-area pb-70">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

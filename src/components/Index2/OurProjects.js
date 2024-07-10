@@ -27,7 +27,7 @@ const OurProjects = ({ showAll }) => {
 
   return (
     <>
-      <section className="solutions-area ptb-70">
+      <section className="solutions-area pb-70">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

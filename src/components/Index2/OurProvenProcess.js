@@ -7,7 +7,7 @@ import history3 from "../../images/history/3.png"
 const OurProvenProcess = () => {
   return (
     <>
-      <div className="history-area ptb-100">
+      <div className="history-area pb-100">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">
@@ -27,7 +27,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history1} alt="about" width = "95%"/>
+                      <img src={history1} alt="about" width="95%" />
                     </div>
                   </div>
 
@@ -58,7 +58,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history2} alt="about" width = "95%" />
+                      <img src={history2} alt="about" width="95%" />
                     </div>
                   </div>
 
@@ -88,7 +88,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history3} alt="about" width = "95%"/>
+                      <img src={history3} alt="about" width="95%" />
                     </div>
                   </div>
 

@@ -4,7 +4,6 @@ import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
 
-import RelatedServices from "../../components/ServiceDetails/RelatedServices"
 import Footer from "../../components/_App/Footer"
 import TailoredDigitalPlatformDevelopment from "../../components/ServiceDetails/TailoredDigitalPlatformDevelopment"
 
@@ -21,8 +20,6 @@ const TailoredDigitalPlatformDevelopmentPage = () => {
       />
 
       <TailoredDigitalPlatformDevelopment />
-
-      <RelatedServices />
 
       <Footer />
     </Layout>
