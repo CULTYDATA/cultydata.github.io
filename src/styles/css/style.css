@@ -11171,3 +11171,12 @@ New Team css
   font-size: 18px;
 }
 
+
+.timeline-block:hover .timeline-icon{
+  background-color: #37786a; 
+}
+
+.timeline-block:hover .number-badge {
+  color: #ffffff; 
+}
+
