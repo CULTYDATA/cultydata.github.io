@@ -1,7 +1,10 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
 
-import keyValue1 from "../../images/services/TDPD.png"
+import keyValue1 from "../../images/services/diff1.png"
+import keyValue2 from "../../images/services/diff2.png"
+import keyValue3 from "../../images/services/diff3.png"
+import keyValue4 from "../../images/services/diff4.png"
 
 const OurKeyValue = () => {
   return (
@@ -26,7 +29,7 @@ const OurKeyValue = () => {
               <div className="single-process-box">
                 <div className="number">1</div>
                 <div className="image">
-                  <img src={keyValue1} alt="about" width="25%" />
+                  <img src={keyValue1} alt="about" width="30%" />
                 </div>
                 <h3>Pay-as-you-go Cloud Infrastructure</h3>
                 <p>
@@ -41,7 +44,7 @@ const OurKeyValue = () => {
               <div className="single-process-box">
                 <div className="number">2</div>
                 <div className="image">
-                  <img src={keyValue1} alt="about" width="25%" />
+                  <img src={keyValue2} alt="about" width="30%" />
                 </div>
                 <h3>Fault-Tolerant Architecture</h3>
                 <p>
@@ -56,7 +59,7 @@ const OurKeyValue = () => {
               <div className="single-process-box">
                 <div className="number">3</div>
                 <div className="image">
-                  <img src={keyValue1} alt="about" width="25%" />
+                  <img src={keyValue3} alt="about" width="30%" />
                 </div>
                 <h3>Scalability Built-In from Day One</h3>
                 <p>
@@ -70,7 +73,7 @@ const OurKeyValue = () => {
               <div className="single-process-box ">
                 <div className="number">4</div>
                 <div className="image">
-                  <img src={keyValue1} alt="about" width="25%" />
+                  <img src={keyValue4} alt="about" width="30%" />
                 </div>
                 <h3>Security-First Approach</h3>
                 <p>
