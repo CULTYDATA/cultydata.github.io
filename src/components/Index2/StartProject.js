@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import start1 from "../../images/journey1.png"
+import start1 from "../../images/bannerlast.jpg"
 
 const StartProject = () => {
   return (

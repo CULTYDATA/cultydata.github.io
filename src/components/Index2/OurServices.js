@@ -1,17 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
-import serviceIcon7 from "../../images/services/TDPD.png"
-import serviceIcon8 from "../../images/services/ttbt.png"
-import starIcon from "../../images/star-icon.png"
-
-import serviceIcon10 from "../../images/services/cna.png"
-
-import serviceIcon12 from "../../images/services/flexibility.png"
+import React from "react";
+import { Link } from "gatsby";
+import serviceIcon7 from "../../images/services/TDPD.png";
+import serviceIcon8 from "../../images/services/ttbt.png";
+import starIcon from "../../images/star-icon.png";
+import serviceIcon10 from "../../images/services/cna.png";
+import serviceIcon12 from "../../images/services/flexibility.png";
 
 const OurServices = () => {
   return (
     <>
-      <section className="services-area pb-70">
+      <section className="services-area pb-70" >
         <div className="container">
           <div className="section-title">
             <span className="sub-title">
@@ -48,7 +46,7 @@ const OurServices = () => {
               </div>
             </div>
 
-            <div className="col-lg-5   col-md-6 col-sm-12">
+            <div className="col-lg-5 col-md-6 col-sm-12">
               <div className="single-services-box-item">
                 <div className="icon">
                   <img src={serviceIcon8} alt="services" />
@@ -129,7 +127,7 @@ const OurServices = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default OurServices
+export default OurServices;

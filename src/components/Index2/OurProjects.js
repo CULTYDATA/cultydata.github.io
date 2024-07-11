@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import starIcon from "../../images/star-icon.png"
 
-import project1 from "../../images/projects/trade.png"
-import project2 from "../../images/projects/kyc.png"
+import project1 from "../../images/projects/trading11.jpg"
+import project2 from "../../images/projects/sharedkyc.jpg"
 
 const OurProjects = ({ showAll }) => {
   const projects = [
