@@ -1,16 +1,14 @@
-import React from "react"
-import AOS from "aos"
-
-import { Link } from "gatsby"
-import img1 from "../../images/banner11.png"
-
-import shape2 from "../../images/shape/shape2.png"
-import shape3 from "../../images/shape/star-01.svg"
+import React from "react";
+import AOS from "aos";
+import { Link } from "gatsby";
+import img1 from "../../images/bannerteam.jpg";
+import shape2 from "../../images/shape/shape2.png";
+import shape3 from "../../images/shape/star-01.svg";
 
 const MainBanner = () => {
   React.useEffect(() => {
-    AOS.init()
-  }, [])
+    AOS.init();
+  }, []);
 
   return (
     <>
@@ -60,7 +58,7 @@ const MainBanner = () => {
                 data-aos-duration="1200"
                 data-aos-delay="400"
               >
-                <img src={img1} alt="banner" width="80%" />
+                <img src={img1} alt="banner" width="90%" className="br-style1" />
               </div>
             </div>
           </div>
@@ -76,7 +74,7 @@ const MainBanner = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default MainBanner
+export default MainBanner;

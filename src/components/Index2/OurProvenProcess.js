@@ -1,8 +1,8 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import history1 from "../../images/history/1.png"
-import history2 from "../../images/history/2.0.png"
-import history3 from "../../images/history/3.png"
+import history1 from "../../images/history/planning.jpg"
+import history2 from "../../images/history/agiledevelopment.jpg"
+import history3 from "../../images/history/teamorganisation.jpg"
 
 const OurProvenProcess = () => {
   return (

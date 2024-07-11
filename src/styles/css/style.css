@@ -2300,11 +2300,12 @@ About Area CSS
 }
 .about-content .content .sub-title {
   position: relative;
+  text-align: left;
   display: block;
   text-transform: uppercase;
   margin-bottom: 15px;
   color: #35796a;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 15px;
 }
 .about-content .content .sub-title img {
@@ -8367,14 +8368,14 @@ Testimonials Area CSS
 }
 .cube-img1 {
   position: absolute;
-  left: 50%;
-  top: 20%;
+  left: 48%;
+  top: 15%;
   z-index: -1;
 }
 .cube-img2 {
   position: absolute;
-  left: 80%;
-  top: 80%;
+  left: 94%;
+  top: 84%;
   z-index: -1;
 }
 .cube-img1 img {
@@ -11205,6 +11206,8 @@ New Team css
   color: #ffffff;
 }
 
+
 .bold-text {
   color: #e2ac54;
 }
+

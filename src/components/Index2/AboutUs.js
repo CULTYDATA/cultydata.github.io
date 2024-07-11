@@ -1,10 +1,9 @@
-import React from "react"
-import { Link } from "gatsby"
-import img5 from "../../images/about/baneer2.png"
-import starIcon from "../../images/star-icon.png"
-import icon4 from "../../images/icons/12.png"
-
-import icon6 from "../../images/icons/thumbs.png"
+import React from "react";
+import { Link } from "gatsby";
+import img5 from "../../images/about/techexpertise.jpg";
+import starIcon from "../../images/cultilogo.png";
+import icon4 from "../../images/icons/12.png";
+import icon6 from "../../images/icons/thumbs.png";
 
 const AboutUs = () => {
   return (
@@ -14,7 +13,8 @@ const AboutUs = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
-                <img src={img5} alt="banner" Width="80%" />
+               
+                <img src={img5} alt="banner" className="sec-img-one" />
               </div>
             </div>
 
@@ -22,7 +22,7 @@ const AboutUs = () => {
               <div className="about-content">
                 <div className="content">
                   <span className="sub-title">
-                    <img src={starIcon} alt="banner" />
+                    <img src={starIcon} alt="banner" width = "4%" />
                     About Us
                   </span>
                   <h2>
@@ -60,7 +60,7 @@ const AboutUs = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
