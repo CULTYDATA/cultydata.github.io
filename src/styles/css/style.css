@@ -11207,24 +11207,7 @@ New Team css
 }
 
 
-.br-style1 {
-  position: relative;
-  border-radius: 0 180px 0 200px;
+.bold-text {
+  color: #e2ac54;
 }
 
-
-.sec-img-one {
-  width: 80%;
-  border-radius: 10px; /* Adjust as needed */
-}
-
-
-
-.section-title .sub-title img {
-  margin-right: 5px;
-  animation-name: rotateme;
-  animation-duration: 40s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-
-}
