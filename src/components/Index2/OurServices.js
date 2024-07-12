@@ -1,12 +1,26 @@
-import React from "react"
-import { Link } from "gatsby"
-import serviceIcon7 from "../../images/services/TDPD.png"
-import serviceIcon8 from "../../images/services/ttbt.png"
-import starIcon from "../../images/shape/icon.svg"
-import serviceIcon10 from "../../images/services/cna.png"
-import serviceIcon12 from "../../images/services/flexibility.png"
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import serviceIcon7 from "../../images/services/digital1.png";
+import serviceIcon7Hover from "../../images/services/hoverdigital1.png"; // New hover image for serviceIcon7
+import serviceIcon8 from "../../images/services/Team1.png";
+import serviceIcon8Hover from "../../images/services/hoverteam1.png"; // New hover image for serviceIcon8
+import serviceIcon10 from "../../images/services/Cloud1.png";
+import serviceIcon10Hover from "../../images/services/cloud-hover1.png"; // New hover image for serviceIcon10
+import serviceIcon12 from "../../images/services/delivery1.png";
+import serviceIcon12Hover from "../../images/services/hoverdelivery1.png"; // New hover image for serviceIcon12
+import starIcon from "../../images/shape/icon.svg";
 
 const OurServices = () => {
+  const [hoveredIcon, setHoveredIcon] = useState(null);
+
+  const handleMouseEnter = (iconName) => {
+    setHoveredIcon(iconName); 
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIcon(null);
+  };
+
   return (
     <>
       <section className="services-area pb-70">
@@ -21,9 +35,18 @@ const OurServices = () => {
 
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="single-process-box display-flex-center">
+              <div
+                className="single-process-box display-flex-center " style={{height:"90%"}}
+                onMouseEnter={() => handleMouseEnter("serviceIcon7")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className="icon">
-                  <img src={serviceIcon7} alt="services" width="50%" />
+                  <img
+                    src={hoveredIcon === "serviceIcon7" ? serviceIcon7Hover : serviceIcon7}
+                    alt="services"
+                    width="60%"
+                    
+                  />
                 </div>
                 <div>
                   <h3>
@@ -49,14 +72,21 @@ const OurServices = () => {
             </div>
 
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="single-process-box display-flex-center">
+              <div
+                className="single-process-box display-flex-center"
+                onMouseEnter={() => handleMouseEnter("serviceIcon8")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className="icon">
-                  <img src={serviceIcon8} alt="services" width="50%" />
+                  <img
+                    src={hoveredIcon === "serviceIcon8" ? serviceIcon8Hover : serviceIcon8}
+                    alt="services"
+                    width="60%"
+                  />
                 </div>
                 <div>
                   <h3>
                     <Link to="/services/tech-team-building-training/">
-                      {" "}
                       Tech Team Building & Training
                     </Link>
                   </h3>
@@ -78,9 +108,17 @@ const OurServices = () => {
             </div>
 
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="single-process-box display-flex-center">
+              <div
+                className="single-process-box display-flex-center"
+                onMouseEnter={() => handleMouseEnter("serviceIcon10")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className="icon">
-                  <img src={serviceIcon10} alt="services" width="50%" />
+                  <img
+                    src={hoveredIcon === "serviceIcon10" ? serviceIcon10Hover : serviceIcon10}
+                    alt="services"
+                    width="60%"
+                  />
                 </div>
                 <div>
                   <h3>
@@ -106,9 +144,17 @@ const OurServices = () => {
             </div>
 
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <div className="single-process-box display-flex-center">
+              <div
+                className="single-process-box display-flex-center"
+                onMouseEnter={() => handleMouseEnter("serviceIcon12")}
+                onMouseLeave={handleMouseLeave}
+              >
                 <div className="icon">
-                  <img src={serviceIcon12} alt="services" width="50%" />
+                  <img
+                    src={hoveredIcon === "serviceIcon12" ? serviceIcon12Hover : serviceIcon12}
+                    alt="services"
+                    width="50%"
+                  />
                 </div>
                 <div>
                   <h3>
@@ -135,7 +181,7 @@ const OurServices = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default OurServices
+export default OurServices;
