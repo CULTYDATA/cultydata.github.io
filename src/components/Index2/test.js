@@ -1,12 +1,11 @@
-import React from "react";
-import { Link } from "gatsby";
-import starIcon from "../../images/star-icon.png";
-import icon1 from "../../images/services/TDPD.png";
-import icon2 from "../../images/services/ttbt.png";
-import icon3 from "../../images/services/cna.png";
-import icon4 from "../../images/services/flexibility.png";
-import shape2 from "../../images/shape/circle-shape2.png";
-
+import React from "react"
+import { Link } from "gatsby"
+import starIcon from "../../images/shape/icon.svg"
+import icon1 from "../../images/services/TDPD.png"
+import icon2 from "../../images/services/ttbt.png"
+import icon3 from "../../images/services/cna.png"
+import icon4 from "../../images/services/flexibility.png"
+import shape2 from "../../images/shape/circle-shape2.png"
 
 const OurServices = () => {
   return (
@@ -79,9 +78,8 @@ const OurServices = () => {
               </h3>
               <p>
                 Leverage the power of the cloud with our expertly designed
-                cloud-native architectures. We ensure your platform is
-                scalable, resilient, and optimized for performance from day
-                one.
+                cloud-native architectures. We ensure your platform is scalable,
+                resilient, and optimized for performance from day one.
               </p>
 
               <Link to="/services/service-details" className="read-more-btn">
@@ -122,7 +120,7 @@ const OurServices = () => {
         <div className="line"></div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default OurServices;
+export default OurServices

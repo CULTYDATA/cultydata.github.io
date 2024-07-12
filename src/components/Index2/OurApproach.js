@@ -1,6 +1,6 @@
 import React from "react"
 
-import StarIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import HowitsWork from "../../images/main2.png"
 
 const HowItWork = () => {

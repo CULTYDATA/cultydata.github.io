@@ -1,8 +1,6 @@
 import React from "react"
-import ServiceSidebar from "./ServiceSidebar"
-import details1 from "../../images/services/services-details1.jpg"
+
 import project2 from "../../images/projects/project2.jpg"
-import charts from "../../images/services/charts.jpg"
 
 const CloudNativeArchitectureDesign = () => {
   return (
@@ -10,13 +8,8 @@ const CloudNativeArchitectureDesign = () => {
       <section className="services-details-area ptb-100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-md-12">
-              <div className="services-details-image">
-                <img src={details1} alt="about" />
-              </div>
-
+            <div className="col-lg-10 col-md-12">
               <div className="services-details-desc">
-                <span className="sub-title">AI & ML Development</span>
                 <h3>About this Services</h3>
                 <p>
                   Improve Machine Learning algorithms by studying underfitting,
@@ -144,14 +137,7 @@ const CloudNativeArchitectureDesign = () => {
                     <span>SQL</span>
                   </li>
                 </ul>
-                <div className="charts-image">
-                  <img src={charts} alt="about" />
-                </div>
               </div>
-            </div>
-
-            <div className="col-lg-4 col-md-12">
-              <ServiceSidebar />
             </div>
           </div>
         </div>

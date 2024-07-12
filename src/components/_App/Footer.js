@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo from "../../images/full-logo.svg"
-import footerMap from "../../images/footer-map.png"
+// import footerMap from "../../images/footer-map.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -154,9 +154,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-map">
+      {/* <div className="footer-map">
         <img src={footerMap} alt="map" />
-      </div>
+      </div> */}
     </footer>
   )
 }

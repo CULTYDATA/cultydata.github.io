@@ -1,5 +1,5 @@
 import React from "react"
-import starIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import history1 from "../../images/history/planning.jpg"
 import history2 from "../../images/history/agiledevelopment.jpg"
 import history3 from "../../images/history/teamorganisation.jpg"

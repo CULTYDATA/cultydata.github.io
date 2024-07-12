@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import starIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import client1 from "../../images/testimonials/client1.jpg"
 
 import shape from "../../images/shape/shape1.svg"
