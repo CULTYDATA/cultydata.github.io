@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import serviceIcon7 from "../../images/services/TDPD.png"
 import serviceIcon8 from "../../images/services/ttbt.png"
-import starIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import serviceIcon10 from "../../images/services/cna.png"
 import serviceIcon12 from "../../images/services/flexibility.png"
 

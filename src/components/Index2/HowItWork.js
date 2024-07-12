@@ -1,5 +1,5 @@
 import React from "react"
-import starIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import process1 from "../../images/process/process1.png"
 import process2 from "../../images/process/process2.png"
 import process3 from "../../images/process/process3.png"

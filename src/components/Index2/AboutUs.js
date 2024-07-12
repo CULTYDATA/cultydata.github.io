@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import img5 from "../../images/about/techexpertise.jpg"
-import starIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import icon4 from "../../images/icons/12.png"
 import icon6 from "../../images/icons/thumbs.png"
 
@@ -21,7 +21,7 @@ const AboutUs = () => {
               <div className="about-content">
                 <div className="content">
                   <span className="sub-title">
-                    <img src={starIcon} alt="banner" width="4%" />
+                    <img src={starIcon} alt="banner" />
                     About Us
                   </span>
                   <h2>

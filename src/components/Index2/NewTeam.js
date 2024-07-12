@@ -1,11 +1,10 @@
 // NewTeam.js
-import React from "react";
-import starIcon from "../../images/star-icon.png";
-import team5 from "../../images/team/team5.jpg";
-import team6 from "../../images/team/team6.jpg";
-import team7 from "../../images/team/team7.jpg";
-import team8 from "../../images/team/team7.jpg";
-
+import React from "react"
+import starIcon from "../../images/shape/icon.svg"
+import team5 from "../../images/team/team5.jpg"
+import team6 from "../../images/team/team6.jpg"
+import team7 from "../../images/team/team7.jpg"
+import team8 from "../../images/team/team7.jpg"
 
 const NewTeam = () => {
   return (
@@ -18,8 +17,8 @@ const NewTeam = () => {
           </span>
           <h2>Our Team Expertise</h2>
           <p>
-          Meet Our Full-Stack, Cross-Technology Experts with Entrepreneurial
-          Spirit
+            Meet Our Full-Stack, Cross-Technology Experts with Entrepreneurial
+            Spirit
           </p>
         </div>
 
@@ -32,10 +31,10 @@ const NewTeam = () => {
 
                 <div className="hover-content">
                   <p className="hover-description">
-                    With over 15 years of experience in tech entrepreneurship, Sarah leads our
-                    team with visionary strategies and a passion for innovation. Her
-                    background in AI and machine learning drives our cutting-edge approach to
-                    digital solutions.
+                    With over 15 years of experience in tech entrepreneurship,
+                    Sarah leads our team with visionary strategies and a passion
+                    for innovation. Her background in AI and machine learning
+                    drives our cutting-edge approach to digital solutions.
                   </p>
                   <li>
                     <a
@@ -48,8 +47,6 @@ const NewTeam = () => {
                     </a>
                   </li>
                 </div>
-
-                
               </div>
               <div className="content">
                 <h3>Sarah Chen</h3>
@@ -66,9 +63,10 @@ const NewTeam = () => {
 
                 <div className="hover-content">
                   <p className="hover-description">
-                  Raj brings 20+ years of expertise in cloud architecture and blockchain
-technology. His pioneering work in decentralised systems has been
-instrumental in shaping our unique technological offerings.
+                    Raj brings 20+ years of expertise in cloud architecture and
+                    blockchain technology. His pioneering work in decentralised
+                    systems has been instrumental in shaping our unique
+                    technological offerings.
                   </p>
 
                   <li>
@@ -82,8 +80,6 @@ instrumental in shaping our unique technological offerings.
                     </a>
                   </li>
                 </div>
-
-                
               </div>
               <div className="content">
                 <h3>Dr. Raj Patel,</h3>
@@ -100,9 +96,10 @@ instrumental in shaping our unique technological offerings.
 
                 <div className="hover-content">
                   <p className="hover-description">
-                  Emma's decade-long experience in product management for startups
-ensures that our solutions are not just technologically advanced, but also
-perfectly aligned with market needs and user expectations.
+                    Emma's decade-long experience in product management for
+                    startups ensures that our solutions are not just
+                    technologically advanced, but also perfectly aligned with
+                    market needs and user expectations.
                   </p>
 
                   <li>
@@ -116,8 +113,6 @@ perfectly aligned with market needs and user expectations.
                     </a>
                   </li>
                 </div>
-
-            
               </div>
               <div className="content">
                 <h3>Emma Larsson</h3>
@@ -134,9 +129,10 @@ perfectly aligned with market needs and user expectations.
 
                 <div className="hover-content">
                   <p className="hover-description">
-                  Alex's full-stack expertise and agile development mastery drive our
-efficient and innovative development processes. His commitment to clean,
-scalable code is the backbone of our technical excellence.
+                    Alex's full-stack expertise and agile development mastery
+                    drive our efficient and innovative development processes.
+                    His commitment to clean, scalable code is the backbone of
+                    our technical excellence.
                   </p>
 
                   <li>
@@ -150,7 +146,6 @@ scalable code is the backbone of our technical excellence.
                     </a>
                   </li>
                 </div>
-
               </div>
               <div className="content">
                 <h3>Alex Nguyen</h3>
@@ -161,7 +156,7 @@ scalable code is the backbone of our technical excellence.
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default NewTeam;
+export default NewTeam

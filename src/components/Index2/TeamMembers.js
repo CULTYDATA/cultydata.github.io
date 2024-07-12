@@ -1,6 +1,6 @@
 import React from "react"
 
-import starIcon from "../../images/star-icon.png"
+import starIcon from "../../images/shape/icon.svg"
 import team1 from "../../images/scientist/scientist1.png"
 import team2 from "../../images/scientist/scientist2.png"
 import team3 from "../../images/scientist/scientist3.png"
