@@ -11211,3 +11211,7 @@ New Team css
   color: #e2ac54;
 }
 
+.br-style1 {
+  position: relative;
+  border-radius: 0 180px 0 200px;
+}
