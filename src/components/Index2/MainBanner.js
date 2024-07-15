@@ -1,9 +1,10 @@
 import React from "react";
 import AOS from "aos";
 import { Link } from "gatsby";
-import img1 from "../../images/bannerteam.jpg";
+import img1 from "../../images/main1.png";
 import shape2 from "../../images/shape/shape2.png";
-import shape3 from "../../images/shape/star-01.svg";
+
+import lineborder from "../../images/line-round.svg"
 
 const MainBanner = () => {
   React.useEffect(() => {
@@ -53,10 +54,11 @@ const MainBanner = () => {
 
             <div className="col-lg-6 col-md-12">
               <div
-                className="main-banner-image"
+                className="main-banner-image br-style1"
                 data-aos="fade-up"
                 data-aos-duration="1200"
                 data-aos-delay="400"
+                
               >
                 <img src={img1} alt="banner" width="90%" className="br-style1" />
               </div>
@@ -64,14 +66,13 @@ const MainBanner = () => {
           </div>
         </div>
         <div className="cube-img1">
-          <img src={shape3} alt="shape" />
+          <img src={lineborder} alt="shape"  width="70%"/>
         </div>
-        <div className="cube-img2">
-          <img src={shape3} alt="shape" />
-        </div>
+        
         <div className="shape-img22">
           <img src={shape2} alt="shape" />
         </div>
+      
       </div>
     </>
   );
