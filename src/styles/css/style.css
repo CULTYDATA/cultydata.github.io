@@ -8369,8 +8369,8 @@ Testimonials Area CSS
 }
 .cube-img1 {
   position: absolute;
-  left: 48%;
-  top: 15%;
+  left: 45%;
+  top: 10%;
   z-index: -1;
 }
 .cube-img2 {
@@ -11216,3 +11216,45 @@ New Team css
   align-items: center;
   justify-content: center;
 }
+
+.br-style1 {
+  position: relative;
+  border-radius: 0 180px 0 200px;
+}
+.br-style1:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid hsla(0, 0%, 100%, .12);
+  border-radius: 0 200px;
+  top: -30px;
+  left: 30px;
+}
+
+
+
+/* Assuming this is your CSS file */
+.sec-img-one {
+  /* Add your specific styles for img5 here */
+  /* Example styles: */
+  width: 60%; /* Adjust as needed */
+  height: 65%; /* Maintain aspect ratio */
+  /*border-radius: 500px; /* Example border-radius */
+  /* Any other styles you want to apply */
+}
+
+
+
+.sec-img-two {
+  /* Add your specific styles for img5 here */
+  /* Example styles: */
+  width: 25%; /* Adjust as needed */
+  height: 25%; /* Maintain aspect ratio */
+  vertical-align:bottom;
+  position: relative;
+    right: 100px;
+  /*border-radius: 500px; /* Example border-radius */
+  /* Any other styles you want to apply */
+}
+

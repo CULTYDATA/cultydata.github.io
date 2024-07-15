@@ -1,9 +1,10 @@
-import React from "react"
-import { Link } from "gatsby"
-import img5 from "../../images/about/techexpertise.jpg"
-import starIcon from "../../images/shape/icon.svg"
-import icon4 from "../../images/icons/12.png"
-import icon6 from "../../images/icons/thumbs.png"
+import React from "react";
+import { Link } from "gatsby";
+import img5 from "../../images/about/abou.png";
+import starIcon from "../../images/shape/icon.svg";
+import icon4 from "../../images/icons/12.png";
+import icon6 from "../../images/icons/thumbs.png";
+import img6 from "../../images/about/about2.png"; // Adjust the path as necessary
 
 const AboutUs = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUs = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
                 <img src={img5} alt="banner" className="sec-img-one" />
+                <img src={img6} alt="banner" className="sec-img-two img-six"  /> {/* Add 'img-six' class here */}
               </div>
             </div>
 
@@ -59,7 +61,7 @@ const AboutUs = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;
