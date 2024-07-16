@@ -1,4 +1,5 @@
 import React from "react"
+import AOS from "aos"
 import { Link } from "gatsby"
 import img5 from "../../images/about/abou.png"
 import starIcon from "../../images/shape/icon.svg"
@@ -7,6 +8,9 @@ import icon6 from "../../images/icons/thumbs.png"
 import img6 from "../../images/about/about2.png"
 
 const AboutUs = () => {
+  React.useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <section className="about-area pb-100">
@@ -15,7 +19,14 @@ const AboutUs = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
                 <img src={img5} alt="banner" className="sec-img-one" />
-                <img src={img6} alt="banner" className="sec-img-two img-six" />
+                <img
+                  src={img6}
+                  alt="banner"
+                  className="sec-img-two img-six"
+                  data-aos="fade-left"
+                  data-aos-duration="1200"
+                  data-aos-delay="100"
+                />
               </div>
             </div>
 
