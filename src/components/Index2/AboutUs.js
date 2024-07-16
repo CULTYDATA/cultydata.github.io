@@ -1,10 +1,10 @@
-import React from "react";
-import { Link } from "gatsby";
-import img5 from "../../images/about/abou.png";
-import starIcon from "../../images/shape/icon.svg";
-import icon4 from "../../images/icons/12.png";
-import icon6 from "../../images/icons/thumbs.png";
-import img6 from "../../images/about/about2.png"; // Adjust the path as necessary
+import React from "react"
+import { Link } from "gatsby"
+import img5 from "../../images/about/abou.png"
+import starIcon from "../../images/shape/icon.svg"
+import icon4 from "../../images/icons/12.png"
+import icon6 from "../../images/icons/thumbs.png"
+import img6 from "../../images/about/about2.png"
 
 const AboutUs = () => {
   return (
@@ -15,14 +15,14 @@ const AboutUs = () => {
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
                 <img src={img5} alt="banner" className="sec-img-one" />
-                <img src={img6} alt="banner" className="sec-img-two img-six"  /> {/* Add 'img-six' class here */}
+                <img src={img6} alt="banner" className="sec-img-two img-six" />
               </div>
             </div>
 
             <div className="col-lg-6 col-md-12">
               <div className="about-content">
                 <div className="content">
-                  <span className="sub-title">
+                  <span className="sub-title justify-content-center">
                     <img src={starIcon} alt="banner" />
                     About Us
                   </span>
@@ -61,7 +61,7 @@ const AboutUs = () => {
         </div>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default AboutUs;
+export default AboutUs

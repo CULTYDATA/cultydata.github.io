@@ -3,23 +3,23 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
-import ContinuousDeliveryPipelineSetup from "../../components/ServiceDetails/ContinuousDeliveryPipelineSetup"
 
 import Footer from "../../components/_App/Footer"
+import BlockchainSolutionsDevelopment from "../../components/ServiceDetails/BlockchainSolutionsDevelopment"
 
-const ContinuousDeliveryPipelineSetupPage = () => {
+const BlockchainSolutionsDevelopmentPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Service Details"
+        pageTitle="Blockchain Solutions Development"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Service Details"
+        activePageText="Blockchain Solutions Development"
       />
 
-      <ContinuousDeliveryPipelineSetup />
+      <BlockchainSolutionsDevelopment />
 
       <Footer />
     </Layout>
@@ -31,6 +31,6 @@ const ContinuousDeliveryPipelineSetupPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Continuous Delivery Pipeline Setup" />
+export const Head = () => <Seo title="Blockchain Solutions Development" />
 
-export default ContinuousDeliveryPipelineSetupPage
+export default BlockchainSolutionsDevelopmentPage

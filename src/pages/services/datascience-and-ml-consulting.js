@@ -3,23 +3,23 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
+import DataScienceandMLConsulting from "../../components/ServiceDetails/DataScienceandMLConsulting"
 
 import Footer from "../../components/_App/Footer"
-import TailoredDigitalPlatformDevelopment from "../../components/ServiceDetails/TailoredDigitalPlatformDevelopment"
 
-const TailoredDigitalPlatformDevelopmentPage = () => {
+const DataScienceandMLConsultingPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Tailored Digital Platform Development"
+        pageTitle="Data Science and Machine Learning Consulting"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Tailored Digital Platform Development"
+        activePageText="Data Science and Machine Learning Consulting"
       />
 
-      <TailoredDigitalPlatformDevelopment />
+      <DataScienceandMLConsulting />
 
       <Footer />
     </Layout>
@@ -31,6 +31,8 @@ const TailoredDigitalPlatformDevelopmentPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Tailored Digital Platform Development" />
+export const Head = () => (
+  <Seo title="Data Science and Machine Learning Consulting" />
+)
 
-export default TailoredDigitalPlatformDevelopmentPage
+export default DataScienceandMLConsultingPage

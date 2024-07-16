@@ -8,34 +8,26 @@ const ServiceSidebar = () => {
         <ul className="services-list">
           <li>
             <Link
-              to="/services/tailored-digital-platform-development"
+              to="/services/blockchain-solutions-development"
               activeClassName="active"
             >
-              Tailored Digital Platform Development
+              Blockchain Solutions Development
             </Link>
           </li>
           <li>
             <Link
-              to="/services/tech-team-building-training"
+              to="/services/fullstack-platform-development"
               activeClassName="active"
             >
-              Tech Team Building & Training
+              Full Stack Platform Development
             </Link>
           </li>
           <li>
             <Link
-              to="/services/cloud-native-architecture-design"
+              to="/services/datascience-and-ml-consulting"
               activeClassName="active"
             >
-              Cloud-Native Architecture Design
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/services/continuous-delivery-pipeline-setup"
-              activeClassName="active"
-            >
-              Continuous Delivery Pipeline Setup
+              Data Science and Machine Learning Consulting
             </Link>
           </li>
         </ul>

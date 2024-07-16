@@ -3685,7 +3685,7 @@ Services Details Area CSS
 .services-details-info .services-list li a.active {
   background-color: #fdce74;
   border-color: #fdce74;
-  color: #ffffff;
+  color: #35796a;
 }
 .services-details-info .services-list li:last-child a {
   border-bottom: none;
@@ -8369,8 +8369,8 @@ Testimonials Area CSS
 }
 .cube-img1 {
   position: absolute;
-  left: 45%;
-  top: 10%;
+  left: 47%;
+  top: 15%;
   z-index: -1;
 }
 .cube-img2 {
@@ -8381,7 +8381,7 @@ Testimonials Area CSS
 }
 .cube-img1 img {
   animation-name: rotateme;
-  animation-duration: 10s;
+  animation-duration: 18s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -11226,13 +11226,11 @@ New Team css
   position: absolute;
   height: 100%;
   width: 100%;
-  border: 2px solid hsla(0, 0%, 100%, .12);
+  border: 2px solid hsla(0, 0%, 100%, 0.12);
   border-radius: 0 200px;
   top: -30px;
   left: 30px;
 }
-
-
 
 /* Assuming this is your CSS file */
 .sec-img-one {
@@ -11244,17 +11242,14 @@ New Team css
   /* Any other styles you want to apply */
 }
 
-
-
 .sec-img-two {
   /* Add your specific styles for img5 here */
   /* Example styles: */
   width: 25%; /* Adjust as needed */
   height: 25%; /* Maintain aspect ratio */
-  vertical-align:bottom;
+  vertical-align: bottom;
   position: relative;
-    right: 100px;
+  right: 100px;
   /*border-radius: 500px; /* Example border-radius */
   /* Any other styles you want to apply */
 }
-

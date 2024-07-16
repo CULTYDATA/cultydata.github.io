@@ -112,43 +112,33 @@ const Navbar = () => {
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link
-                          to="/services/tailored-digital-platform-development"
+                          to="/services/blockchain-solutions-development"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Tailored Digital Platform Development
+                          Blockchain Solutions Development
                         </Link>
                       </li>
 
                       <li className="nav-item">
                         <Link
-                          to="/services/tech-team-building-training"
+                          to="/services/fullstack-platform-development"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Tech Team Building & Training
+                          Full-Stack Platform Development
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link
-                          to="/services/cloud-native-architecture-design"
+                          to="/services/datascience-and-ml-consulting"
                           activeClassName="active"
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Cloud-Native Architecture Design
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/continuous-delivery-pipeline-setup"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          Continuous Delivery Pipeline Setup
+                          Data Science and Machine Learning Consulting
                         </Link>
                       </li>
                     </ul>
@@ -159,7 +149,7 @@ const Navbar = () => {
                     </Link>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <Link
                       to="/blog"
                       activeClassName="active"
@@ -168,7 +158,7 @@ const Navbar = () => {
                     >
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
 
                 <div className="others-option d-flex align-items-center">

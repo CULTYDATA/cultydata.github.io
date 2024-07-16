@@ -3,23 +3,23 @@ import Layout from "../../components/_App/layout"
 import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
-import CloudNativeArchitectureDesign from "../../components/ServiceDetails/CloudNativeArchitectureDesign"
+import FullStackPlatformDevelopment from "../../components/ServiceDetails/FullStackPlatformDevelopment"
 
 import Footer from "../../components/_App/Footer"
 
-const CloudNativeArchitectureDesignPage = () => {
+const FullStackPlatformDevelopmentPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Cloud-Native Architecture Design"
+        pageTitle="Full Stack Platform Development"
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Cloud-Native Architecture Design"
+        activePageText="Full Stack Platform Development"
       />
 
-      <CloudNativeArchitectureDesign />
+      <FullStackPlatformDevelopment />
 
       <Footer />
     </Layout>
@@ -31,6 +31,6 @@ const CloudNativeArchitectureDesignPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Cloud-Native Architecture Design" />
+export const Head = () => <Seo title="Full Stack Platform Development" />
 
-export default CloudNativeArchitectureDesignPage
+export default FullStackPlatformDevelopmentPage
