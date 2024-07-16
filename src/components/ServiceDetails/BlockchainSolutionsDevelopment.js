@@ -1,6 +1,6 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
-import details1 from "../../images/services/services-details1.jpg"
+import details1 from "../../images/services/blockchainservice 3.png"
 
 const BlockchainSolutionsDevelopment = () => {
   return (
@@ -11,9 +11,9 @@ const BlockchainSolutionsDevelopment = () => {
             <div className="col-lg-4 col-md-12">
               <ServiceSidebar />
             </div>
-            <div className="col-lg-8 col-md-12">
-              <div className="services-details-image">
-                <img src={details1} alt="about" />
+            <div className="col-lg-8 col-md-12" >
+              <div className="services-details-image" >
+                <img src={details1} alt="about" width="20%" />
               </div>
 
               <div className="services-details-desc">

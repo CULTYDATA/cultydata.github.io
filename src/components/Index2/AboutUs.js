@@ -1,7 +1,7 @@
 import React from "react"
 import AOS from "aos"
 import { Link } from "gatsby"
-import img5 from "../../images/about/abou.png"
+import img5 from "../../images/about/aboutus1.png"
 import starIcon from "../../images/shape/icon.svg"
 import icon4 from "../../images/icons/12.png"
 import icon6 from "../../images/icons/thumbs.png"
