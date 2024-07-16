@@ -1,12 +1,13 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 
-import details1 from "../../images/services/services-details1.jpg"
-import serviceIcon1 from "../../images/services/prop1.png"
-import serviceIcon2 from "../../images/services/prop2.png"
-import serviceIcon3 from "../../images/services/prop3.png"
-import serviceIcon4 from "../../images/services/prop4.png"
-import serviceIcon5 from "../../images/services/prop5.png"
+import details1 from "../../images/services/deliveryteam.jpg"
+import serviceIcon1 from "../../images/services/prop11.png"
+import serviceIcon2 from "../../images/services/prop22.png"
+import serviceIcon3 from "../../images/services/prop33.png"
+import serviceIcon4 from "../../images/services/prop44.png"
+import serviceIcon5 from "../../images/services/prop55.png"
+import serviceIcon6 from "../../images/services/prop66.png"
 
 const BlockchainSolutionsDevelopment = () => {
   return (
@@ -91,7 +92,7 @@ const BlockchainSolutionsDevelopment = () => {
                   <div className="col-lg-6 col-sm-6">
                     <div className="single-services-item-box">
                       <div className="icon">
-                        <img src={serviceIcon4} alt="feature" width="20%" />
+                        <img src={serviceIcon5} alt="feature" width="20%" />
                       </div>
                       <h3>Handover and Support</h3>
                       <p>
@@ -105,7 +106,7 @@ const BlockchainSolutionsDevelopment = () => {
                   <div className="col-lg-6 col-sm-6">
                     <div className="single-services-item-box">
                       <div className="icon">
-                        <img src={serviceIcon5} alt="feature" width="20%" />
+                        <img src={serviceIcon6} alt="feature" width="20%" />
                       </div>
                       <h3>Entrepreneurial Promotion</h3>
                       <p>
