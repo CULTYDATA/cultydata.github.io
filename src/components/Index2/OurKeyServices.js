@@ -7,7 +7,7 @@ import serviceIcon3 from "../../images/services/projecthandover.png"
 const OurKeyServices = () => {
   return (
     <>
-      <section className="featured-services-area  pb-70">
+      <section className="featured-services-area  ptb-50">
         <div className="container">
           <div className="section-title">
             <h2>Our Key services</h2>

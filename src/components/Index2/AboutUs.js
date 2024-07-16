@@ -13,7 +13,7 @@ const AboutUs = () => {
   }, [])
   return (
     <>
-      <section className="about-area pb-100">
+      <section className="about-area ptb-50">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">

@@ -11,7 +11,7 @@ import shape1 from "../../images/shape/circle-shape1.png"
 const HowItWork = () => {
   return (
     <>
-      <section className="process-area pt-100 pb-70">
+      <section className="process-area ptb-50">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

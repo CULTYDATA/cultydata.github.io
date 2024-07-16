@@ -1,6 +1,7 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 import details1 from "../../images/services/datascience.png"
+import { Link } from "gatsby"
 
 const DataScienceandMLConsulting = () => {
   return (
@@ -73,6 +74,18 @@ const DataScienceandMLConsulting = () => {
                     </span>
                   </li>
                 </ul>
+                <h3>Comprehensive Support</h3>
+                <p>
+                  Our feature team ensures end-to-end delivery for your data
+                  science projects.{" "}
+                  <Link
+                    to="/services/comprehensive-support"
+                    className="learn-more-btn"
+                  >
+                    <i className="flaticon-right"></i>
+                    Learn More
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

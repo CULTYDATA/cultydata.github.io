@@ -10,6 +10,8 @@ const PageBanner = ({
   homePageUrl,
   homePageText,
   activePageText,
+  sectionUrl = null,
+  sectionPageText = null,
 }) => {
   React.useEffect(() => {
     AOS.init()
@@ -33,6 +35,11 @@ const PageBanner = ({
             <li>
               <Link to={homePageUrl}>{homePageText}</Link>
             </li>
+            {sectionUrl && sectionPageText && (
+              <li>
+                <Link to={sectionUrl}>{sectionPageText}</Link>
+              </li>
+            )}
             <li>{activePageText}</li>
           </ul>
         </div>

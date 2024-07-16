@@ -8,7 +8,7 @@ import team8 from "../../images/team/team7.jpg"
 
 const NewTeam = () => {
   return (
-    <section className="scientist-area pt-100 pb-70">
+    <section className="scientist-area ptb-50">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">

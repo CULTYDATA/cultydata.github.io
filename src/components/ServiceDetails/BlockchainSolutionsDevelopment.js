@@ -1,6 +1,7 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 import details1 from "../../images/services/blockchainservice 3.png"
+import { Link } from "gatsby"
 
 const BlockchainSolutionsDevelopment = () => {
   return (
@@ -11,8 +12,8 @@ const BlockchainSolutionsDevelopment = () => {
             <div className="col-lg-4 col-md-12">
               <ServiceSidebar />
             </div>
-            <div className="col-lg-8 col-md-12" >
-              <div className="services-details-image" >
+            <div className="col-lg-8 col-md-12">
+              <div className="services-details-image">
                 <img src={details1} alt="about" width="20%" />
               </div>
 
@@ -75,6 +76,18 @@ const BlockchainSolutionsDevelopment = () => {
                     </span>
                   </li>
                 </ul>
+                <h3>Comprehensive Support</h3>
+                <p>
+                  Our feature team ensures end-to-end delivery for your
+                  blockchain projects.{" "}
+                  <Link
+                    to="/services/comprehensive-support"
+                    className="learn-more-btn"
+                  >
+                    <i className="flaticon-right"></i>
+                    Learn More
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

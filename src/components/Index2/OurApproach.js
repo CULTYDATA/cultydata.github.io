@@ -6,7 +6,7 @@ import HowitsWork from "../../images/main2.png"
 const HowItWork = () => {
   return (
     <>
-      <section className="how-its-work-area ptb-100">
+      <section className="how-its-work-area ptb-50">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">

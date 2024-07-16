@@ -16,6 +16,8 @@ const BlockchainSolutionsDevelopmentPage = () => {
         pageTitle="Blockchain Solutions Development"
         homePageText="Home"
         homePageUrl="/"
+        sectionPageText="Services"
+        sectionUrl="/services"
         activePageText="Blockchain Solutions Development"
       />
 

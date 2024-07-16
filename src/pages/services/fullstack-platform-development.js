@@ -16,6 +16,8 @@ const FullStackPlatformDevelopmentPage = () => {
         pageTitle="Full Stack Platform Development"
         homePageText="Home"
         homePageUrl="/"
+        sectionPageText="Services"
+        sectionUrl="/services"
         activePageText="Full Stack Platform Development"
       />
 

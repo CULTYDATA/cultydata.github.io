@@ -1,5 +1,6 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
+import { Link } from "gatsby"
 import details1 from "../../images/services/fullstack1.png"
 
 const FullStackPlatformDevelopment = () => {
@@ -69,6 +70,18 @@ const FullStackPlatformDevelopment = () => {
                     </span>
                   </li>
                 </ul>
+                <h3>Comprehensive Support</h3>
+                <p>
+                  Our feature team ensures end-to-end delivery for your platform
+                  development projects.{" "}
+                  <Link
+                    to="/services/comprehensive-support"
+                    className="learn-more-btn"
+                  >
+                    <i className="flaticon-right"></i>
+                    Learn More
+                  </Link>
+                </p>
               </div>
             </div>
           </div>

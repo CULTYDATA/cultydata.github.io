@@ -14,8 +14,10 @@ const CaseDetailsPage = () => {
 
       <PageBanner
         pageTitle="Shared KYC Solutions"
-        homePageText="Case Studies"
-        homePageUrl="/case-studies"
+        homePageText="Home"
+        homePageUrl="/"
+        sectionPageText="Case Studies"
+        sectionUrl="/case-studies"
         activePageText="Case Studies Details"
       />
 

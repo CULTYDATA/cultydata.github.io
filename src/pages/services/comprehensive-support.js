@@ -4,25 +4,28 @@ import Seo from "../../components/_App/seo"
 import Navbar from "../../components/_App/Navbar"
 import PageBanner from "../../components/Common/PageBanner"
 
-import StartProject from "../../components/Index2/StartProject"
 import Footer from "../../components/_App/Footer"
-import ServicesOne from "../../components/Services/ServicesOne"
+import ComprehensiveSupport from "../../components/ServiceDetails/ComprehensiveSupport"
 
-const ServicesPage = () => {
+const ComprehensiveSupportPage = () => {
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Services"
+        pageTitle={
+          <span>
+            Comprehensive Feature Team for <br /> End-to-End Delivery
+          </span>
+        }
         homePageText="Home"
         homePageUrl="/"
-        activePageText="Services"
+        sectionPageText="Services"
+        sectionUrl="/services"
+        activePageText="Comprehensive Feature Team for End-to-End Delivery"
       />
 
-      <ServicesOne />
-
-      <StartProject />
+      <ComprehensiveSupport />
 
       <Footer />
     </Layout>
@@ -34,6 +37,8 @@ const ServicesPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Services" />
+export const Head = () => (
+  <Seo title="Comprehensive Feature Team for End-to-End Delivery" />
+)
 
-export default ServicesPage
+export default ComprehensiveSupportPage

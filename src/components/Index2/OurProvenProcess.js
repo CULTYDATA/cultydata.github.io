@@ -7,7 +7,7 @@ import history3 from "../../images/history/teamorganisation.jpg"
 const OurProvenProcess = () => {
   return (
     <>
-      <div className="history-area pb-100">
+      <div className="history-area ptb-50">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

@@ -9,7 +9,7 @@ import keyValue4 from "../../images/services/diff4.png"
 const OurKeyValue = () => {
   return (
     <>
-      <section className="process-area pb-70">
+      <section className="process-area ptb-50">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

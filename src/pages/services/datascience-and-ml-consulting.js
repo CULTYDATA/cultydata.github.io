@@ -13,9 +13,16 @@ const DataScienceandMLConsultingPage = () => {
       <Navbar />
 
       <PageBanner
-        pageTitle="Data Science and Machine Learning Consulting"
+        pageTitle={
+          <span>
+            Data Science and <br />
+            Machine Learning Consulting
+          </span>
+        }
         homePageText="Home"
         homePageUrl="/"
+        sectionPageText="Services"
+        sectionUrl="/services"
         activePageText="Data Science and Machine Learning Consulting"
       />
 

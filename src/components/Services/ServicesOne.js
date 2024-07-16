@@ -13,15 +13,20 @@ const ServicesOne = () => {
                   <i className="flaticon-rocket"></i>
                 </div>
                 <h3>
-                  <Link to="/services/service-details">Startup Applications</Link>
+                  <Link to="/services/blockchain-solutions-development">
+                    Blockchain Solutions Development
+                  </Link>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  We design and develop custom blockchain solutions, including
+                  tokenized asset platforms, DApps, and seamless blockchain
+                  integration.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/blockchain-solutions-development"
+                >
                   View Details
                 </Link>
               </div>
@@ -34,16 +39,21 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">SaaS Solutions</Link>
+                  <Link to="/services/fullstack-platform-development">
+                    Full-Stack Platform Development
+                  </Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  We provide end-to-end development services for Web2 and Web3
+                  platforms, covering front-end and back-end development, API
+                  integration, and cloud deployment.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/fullstack-platform-development"
+                >
                   View Details
                 </Link>
               </div>
@@ -56,82 +66,21 @@ const ServicesOne = () => {
                 </div>
 
                 <h3>
-                  <Link to="/services/service-details">eCommerce Platforms</Link>
+                  <Link to="/services/datascience-and-ml-consulting">
+                    Data Science and Machine Learning Consulting
+                  </Link>
                 </h3>
 
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
+                  We offer expert consulting in data science and machine
+                  learning, focusing on predictive analytics, time series
+                  analysis, and custom algorithm development.
                 </p>
 
-                <Link className="view-details-btn" to="/services/service-details">
-                  View Details
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-solutions-box">
-                <div className="icon">
-                  <i className="flaticon-segmentation"></i>
-                </div>
-
-                <h3>
-                  <Link to="/services/service-details">Research</Link>
-                </h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
-                </p>
-
-                <Link className="view-details-btn" to="/services/service-details">
-                  View Details
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-solutions-box">
-                <div className="icon">
-                  <i className="flaticon-analytics"></i>
-                </div>
-
-                <h3>
-                  <Link to="/services/service-details">Analytics</Link>
-                </h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
-                </p>
-
-                <Link className="view-details-btn" to="/services/service-details">
-                  View Details
-                </Link>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-solutions-box">
-                <div className="icon">
-                  <i className="flaticon-settings"></i>
-                </div>
-
-                <h3>
-                  <Link to="/services/service-details">Technology</Link>
-                </h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
-                  adipiscing aliqua.
-                </p>
-
-                <Link className="view-details-btn" to="/services/service-details">
+                <Link
+                  className="view-details-btn"
+                  to="/services/datascience-and-ml-consulting"
+                >
                   View Details
                 </Link>
               </div>
