@@ -8,7 +8,7 @@ const caseStudyData = {
   location: "UK",
   technologies: ["Blockchain"],
   completedDate: "February 2023 - February 2024",
-  website: { name: "EnvyTheme.com", url: "https://envytheme.com/" },
+  website: { name: "Carbonplace.com", url: "https://carbonplace.com/" },
 }
 
 const CarbonplaceDetails = () => {
