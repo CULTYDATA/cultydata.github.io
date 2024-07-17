@@ -1,6 +1,6 @@
 import React from "react"
 import starIcon from "../../images/star-icon.png"
-import contact from "../../images/contact.png"
+import contact from "../../images/contact1.jpg"
 
 const ContactForm = () => {
   return (
