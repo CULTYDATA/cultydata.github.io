@@ -18,6 +18,7 @@ import OurKeyServices from "../components/Index2/OurKeyServices"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
 import NewTeam from "../components/Index2/newteam"
 import OurProjects from "../components/Index2/OurProjects"
+import ServicesOne from "../components/Services/ServicesOne"
 
 const IndexPage = () => {
   return (
@@ -26,6 +27,8 @@ const IndexPage = () => {
 
       <MainBanner />
       <AboutUs />
+
+      <ServicesOne/>
 
       <OurServices />
 
