@@ -7,7 +7,6 @@ import MainBanner from "../components/Index2/MainBanner"
 import AboutUs from "../components/Index2/AboutUs"
 
 import Testimonials from "../components/Index2/Testimonials"
-import Partner from "../components/Index2/Partner"
 
 import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
@@ -16,7 +15,7 @@ import OurKeyValue from "../components/Index2/OurKeyValue"
 
 import OurKeyServices from "../components/Index2/OurKeyServices"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
-import NewTeam from "../components/Index2/newteam"
+import NewTeam from "../components/Index2/NewTeam"
 import OurProjects from "../components/Index2/OurProjects"
 import ServicesOne from "../components/Services/ServicesOne"
 
@@ -28,7 +27,7 @@ const IndexPage = () => {
       <MainBanner />
       <AboutUs />
 
-      <ServicesOne/>
+      <ServicesOne />
 
       <OurServices />
 
@@ -40,7 +39,6 @@ const IndexPage = () => {
       <OurProjects showAll={false} />
 
       <Testimonials />
-      {/* <Partner /> */}
 
       <NewTeam />
 
