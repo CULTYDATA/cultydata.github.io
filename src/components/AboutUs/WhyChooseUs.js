@@ -1,6 +1,4 @@
 import React from "react"
-import starIcon from "../../images/star-icon.png"
-import howItWork from "../../images/whyChooseus.png"
 
 import serviceIcon1 from "../../images/services/comp.png"
 import serviceIcon2 from "../../images/services/exp.png"
@@ -19,8 +17,7 @@ const WhyChooseUs = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-featured-services-box">
                 <div className="icon">
-                  
-                  <img src={serviceIcon1} alt="feature" width = "80%" />
+                  <img src={serviceIcon1} alt="feature" width="80%" />
                 </div>
                 <h3>Agile and Adaptive</h3>
                 <p>
@@ -33,9 +30,7 @@ const WhyChooseUs = () => {
             <div className="col-lg-4 col-md-6 col-sm-6">
               <div className="single-featured-services-box">
                 <div className="icon">
-                  
-                  
-                  <img src={serviceIcon2} alt="feature" width= "80%" />
+                  <img src={serviceIcon2} alt="feature" width="80%" />
                 </div>
                 <h3>Expertise Across Domains</h3>
                 <p>
@@ -48,9 +43,7 @@ const WhyChooseUs = () => {
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
               <div className="single-featured-services-box">
                 <div className="icon">
-                 
-                  
-                  <img src={serviceIcon3} alt="feature" width = "90%" />
+                  <img src={serviceIcon3} alt="feature" width="90%" />
                 </div>
                 <h3>Committed to Excellence</h3>
                 <p>
