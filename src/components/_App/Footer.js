@@ -22,38 +22,9 @@ const Footer = () => {
 
               <ul className="social-link">
                 <li>
+                  
                   <a
-                    href="https://www.facebook.com/"
-                    className="d-block"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://twitter.com/"
-                    className="d-block"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/"
-                    className="d-block"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-instagram"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/cultydata/about/"
                     className="d-block"
                     target="_blank"
                     rel="noreferrer"
@@ -114,18 +85,12 @@ const Footer = () => {
                   <i className="bx bx-map"></i>
                   175 5th Ave, New York, NY 10010, <br /> United States
                 </li>
-                <li>
-                  <i className="bx bx-phone-call"></i>
-                  <a href="tel:11234567890">+1 (123) 456 7890</a>
-                </li>
+               
                 <li>
                   <i className="bx bx-envelope"></i>
                   <a href="mailto:hello@rewy.com">hello@rewy.com</a>
                 </li>
-                <li>
-                  <i className="bx bxs-inbox"></i>
-                  <a href="tel:+557854578964">+55 785 4578964</a>
-                </li>
+                
               </ul>
             </div>
           </div>
