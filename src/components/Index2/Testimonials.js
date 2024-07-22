@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import starIcon from "../../images/shape/icon.svg"
 import client1 from "../../images/testimonials/client1.jpg"
 

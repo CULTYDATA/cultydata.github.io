@@ -15,7 +15,7 @@ const ContactInfo = () => {
                   <i className="bx bx-map"></i>
                 </div>
                 <h3>Our Address</h3>
-                <p>175 5th Ave, New York, NY 10010, United States</p>
+                <p>175 5th Ave, NY 10010, Paris</p>
               </div>
             </div>
 
@@ -28,11 +28,12 @@ const ContactInfo = () => {
                   <i className="bx bx-phone-call"></i>
                 </div>
                 <h3>Contact</h3>
+
                 <p>
-                  Mobile: <a href="tel:+44457895789">(+44) - 45789 - 5789</a>
-                </p>
-                <p>
-                  E-mail: <a href="mailto:hello@rewy.com">hello@rewy.com</a>
+                  E-mail:{" "}
+                  <a href="mailto:connect@cultydata.com">
+                    connect@cultydata.com
+                  </a>
                 </p>
               </div>
             </div>

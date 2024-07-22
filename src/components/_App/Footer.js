@@ -22,7 +22,6 @@ const Footer = () => {
 
               <ul className="social-link">
                 <li>
-                  
                   <a
                     href="https://www.linkedin.com/company/cultydata/about/"
                     className="d-block"
@@ -83,14 +82,15 @@ const Footer = () => {
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-map"></i>
-                  175 5th Ave, New York, NY 10010, <br /> United States
+                  175 5th Ave, NY 10010, <br /> Paris
                 </li>
-               
+
                 <li>
                   <i className="bx bx-envelope"></i>
-                  <a href="mailto:hello@rewy.com">hello@rewy.com</a>
+                  <a href="mailto:connect@cultydata.com">
+                    connect@cultydata.com
+                  </a>
                 </li>
-                
               </ul>
             </div>
           </div>

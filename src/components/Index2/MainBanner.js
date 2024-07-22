@@ -22,9 +22,9 @@ const MainBanner = () => {
                   data-aos="fade-right"
                   data-aos-duration="1200"
                   data-aos-delay="100"
-                  style = {{fontSize:"45px"}}
+                  style={{ fontSize: "45px" }}
                 >
-                 Empowering Your Digital Vision: From Concept to Scale-Ready
+                  Empowering Your Digital Vision: From Concept to Scale-Ready
                   Platform
                 </h1>
 
@@ -65,7 +65,12 @@ const MainBanner = () => {
             </div>
           </div>
         </div>
-        <div className="cube-img1">
+        <div
+          className="cube-img1"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+          data-aos-delay="400"
+        >
           <img src={lineborder} alt="shape" width="40%" />
         </div>
 

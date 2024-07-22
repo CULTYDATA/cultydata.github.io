@@ -1,14 +1,13 @@
 import React from "react"
 import CaseStudiesSidebar from "./CaseStudiesSidebar"
 import details1 from "../../images/projects/sharedkyc.jpg"
-import project2 from "../../images/projects/project2.jpg"
 
 const caseStudyData = {
   client: "BP2S/Consensys",
   location: "Australia",
-  technologies: ["Blockchain"],
+  technologies: ["-"],
   completedDate: " April 2018 - February 2019",
-  website: { name: "EnvyTheme.com", url: "https://envytheme.com/" },
+  website: { name: "-", url: "/" },
 }
 
 const SharedKYCDetails = () => {
