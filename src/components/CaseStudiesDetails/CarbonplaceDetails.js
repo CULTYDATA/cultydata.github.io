@@ -1,12 +1,11 @@
 import React from "react"
 import CaseStudiesSidebar from "./CaseStudiesSidebar"
 import details1 from "../../images/projects/tradding111.jpg"
-import project2 from "../../images/projects/project2.jpg"
 
 const caseStudyData = {
   client: "Carbonplace",
   location: "UK",
-  technologies: ["Blockchain"],
+  technologies: ["-"],
   completedDate: "February 2023 - February 2024",
   website: { name: "Carbonplace.com", url: "https://carbonplace.com/" },
 }

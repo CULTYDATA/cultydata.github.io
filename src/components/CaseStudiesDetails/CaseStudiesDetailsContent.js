@@ -1,7 +1,6 @@
 import React from "react"
 import CaseStudiesSidebar from "./CaseStudiesSidebar"
 import details1 from "../../images/projects/projects-details1.jpg"
-import project2 from "../../images/projects/project2.jpg"
 
 const caseStudyData = {
   client: "xxxx",
