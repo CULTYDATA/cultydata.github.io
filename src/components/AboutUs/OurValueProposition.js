@@ -9,7 +9,7 @@ import serviceIcon5 from "../../images/services/prop5.png"
 const OurValueProposition = () => {
   return (
     <>
-      <section className="services-area pt-100 pb-70  bg-fefbf1">
+      <section className="services-area pt-100 pb-70  ">
         <div className="container">
           <div className="section-title">
             <h2>Our Value Proposition</h2>
