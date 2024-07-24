@@ -35,7 +35,7 @@ const OurKeyValue = () => {
                 <p>
                   We implement cost-effective cloud solutions that scale with
                   your needs, ensuring you only pay for what you use. This
-                  approach maximises your resources and minimises upfront costs.
+                  approach maximizes your resources and minimizes upfront costs.
                 </p>
               </div>
             </div>

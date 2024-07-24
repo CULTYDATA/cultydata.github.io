@@ -1,8 +1,8 @@
 import React from "react"
 import starIcon from "../../images/shape/icon.svg"
-import history1 from "../../images/history/planning.jpg"
-import history2 from "../../images/history/agiledevelopment.jpg"
-import history3 from "../../images/history/teamorganisation.jpg"
+import process1 from "../../images/history/planning.jpg"
+import process2 from "../../images/history/agile-development.jpg"
+import process3 from "../../images/history/team-organisation.jpg"
 
 const OurProvenProcess = () => {
   return (
@@ -27,7 +27,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history1} alt="about" width="95%" />
+                      <img src={process1} alt="about" width="95%" />
                     </div>
                   </div>
 
@@ -58,7 +58,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history2} alt="about" width="95%" />
+                      <img src={process2} alt="about" width="95%" />
                     </div>
                   </div>
 
@@ -88,7 +88,7 @@ const OurProvenProcess = () => {
                 <div className="row align-items-center">
                   <div className="col-lg-5 col-md-12">
                     <div className="image">
-                      <img src={history3} alt="about" width="95%" />
+                      <img src={process3} alt="about" width="95%" />
                     </div>
                   </div>
 

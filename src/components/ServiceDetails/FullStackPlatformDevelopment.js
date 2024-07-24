@@ -1,7 +1,7 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 import { Link } from "gatsby"
-import details1 from "../../images/services/fullstack1.png"
+import details1 from "../../images/services/service-2.png"
 
 const FullStackPlatformDevelopment = () => {
   return (

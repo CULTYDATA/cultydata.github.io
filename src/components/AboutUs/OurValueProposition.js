@@ -19,7 +19,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon1} alt="feature" width="20%"/>
+                  <img src={serviceIcon1} alt="feature" width="20%" />
                 </div>
                 <h3>High-Performance Teams</h3>
                 <p>
@@ -46,7 +46,7 @@ const OurValueProposition = () => {
             <div className="col-lg-4 col-sm-6">
               <div className="single-services-item-box">
                 <div className="icon">
-                  <img src={serviceIcon3} alt="feature"  width="20%" />
+                  <img src={serviceIcon3} alt="feature" width="20%" />
                 </div>
                 <h3>Holacratic Organization</h3>
                 <p>

@@ -1,6 +1,6 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
-import details1 from "../../images/services/datascience.png"
+import details1 from "../../images/services/service-3.png"
 import { Link } from "gatsby"
 
 const DataScienceandMLConsulting = () => {
