@@ -40,8 +40,7 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
-    "build": "gatsby build --prefix-paths",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
@@ -51,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:CULTYDATA/cultydata.github.io.git"
+    "url": "https://github.com/CULTYDATA/cultydata.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/CULTYDATA/cultydata.github.io"
