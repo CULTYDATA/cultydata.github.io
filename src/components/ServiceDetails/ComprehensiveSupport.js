@@ -1,7 +1,7 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 
-import details1 from "../../images/services/deliveryteam.jpg"
+import details1 from "../../images/services/service-4.jpg"
 import serviceIcon1 from "../../images/services/prop11.png"
 import serviceIcon2 from "../../images/services/prop22.png"
 import serviceIcon3 from "../../images/services/prop33.png"

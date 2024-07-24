@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 
-import serviceIcon7 from "../../images/services/digital1.png"
-import serviceIcon7Hover from "../../images/services/hoverdigital1.png"
-import serviceIcon8 from "../../images/services/Team1.png"
-import serviceIcon8Hover from "../../images/services/hoverteam1.png"
-import serviceIcon10 from "../../images/services/cloud1.png"
-import serviceIcon10Hover from "../../images/services/cloud-hover1.png"
-import serviceIcon12 from "../../images/services/delivery1.png"
-import serviceIcon12Hover from "../../images/services/hoverdelivery1.png"
+import serviceIcon1 from "../../images/services/core-service-1.png"
+import serviceIcon1Hover from "../../images/services/core-service-1-hover.png"
+import serviceIcon2 from "../../images/services/core-service-2.png"
+import serviceIcon2Hover from "../../images/services/core-service-2-hover.png"
+import serviceIcon3 from "../../images/services/core-service-3.png"
+import serviceIcon3Hover from "../../images/services/core-service-3-hover.png"
+import serviceIcon4 from "../../images/services/core-service-4.png"
+import serviceIcon4Hover from "../../images/services/core-service-4-hover.png"
 import starIcon from "../../images/shape/icon.svg"
 
 const OurServices = () => {
@@ -37,15 +37,15 @@ const OurServices = () => {
             <button
               className="single-process-box display-flex-center"
               style={{ height: "90%" }}
-              onMouseEnter={() => handleMouseEnter("serviceIcon7")}
+              onMouseEnter={() => handleMouseEnter("serviceIcon1")}
               onMouseLeave={handleMouseLeave}
             >
               <div className="icon">
                 <img
                   src={
-                    hoveredIcon === "serviceIcon7"
-                      ? serviceIcon7Hover
-                      : serviceIcon7
+                    hoveredIcon === "serviceIcon1"
+                      ? serviceIcon1Hover
+                      : serviceIcon1
                   }
                   alt="services"
                   width="60%"
@@ -66,15 +66,15 @@ const OurServices = () => {
           <div className="col-lg-6 col-md-6 col-sm-12">
             <button
               className="single-process-box display-flex-center"
-              onMouseEnter={() => handleMouseEnter("serviceIcon8")}
+              onMouseEnter={() => handleMouseEnter("serviceIcon2")}
               onMouseLeave={handleMouseLeave}
             >
               <div className="icon">
                 <img
                   src={
-                    hoveredIcon === "serviceIcon8"
-                      ? serviceIcon8Hover
-                      : serviceIcon8
+                    hoveredIcon === "serviceIcon2"
+                      ? serviceIcon2Hover
+                      : serviceIcon2
                   }
                   alt="services"
                   width="60%"
@@ -95,15 +95,15 @@ const OurServices = () => {
           <div className="col-lg-6 col-md-6 col-sm-12">
             <button
               className="single-process-box display-flex-center"
-              onMouseEnter={() => handleMouseEnter("serviceIcon10")}
+              onMouseEnter={() => handleMouseEnter("serviceIcon3")}
               onMouseLeave={handleMouseLeave}
             >
               <div className="icon">
                 <img
                   src={
-                    hoveredIcon === "serviceIcon10"
-                      ? serviceIcon10Hover
-                      : serviceIcon10
+                    hoveredIcon === "serviceIcon3"
+                      ? serviceIcon3Hover
+                      : serviceIcon3
                   }
                   alt="services"
                   width="60%"
@@ -124,15 +124,15 @@ const OurServices = () => {
           <div className="col-lg-6 col-md-6 col-sm-12">
             <button
               className="single-process-box display-flex-center"
-              onMouseEnter={() => handleMouseEnter("serviceIcon12")}
+              onMouseEnter={() => handleMouseEnter("serviceIcon4")}
               onMouseLeave={handleMouseLeave}
             >
               <div className="icon">
                 <img
                   src={
-                    hoveredIcon === "serviceIcon12"
-                      ? serviceIcon12Hover
-                      : serviceIcon12
+                    hoveredIcon === "serviceIcon4"
+                      ? serviceIcon4Hover
+                      : serviceIcon4
                   }
                   alt="services"
                   width="50%"

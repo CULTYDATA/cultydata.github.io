@@ -1,11 +1,11 @@
 import React from "react"
 import AOS from "aos"
 import { Link } from "gatsby"
-import img5 from "../../images/about/aboutus1.png"
+import img1 from "../../images/about/about-us1.png"
 import starIcon from "../../images/shape/icon.svg"
-import icon4 from "../../images/icons/12.png"
-import icon6 from "../../images/icons/thumbs.png"
-import img6 from "../../images/about/about2.png"
+import icon1 from "../../images/icons/icon1.png"
+import icon2 from "../../images/icons/icon2.png"
+import img2 from "../../images/about/about-us2.png"
 
 const AboutUs = () => {
   React.useEffect(() => {
@@ -18,9 +18,9 @@ const AboutUs = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="about-image">
-                <img src={img5} alt="banner" className="sec-img-one" />
+                <img src={img1} alt="banner" className="sec-img-one" />
                 <img
-                  src={img6}
+                  src={img2}
                   alt="banner"
                   className="sec-img-two img-six"
                   data-aos="fade-left"
@@ -50,13 +50,13 @@ const AboutUs = () => {
 
                   <ul className="features-list">
                     <li>
-                      <img src={icon4} alt="banner" width="20%" />
+                      <img src={icon1} alt="banner" width="20%" />
                       <h3>50 Years</h3>
                       <p>Combined experience</p>
                     </li>
 
                     <li>
-                      <img src={icon6} alt="banner" width="20%" />
+                      <img src={icon2} alt="banner" width="20%" />
                       <h3>100%</h3>
                       <p>Satisfaction rate</p>
                     </li>

@@ -1,6 +1,6 @@
 import React from "react"
 import CaseStudiesSidebar from "./CaseStudiesSidebar"
-import details1 from "../../images/projects/tradding111.jpg"
+import details1 from "../../images/projects/project1.jpg"
 
 const caseStudyData = {
   client: "Carbonplace",

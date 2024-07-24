@@ -1,252 +1,160 @@
 import React from "react"
-
 import starIcon from "../../images/shape/icon.svg"
-import team1 from "../../images/scientist/scientist1.png"
-import team2 from "../../images/scientist/scientist2.png"
-import team3 from "../../images/scientist/scientist3.png"
-import team4 from "../../images/scientist/scientist4.png"
+import team1 from "../../images/team/team5.jpg"
+import team2 from "../../images/team/team6.jpg"
+import team3 from "../../images/team/team7.jpg"
+import team4 from "../../images/team/team7.jpg"
 
 const TeamMembers = () => {
   return (
-    <>
-      <section className="scientist-area bg-color pt-100 pb-70">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title">
-              <img src={starIcon} alt="banner" />
-              Team Members
-            </span>
-            <h2>Our Team Expertise</h2>
-            <p>
-              Meet Our Full-Stack, Cross-Technology Experts with Entrepreneurial
-              Spirit
-            </p>
+    <section className="scientist-area ptb-50">
+      <div className="container">
+        <div className="section-title">
+          <span className="sub-title">
+            <img src={starIcon} alt="testimonials" />
+            Team Members
+          </span>
+          <h2>Our Team Expertise</h2>
+          <p>
+            Meet Our Full-Stack, Cross-Technology Experts with Entrepreneurial
+            Spirit
+          </p>
+        </div>
+
+        <div className="row">
+          {/* Team member 1 */}
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-scientist-item-box">
+              <div className="image">
+                <img src={team1} alt="Merv Adrian" />
+
+                <div className="hover-content">
+                  <p className="hover-description">
+                    With over 15 years of experience in tech entrepreneurship,
+                    Sarah leads our team with visionary strategies and a passion
+                    for innovation. Her background in AI and machine learning
+                    drives our cutting-edge approach to digital solutions.
+                  </p>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
+                </div>
+              </div>
+              <div className="content">
+                <h3>Sarah Chen</h3>
+                <span>CEO</span>
+              </div>
+            </div>
           </div>
 
-          <div className="row">
-            <div className="col-lg-3 col-sm-6 col-md-6">
-              <div className="single-scientist-box">
-                <div className="image">
-                  <img src={team1} alt="banner" />
-                </div>
-                <div className="content">
-                  <h3>Sarah Chen </h3>
-                  <span>CEO</span>
+          {/* Team member 2 */}
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-scientist-item-box">
+              <div className="image">
+                <img src={team2} alt="Kirk Borne" />
 
-                  <ul className="social">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://twitter.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
+                <div className="hover-content">
+                  <p className="hover-description">
+                    Raj brings 20+ years of expertise in cloud architecture and
+                    blockchain technology. His pioneering work in decentralised
+                    systems has been instrumental in shaping our unique
+                    technological offerings.
+                  </p>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
                 </div>
               </div>
-            </div>
-
-            <div className="col-lg-3 col-sm-6 col-md-6">
-              <div className="single-scientist-box">
-                <div className="image">
-                  <img src={team2} alt="banner" />
-                </div>
-                <div className="content">
-                  <h3>Dr. Raj Patel</h3>
-                  <span>CTO</span>
-
-                  <ul className="social">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://twitter.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div className="content">
+                <h3>Dr. Raj Patel,</h3>
+                <span>CTO</span>
               </div>
             </div>
+          </div>
 
-            <div className="col-lg-3 col-sm-6 col-md-6">
-              <div className="single-scientist-box">
-                <div className="image">
-                  <img src={team3} alt="banner" />
-                </div>
-                <div className="content">
-                  <h3>Emma Larsson</h3>
-                  <span>Head of Product</span>
+          {/* Team member 3 */}
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-scientist-item-box">
+              <div className="image">
+                <img src={team3} alt="John Doe" />
 
-                  <ul className="social">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://twitter.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
+                <div className="hover-content">
+                  <p className="hover-description">
+                    Emma's decade-long experience in product management for
+                    startups ensures that our solutions are not just
+                    technologically advanced, but also perfectly aligned with
+                    market needs and user expectations.
+                  </p>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
                 </div>
               </div>
+              <div className="content">
+                <h3>Emma Larsson</h3>
+                <span>Head of Product</span>
+              </div>
             </div>
+          </div>
 
-            <div className="col-lg-3 col-sm-6 col-md-6">
-              <div className="single-scientist-box">
-                <div className="image">
-                  <img src={team4} alt="banner" />
-                </div>
-                <div className="content">
-                  <h3>Alex Nguyen</h3>
-                  <span>Lead Developer</span>
+          {/* Team member 4 */}
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-scientist-item-box">
+              <div className="image">
+                <img src={team4} alt="Jane Smith" />
 
-                  <ul className="social">
-                    <li>
-                      <a
-                        href="https://www.facebook.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-facebook"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://twitter.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.instagram.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-instagram"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.linkedin.com/"
-                        className="d-block"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <i className="bx bxl-linkedin"></i>
-                      </a>
-                    </li>
-                  </ul>
+                <div className="hover-content">
+                  <p className="hover-description">
+                    Alex's full-stack expertise and agile development mastery
+                    drive our efficient and innovative development processes.
+                    His commitment to clean, scalable code is the backbone of
+                    our technical excellence.
+                  </p>
+
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/"
+                      className="d-block"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i className="bx bxl-linkedin"></i>
+                    </a>
+                  </li>
                 </div>
+              </div>
+              <div className="content">
+                <h3>Alex Nguyen</h3>
+                <span>Lead Developer</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
 

@@ -82,7 +82,7 @@ const Footer = () => {
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-map"></i>
-                  175 5th Ave, NY 10010, <br /> Paris
+                  175 5th Ave, NY 10010, Paris
                 </li>
 
                 <li>
@@ -100,8 +100,8 @@ const Footer = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
               <p>
-                Copyright @{currentYear} <strong>Cultydata</strong> All rights
-                reserved{" "}
+                Copyright © {currentYear} <b className="bold-text">Cultydata</b>
+                . All rights reserved.
               </p>
             </div>
 
@@ -110,9 +110,6 @@ const Footer = () => {
                 <li>
                   <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
-                {/* <li>
-                  <Link to="/terms-of-service">Terms & Conditions</Link>
-                </li> */}
               </ul>
             </div>
           </div>

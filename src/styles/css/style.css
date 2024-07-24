@@ -1479,9 +1479,9 @@ textarea.form-control {
   margin-top: 0;
 }
 
-.main-banner-content {
+/* .main-banner-content {
   margin-top: -50px;
-}
+} */
 .main-banner-content h1 {
   font-size: 57px;
   margin-bottom: 18px;
@@ -2161,7 +2161,7 @@ textarea.form-control {
   position: relative;
   z-index: 1;
   background-color: #ffffff;
-  background-image: url(../../images/banner-bg.png);
+  /* background-image: url(../../images/banner-bg.png); */
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2822,7 +2822,7 @@ Funfacts Area CSS
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../../images/funfacts/funfacts-bg.jpg);
+  /* background-image: url(../../images/funfacts/funfacts-bg.jpg); */
 }
 .funfacts-area.bg-image .single-funfacts-item h3 {
   color: #ffffff;

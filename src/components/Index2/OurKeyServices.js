@@ -1,8 +1,8 @@
-import React from "react";
-import starIcon from "../../images/shape/icon.svg";
-import serviceIcon1 from "../../images/services/future.png";
-import serviceIcon2 from "../../images/services/intellectual.png";
-import serviceIcon3 from "../../images/services/projecthandover.png";
+import React from "react"
+import starIcon from "../../images/shape/icon.svg"
+import serviceIcon1 from "../../images/services/agile-feature-icon.png"
+import serviceIcon2 from "../../images/services/ip-icon.png"
+import serviceIcon3 from "../../images/services/hand-over-icon.png"
 
 const OurKeyServices = () => {
   return (
@@ -25,10 +25,21 @@ const OurKeyServices = () => {
               <h3>Agile Feature Teams</h3>
               <div className="content">
                 <ul>
-                  <li>Multidisciplinary teams oriented towards "Time To Market".</li>
-                  <li>Initiate project sprints, ensuring optimal preparation for organic and technical scaling.</li>
-                  <li>Agile, Cloud-Native, DevSecOps methodologies to enhance flexibility and efficiency.</li>
-                  <li>Daily communication with agile organization for seamless collaboration.</li>
+                  <li>
+                    Multidisciplinary teams oriented towards "Time To Market".
+                  </li>
+                  <li>
+                    Initiate project sprints, ensuring optimal preparation for
+                    organic and technical scaling.
+                  </li>
+                  <li>
+                    Agile, Cloud-Native, DevSecOps methodologies to enhance
+                    flexibility and efficiency.
+                  </li>
+                  <li>
+                    Daily communication with agile organization for seamless
+                    collaboration.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -42,8 +53,13 @@ const OurKeyServices = () => {
               <h3>Intellectual Property (IP) Management</h3>
               <div className="content">
                 <ul>
-                  <li>Exclusive or shared IP rights, based on client preferences.</li>
-                  <li>Agile contracts co-constructed with client startups or partners to ensure mutual benefit.</li>
+                  <li>
+                    Exclusive or shared IP rights, based on client preferences.
+                  </li>
+                  <li>
+                    Agile contracts co-constructed with client startups or
+                    partners to ensure mutual benefit.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -57,8 +73,14 @@ const OurKeyServices = () => {
               <h3>Project Handover</h3>
               <div className="content">
                 <ul>
-                  <li>Detailed transition contracts to facilitate a smooth end-of-collaboration process.</li>
-                  <li>Ensuring continuity and stability post-handover with thorough documentation and support.</li>
+                  <li>
+                    Detailed transition contracts to facilitate a smooth
+                    end-of-collaboration process.
+                  </li>
+                  <li>
+                    Ensuring continuity and stability post-handover with
+                    thorough documentation and support.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -66,7 +88,7 @@ const OurKeyServices = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
-export default OurKeyServices;
+export default OurKeyServices

@@ -1,7 +1,7 @@
 import React from "react"
 import AOS from "aos"
 import { Link } from "gatsby"
-import img1 from "../../images/main1.png"
+import img1 from "../../images/main-banner/main1.png"
 import shape2 from "../../images/shape/shape2.png"
 
 import lineborder from "../../images/line-round.svg"

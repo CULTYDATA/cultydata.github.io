@@ -15,7 +15,7 @@ import OurKeyValue from "../components/Index2/OurKeyValue"
 
 import OurKeyServices from "../components/Index2/OurKeyServices"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
-import NewTeam from "../components/Index2/NewTeam"
+import TeamMembers from "../components/Index2/TeamMembers"
 import OurProjects from "../components/Index2/OurProjects"
 import ServicesOne from "../components/Services/ServicesOne"
 
@@ -40,7 +40,7 @@ const IndexPage = () => {
 
       <Testimonials />
 
-      <NewTeam />
+      <TeamMembers />
 
       <StartProject />
 

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo.png"
+import logo from "../images/full-logo.svg"
 
 const ComingSoonPage = () => {
   const [days, setDays] = React.useState("")
