@@ -1,26 +1,20 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
-import details1 from "../../images/services/service-1.png"
+import details1 from "../../images/services/blockchain1.svg"
 import { Link } from "gatsby"
 
 const BlockchainSolutionsDevelopment = () => {
   return (
     <>
-      <section className="services-details-area ptb-100">
+      <section className="services-details-area ptb-50">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-12">
-              <ServiceSidebar />
-            </div>
+           
             <div className="col-lg-8 col-md-12">
-              <div className="services-details-image">
-                <img src={details1} alt="about" width="20%" />
-              </div>
+              
 
               <div className="services-details-desc">
-                <span className="sub-title">
-                  Blockchain Solutions Development
-                </span>
+              
                 <h3>Service Offering</h3>
                 <p>
                   Our team excels in the design and development of blockchain
@@ -60,7 +54,12 @@ const BlockchainSolutionsDevelopment = () => {
                     </div>
                   </div>
                 </div>
-
+                <div className="services-details-image">
+                <img src={details1} alt="about" />
+                <span className="sub-title padding-top">
+                  Blockchain Solutions Development
+                </span>
+              </div>
                 <h3>Use Case Examples</h3>
                 <ul className="features">
                   <li>
@@ -90,6 +89,10 @@ const BlockchainSolutionsDevelopment = () => {
                 </p>
               </div>
             </div>
+
+            <div className="col-lg-4 col-md-12">
+              <ServiceSidebar />
+            </div> 
           </div>
         </div>
       </section>

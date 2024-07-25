@@ -1,6 +1,6 @@
 import React from "react"
 import CaseStudiesSidebar from "./CaseStudiesSidebar"
-import details1 from "../../images/projects/project1.jpg"
+import details1 from "../../images/projects/tradding11.svg"
 
 const caseStudyData = {
   client: "Carbonplace",
@@ -13,13 +13,11 @@ const caseStudyData = {
 const CarbonplaceDetails = () => {
   return (
     <>
-      <section className="case-studies-details-area ptb-100">
+      <section className="case-studies-details-area ptb-50">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-md-12">
-              <div className="case-studies-details-image">
-                <img src={details1} alt="about" />
-              </div>
+             
               <div className="case-studies-details-desc">
                 <h3>Carbonplace</h3>
                 <p>
@@ -41,6 +39,10 @@ const CarbonplaceDetails = () => {
                     </li>
                   </ul>
                 </div>
+
+                <div className="case-studies-details-image">
+                <img src={details1} alt="about" />
+              </div>
 
                 <h3>Value Addition</h3>
                 <p>
