@@ -3,6 +3,7 @@ import { useRecoilState } from "recoil"
 import { collapsedState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
 import logo from "../../images/full-logo.svg"
+import Lang from "./Lang"
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
@@ -147,6 +148,9 @@ const Navbar = () => {
                     <Link to="/case-studies" className="nav-link">
                       Case Studies
                     </Link>
+                  </li>
+                  <li >
+                    <Lang></Lang> 
                   </li>
 
                   {/* <li className="nav-item">
