@@ -19,6 +19,8 @@ import TeamMembers from "../components/Index2/TeamMembers"
 import OurProjects from "../components/Index2/OurProjects"
 import ServicesOne from "../components/Services/ServicesOne"
 
+import { graphql } from 'gatsby';
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -57,3 +59,17 @@ const IndexPage = () => {
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

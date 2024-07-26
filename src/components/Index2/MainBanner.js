@@ -6,10 +6,14 @@ import shape2 from "../../images/shape/shape2.png"
 
 import lineborder from "../../images/line-round.svg"
 
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
 const MainBanner = () => {
   React.useEffect(() => {
     AOS.init()
   }, [])
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -24,8 +28,7 @@ const MainBanner = () => {
                   data-aos-delay="100"
                   style={{ fontSize: "45px" }}
                 >
-                  Empowering Your Digital Vision: From Concept to Scale-Ready
-                  Platform
+                  {t('home.mainBanner.title')}
                 </h1>
 
                 <p
@@ -33,10 +36,8 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  Welcome to <b className="bold-text">Cultydata Studio</b>,
-                  where we transform digital aspirations into scalable
-                  realities, guiding startups from innovative concepts to
-                  market-ready platforms with unparalleled expertise.
+                  {t('home.mainBanner.txt.1')} <b className="bold-text">{t('home.mainBanner.txt.2')}</b>{t('home.mainBanner.txt.3')}
+                  
                 </p>
 
                 <div
