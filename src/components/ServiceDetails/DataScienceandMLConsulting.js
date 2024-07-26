@@ -1,26 +1,23 @@
-import React from "react"
-import ServiceSidebar from "./ServiceSidebar"
-import details1 from "../../images/services/service-3.png"
-import { Link } from "gatsby"
+import React from "react";
+import ServiceSidebar from "./ServiceSidebar";
+import details1 from "../../images/services/datascience1.svg"; 
+import { Link } from "gatsby";
 
 const DataScienceandMLConsulting = () => {
   return (
     <>
-      <section className="services-details-area ptb-100">
+      <section className="services-details-area ptb-50">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-12">
-              <ServiceSidebar />
-            </div>
+          
+
+           
             <div className="col-lg-8 col-md-12">
-              <div className="services-details-image">
-                <img src={details1} alt="about" />
-              </div>
+              
+             
 
               <div className="services-details-desc">
-                <span className="sub-title">
-                  Data Science and Machine Learning Consulting
-                </span>
+              
                 <h3>Service Offering</h3>
                 <p>
                   We offer expert consulting in data science and machine
@@ -29,7 +26,6 @@ const DataScienceandMLConsulting = () => {
                 </p>
 
                 <h3>Business Domain</h3>
-
                 <div className="row">
                   <div className="col-lg-4 col-sm-6 col-md-6">
                     <div className="single-industries-serve-box">
@@ -47,7 +43,6 @@ const DataScienceandMLConsulting = () => {
                       Retail
                     </div>
                   </div>
-
                   <div className="col-lg-4 col-sm-6 col-md-6">
                     <div className="single-industries-serve-box">
                       <div className="icon">
@@ -57,6 +52,12 @@ const DataScienceandMLConsulting = () => {
                     </div>
                   </div>
                 </div>
+                <div className="services-details-image">
+                <img src={details1} alt="Data Science and ML"  />
+                <span className="sub-title padding-top">
+                  Data Science and Machine Learning Consulting
+                </span>
+              </div>
 
                 <h3>Use Case Examples</h3>
                 <ul className="features">
@@ -74,6 +75,7 @@ const DataScienceandMLConsulting = () => {
                     </span>
                   </li>
                 </ul>
+
                 <h3>Comprehensive Support</h3>
                 <p>
                   Our feature team ensures end-to-end delivery for your data
@@ -88,11 +90,16 @@ const DataScienceandMLConsulting = () => {
                 </p>
               </div>
             </div>
+
+            <div className="col-lg-4 col-md-12">
+              <ServiceSidebar />
+            </div>
+
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default DataScienceandMLConsulting
+export default DataScienceandMLConsulting;

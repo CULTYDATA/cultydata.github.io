@@ -1,27 +1,20 @@
-import React from "react"
-import ServiceSidebar from "./ServiceSidebar"
-import { Link } from "gatsby"
-import details1 from "../../images/services/service-2.png"
+import React from "react";
+import ServiceSidebar from "./ServiceSidebar";
+import { Link } from "gatsby";
+import details1 from "../../images/services/fullstack1.svg";
 
 const FullStackPlatformDevelopment = () => {
   return (
     <>
-      <section className="services-details-area ptb-100">
+      <section className="services-details-area ptb-50">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-12">
-              <ServiceSidebar />
-            </div>
-            <div className="col-lg-8 col-md-12">
-              <div className="services-details-image">
-                <img src={details1} alt="about" />
-              </div>
+           
+           
 
+            <div className="col-lg-8 col-md-12">
               <div className="services-details-desc">
-                <span className="sub-title">
-                  {" "}
-                  Full-Stack Platform Development
-                </span>
+               
                 <h3>Service Offering</h3>
                 <p>
                   We provide end-to-end development services for both Web2 and
@@ -30,7 +23,6 @@ const FullStackPlatformDevelopment = () => {
                 </p>
 
                 <h3>Business Domain</h3>
-
                 <div className="row">
                   <div className="col-lg-4 col-sm-6 col-md-6">
                     <div className="single-industries-serve-box">
@@ -40,7 +32,6 @@ const FullStackPlatformDevelopment = () => {
                       E-commerce
                     </div>
                   </div>
-
                   <div className="col-lg-4 col-sm-6 col-md-6">
                     <div className="single-industries-serve-box">
                       <div className="icon">
@@ -49,7 +40,6 @@ const FullStackPlatformDevelopment = () => {
                       Finance
                     </div>
                   </div>
-
                   <div className="col-lg-4 col-sm-6 col-md-6">
                     <div className="single-industries-serve-box">
                       <div className="icon">
@@ -59,6 +49,11 @@ const FullStackPlatformDevelopment = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="services-details-image ">
+                <img src={details1} alt="Full-Stack Platform Development" />
+                <span className="sub-title padding-top">Full-Stack Platform Development</span>
+              </div>
 
                 <h3>Use Case Examples</h3>
                 <ul className="features">
@@ -70,25 +65,30 @@ const FullStackPlatformDevelopment = () => {
                     </span>
                   </li>
                 </ul>
+
                 <h3>Comprehensive Support</h3>
                 <p>
                   Our feature team ensures end-to-end delivery for your platform
                   development projects.{" "}
-                  <Link
-                    to="/services/comprehensive-support"
-                    className="learn-more-btn"
-                  >
+                  <Link to="/services/comprehensive-support" className="learn-more-btn">
                     <i className="flaticon-right"></i>
                     Learn More
                   </Link>
                 </p>
               </div>
+
+            
+             
             </div>
+
+            <div className="col-lg-4 col-md-12">
+              <ServiceSidebar />
+            </div> 
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default FullStackPlatformDevelopment
+export default FullStackPlatformDevelopment;
