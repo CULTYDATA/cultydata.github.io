@@ -1,7 +1,7 @@
 import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 
-import details1 from "../../images/services/service-4.jpg"
+import details1 from "../../images/services/service-4.svg"
 import serviceIcon1 from "../../images/services/prop11.png"
 import serviceIcon2 from "../../images/services/prop22.png"
 import serviceIcon3 from "../../images/services/prop33.png"
@@ -12,21 +12,15 @@ import serviceIcon6 from "../../images/services/prop66.png"
 const BlockchainSolutionsDevelopment = () => {
   return (
     <>
-      <section className="services-details-area ptb-100">
+      <section className="services-details-area ptb-50">
         <div className="container">
           <div className="row">
-            <div className="col-lg-4 col-md-12">
-              <ServiceSidebar />
-            </div>
+            
             <div className="col-lg-8 col-md-12">
-              <div className="services-details-image">
-                <img src={details1} alt="about" />
-              </div>
+             
 
               <div className="services-details-desc">
-                <span className="sub-title">
-                  Comprehensive Feature Team for End-to-End Delivery
-                </span>
+               
                 <h3>Service Offering</h3>
                 <p>
                   Cultydata Studio provides an experienced feature team capable
@@ -35,7 +29,15 @@ const BlockchainSolutionsDevelopment = () => {
                   design, architecture, development, QA, DevSecOps, and more.
                 </p>
 
-                <h3>Value Proposition</h3>
+                <div className="services-details-image">
+                <img src={details1} alt="about" />
+
+                <span className="sub-title padding-top">
+                  Comprehensive Feature Team for End-to-End Delivery
+                </span> 
+              </div>
+
+                <h3 >Value Proposition</h3>
                 <div className="row justify-content-center">
                   <div className="col-lg-6 col-sm-6">
                     <div className="single-services-item-box">
@@ -137,6 +139,9 @@ const BlockchainSolutionsDevelopment = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+            <div className="col-lg-4 col-md-12">
+              <ServiceSidebar />
             </div>
           </div>
         </div>
