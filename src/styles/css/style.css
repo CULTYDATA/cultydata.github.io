@@ -11243,7 +11243,7 @@ New Team css
   left: 30px;
 }
 
-/* Assuming this is your CSS file */
+
 .sec-img-one {
   /* Add your specific styles for img5 here */
   /* Example styles: */
@@ -11263,4 +11263,39 @@ New Team css
   right: 100px;
   /*border-radius: 500px; /* Example border-radius */
   /* Any other styles you want to apply */
+}
+
+
+
+.single-process-box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust as necessary */
+}
+
+.single-process-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.single-process-box h3 {
+  margin-top: 10px; /* Adjust as necessary */
+}
+
+.single-process-box ul {
+  text-align: left; /* Align list items to the left */
+  padding-left: 20px; /* Add padding if needed */
+}
+
+.service-icon {
+  width: 80px; /* Adjust as necessary */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.section-title {
+  text-align: center;
 }
