@@ -4,6 +4,7 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import Footer from "../components/_App/Footer"
+import { graphql } from "gatsby"
 
 const PrivacyPolicyPage = () => {
   return (
@@ -73,3 +74,17 @@ const PrivacyPolicyPage = () => {
 export const Head = () => <Seo title="Privacy Policy" />
 
 export default PrivacyPolicyPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

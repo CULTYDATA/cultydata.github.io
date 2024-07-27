@@ -4,21 +4,21 @@ import team1 from "../../images/team/team5.jpg"
 import team2 from "../../images/team/team6.jpg"
 import team3 from "../../images/team/team7.jpg"
 import team4 from "../../images/team/team7.jpg"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const TeamMembers = () => {
+  const { t } = useTranslation()
+
   return (
     <section className="scientist-area ptb-50">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">
             <img src={starIcon} alt="testimonials" />
-            Team Members
+            {t("teamMembers.subTitle")}
           </span>
-          <h2>Our Team Expertise</h2>
-          <p>
-            Meet Our Full-Stack, Cross-Technology Experts with Entrepreneurial
-            Spirit
-          </p>
+          <h2>{t("teamMembers.title")}</h2>
+          <p>{t("teamMembers.description")}</p>
         </div>
 
         <div className="row">
@@ -26,14 +26,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team1} alt="Merv Adrian" />
+                <img src={team1} alt={t("teamMembers.member1.name")} />
 
                 <div className="hover-content">
                   <p className="hover-description">
-                    With over 15 years of experience in tech entrepreneurship,
-                    Sarah leads our team with visionary strategies and a passion
-                    for innovation. Her background in AI and machine learning
-                    drives our cutting-edge approach to digital solutions.
+                    {t("teamMembers.member1.description")}
                   </p>
                   <li>
                     <a
@@ -48,8 +45,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>Sarah Chen</h3>
-                <span>CEO</span>
+                <h3>{t("teamMembers.member1.name")}</h3>
+                <span>{t("teamMembers.member1.position")}</span>
               </div>
             </div>
           </div>
@@ -58,14 +55,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team2} alt="Kirk Borne" />
+                <img src={team2} alt={t("teamMembers.member2.name")} />
 
                 <div className="hover-content">
                   <p className="hover-description">
-                    Raj brings 20+ years of expertise in cloud architecture and
-                    blockchain technology. His pioneering work in decentralised
-                    systems has been instrumental in shaping our unique
-                    technological offerings.
+                    {t("teamMembers.member2.description")}
                   </p>
 
                   <li>
@@ -81,8 +75,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>Dr. Raj Patel,</h3>
-                <span>CTO</span>
+                <h3>{t("teamMembers.member2.name")}</h3>
+                <span>{t("teamMembers.member2.position")}</span>
               </div>
             </div>
           </div>
@@ -91,14 +85,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team3} alt="John Doe" />
+                <img src={team3} alt={t("teamMembers.member3.name")} />
 
                 <div className="hover-content">
                   <p className="hover-description">
-                    Emma's decade-long experience in product management for
-                    startups ensures that our solutions are not just
-                    technologically advanced, but also perfectly aligned with
-                    market needs and user expectations.
+                    {t("teamMembers.member3.description")}
                   </p>
 
                   <li>
@@ -114,8 +105,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>Emma Larsson</h3>
-                <span>Head of Product</span>
+                <h3>{t("teamMembers.member3.name")}</h3>
+                <span>{t("teamMembers.member3.position")}</span>
               </div>
             </div>
           </div>
@@ -124,14 +115,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team4} alt="Jane Smith" />
+                <img src={team4} alt={t("teamMembers.member4.name")} />
 
                 <div className="hover-content">
                   <p className="hover-description">
-                    Alex's full-stack expertise and agile development mastery
-                    drive our efficient and innovative development processes.
-                    His commitment to clean, scalable code is the backbone of
-                    our technical excellence.
+                    {t("teamMembers.member4.description")}
                   </p>
 
                   <li>
@@ -147,8 +135,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>Alex Nguyen</h3>
-                <span>Lead Developer</span>
+                <h3>{t("teamMembers.member4.name")}</h3>
+                <span>{t("teamMembers.member4.position")}</span>
               </div>
             </div>
           </div>

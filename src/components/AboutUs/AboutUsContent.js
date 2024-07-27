@@ -1,8 +1,10 @@
 import React from "react"
-
 import aboutImage from "../../images/about/about-us3.png"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const AboutUsContent = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="about-area ptb-100">
@@ -16,49 +18,38 @@ const AboutUsContent = () => {
 
             <div className="overview-content">
               <div className="content right-content">
-                <h2>
-                  Welcome to Cultydata Studio: Your Partner in Digital
-                  Transformation
-                </h2>
-                <p>
-                  Welcome to Cultydata Studio, where we transform your digital
-                  aspirations into tangible, scalable realities. As a premier
-                  incubator-style agency, we specialize in guiding startups
-                  through the intricate journey of digital product development.
-                  Our mission is to bridge the gap between innovative concepts
-                  and market-ready platforms, leveraging our extensive tech
-                  expertise and startup acceleration know-how.
-                </p>
+                <h2>{t("aboutUs.title")}</h2>
+                <p>{t("aboutUs.description")}</p>
 
                 <ul className="features-list">
                   <li>
                     <span>
-                      <i className="bx bx-check"></i> Transforming Aspirations
+                      <i className="bx bx-check"></i> {t("aboutUs.feature1")}
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i className="bx bx-check"></i> Incubator-Style Agency
+                      <i className="bx bx-check"></i> {t("aboutUs.feature2")}
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i className="bx bx-check"></i> Bridging the Gap
+                      <i className="bx bx-check"></i> {t("aboutUs.feature3")}
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i className="bx bx-check"></i> Cultivating Ecosystems
+                      <i className="bx bx-check"></i> {t("aboutUs.feature4")}
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i className="bx bx-check"></i> Expert Guidance
+                      <i className="bx bx-check"></i> {t("aboutUs.feature5")}
                     </span>
                   </li>
                   <li>
                     <span>
-                      <i className="bx bx-check"></i> Strategic Partnerships
+                      <i className="bx bx-check"></i> {t("aboutUs.feature6")}
                     </span>
                   </li>
                 </ul>

@@ -6,6 +6,7 @@ import PageBanner from "../components/Common/PageBanner"
 
 import Footer from "../components/_App/Footer"
 import TeamMembers from "../components/Index2/TeamMembers"
+import { graphql } from "gatsby"
 
 const TeamPage = () => {
   return (
@@ -34,3 +35,17 @@ const TeamPage = () => {
 export const Head = () => <Seo title="Team" />
 
 export default TeamPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

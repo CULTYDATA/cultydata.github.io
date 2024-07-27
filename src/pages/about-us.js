@@ -8,6 +8,7 @@ import AboutUsContent from "../components/AboutUs/AboutUsContent"
 import Footer from "../components/_App/Footer"
 import WhyChooseUs from "../components/AboutUs/WhyChooseUs"
 import OurValueProposition from "../components/AboutUs/OurValueProposition"
+import { graphql } from "gatsby"
 
 const AboutUsPage = () => {
   return (
@@ -37,3 +38,17 @@ const AboutUsPage = () => {
 export const Head = () => <Seo title="About Us" />
 
 export default AboutUsPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

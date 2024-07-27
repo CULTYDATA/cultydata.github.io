@@ -6,6 +6,7 @@ import PageBanner from "../../components/Common/PageBanner"
 import FullStackPlatformDevelopment from "../../components/ServiceDetails/FullStackPlatformDevelopment"
 
 import Footer from "../../components/_App/Footer"
+import { graphql } from "gatsby"
 
 const FullStackPlatformDevelopmentPage = () => {
   return (
@@ -36,3 +37,17 @@ const FullStackPlatformDevelopmentPage = () => {
 export const Head = () => <Seo title="Full Stack Platform Development" />
 
 export default FullStackPlatformDevelopmentPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`
