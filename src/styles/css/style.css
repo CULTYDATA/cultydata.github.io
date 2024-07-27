@@ -160,11 +160,9 @@ a:hover {
   padding-top: 70px;
 }
 
-
 .padding-top {
   padding-top: 12px;
 }
-
 
 .pb-70 {
   padding-bottom: 70px;
@@ -11294,4 +11292,69 @@ New Team css
 
 .section-title {
   text-align: center;
+}
+
+.lang-container {
+  position: relative;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.lang-title {
+  margin: 0;
+}
+
+.lang-button {
+  margin-top: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #03271f;
+}
+
+.lang-button:hover {
+  color: #35796a;
+}
+.lang-button i {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: -3px;
+}
+
+.lang-button a i {
+  color: #03271f;
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+  margin-left: -4px;
+  margin-right: -3px;
+}
+
+.lang-dropdown {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #35796a;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+
+  min-width: 130px;
+}
+
+.lang-dropdown li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.lang-dropdown li:hover,
+.lang-dropdown li.active {
+  color: #35796a;
 }
