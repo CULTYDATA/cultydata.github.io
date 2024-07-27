@@ -11245,24 +11245,20 @@ New Team css
 
 
 .sec-img-one {
-  /* Add your specific styles for img5 here */
-  /* Example styles: */
-  width: 60%; /* Adjust as needed */
-  height: 65%; /* Maintain aspect ratio */
-  /*border-radius: 500px; /* Example border-radius */
-  /* Any other styles you want to apply */
+  
+  width: 60%; 
+  height: 65%; /
+  
 }
 
 .sec-img-two {
-  /* Add your specific styles for img5 here */
-  /* Example styles: */
-  width: 25%; /* Adjust as needed */
-  height: 25%; /* Maintain aspect ratio */
+  
+  width: 25%; 
+  height: 25%; 
   vertical-align: bottom;
   position: relative;
   right: 100px;
-  /*border-radius: 500px; /* Example border-radius */
-  /* Any other styles you want to apply */
+  
 }
 
 
@@ -11271,7 +11267,7 @@ New Team css
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Adjust as necessary */
+  height: 100px; 
 }
 
 .single-process-box {
@@ -11283,17 +11279,17 @@ New Team css
 }
 
 .single-process-box h3 {
-  margin-top: 10px; /* Adjust as necessary */
+  margin-top: 10px; 
 }
 
 .single-process-box ul {
-  text-align: left; /* Align list items to the left */
-  padding-left: 20px; /* Add padding if needed */
+  text-align: left; 
+  padding-left: 20px;
 }
 
 .service-icon {
-  width: 80px; /* Adjust as necessary */
-  height: auto; /* Maintain aspect ratio */
+  width: 80px;
+  height: auto; 
 }
 
 .section-title {
