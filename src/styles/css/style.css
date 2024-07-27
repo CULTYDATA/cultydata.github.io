@@ -11243,24 +11243,55 @@ New Team css
   left: 30px;
 }
 
-/* Assuming this is your CSS file */
+
 .sec-img-one {
-  /* Add your specific styles for img5 here */
-  /* Example styles: */
-  width: 60%; /* Adjust as needed */
-  height: 65%; /* Maintain aspect ratio */
-  /*border-radius: 500px; /* Example border-radius */
-  /* Any other styles you want to apply */
+  
+  width: 60%; 
+  height: 65%; /
+  
 }
 
 .sec-img-two {
-  /* Add your specific styles for img5 here */
-  /* Example styles: */
-  width: 25%; /* Adjust as needed */
-  height: 25%; /* Maintain aspect ratio */
+  
+  width: 25%; 
+  height: 25%; 
   vertical-align: bottom;
   position: relative;
   right: 100px;
-  /*border-radius: 500px; /* Example border-radius */
-  /* Any other styles you want to apply */
+  
+}
+
+
+
+.single-process-box .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; 
+}
+
+.single-process-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.single-process-box h3 {
+  margin-top: 10px; 
+}
+
+.single-process-box ul {
+  text-align: left; 
+  padding-left: 20px;
+}
+
+.service-icon {
+  width: 80px;
+  height: auto; 
+}
+
+.section-title {
+  text-align: center;
 }

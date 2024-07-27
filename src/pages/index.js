@@ -10,16 +10,16 @@ import Testimonials from "../components/Index2/Testimonials"
 
 import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
-import OurServices from "../components/Index2/OurServices"
-import OurKeyValue from "../components/Index2/OurKeyValue"
 
-import OurKeyServices from "../components/Index2/OurKeyServices"
+
+import OurEngagementModel from "../components/Index2/OurEngagementModel"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
 import TeamMembers from "../components/Index2/TeamMembers"
 import OurProjects from "../components/Index2/OurProjects"
 import ServicesOne from "../components/Services/ServicesOne"
 
 import { graphql } from 'gatsby';
+import BestPractice from "../components/Index2/BestPractice"
 
 const IndexPage = () => {
   return (
@@ -31,13 +31,15 @@ const IndexPage = () => {
 
       <ServicesOne />
 
-      <OurServices />
+      
 
-      <OurKeyServices />
+      <OurEngagementModel />
 
       <OurProvenProcess />
 
-      <OurKeyValue />
+      <BestPractice />
+
+      
       <OurProjects showAll={false} />
 
       <Testimonials />
