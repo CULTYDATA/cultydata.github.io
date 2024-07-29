@@ -4,12 +4,10 @@ import { collapsedState } from "../../utils/recoil-atoms"
 import { Link } from "gatsby"
 import logo from "../../images/full-logo.svg"
 import Lang from "./Lang"
-
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
-
   const { t } = useTranslation()
 
   const toggleNavbar = () => {
@@ -66,12 +64,15 @@ const Navbar = () => {
 
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav">
+                  {/* Language selector for mobile view */}
+                  <li className="nav-item lang-mobile">
+                    <Lang />
+                  </li>
                   <li className="nav-item">
                     <Link to="/" className="nav-link">
                       {t("home.navbar.home")}
                     </Link>
                   </li>
-
                   <li className="nav-item">
                     <Link
                       to="#"
@@ -92,7 +93,6 @@ const Navbar = () => {
                           {t("home.navbar.about")}
                         </Link>
                       </li>
-
                       <li className="nav-item">
                         <Link
                           to="/team"
@@ -100,12 +100,11 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Team
+                          {t("team.pageTitle")}
                         </Link>
                       </li>
                     </ul>
                   </li>
-
                   <li className="nav-item">
                     <Link
                       to="#"
@@ -115,7 +114,6 @@ const Navbar = () => {
                       {t("home.navbar.services")}{" "}
                       <i className="bx bx-chevron-down"></i>
                     </Link>
-
                     <ul className="dropdown-menu">
                       <li className="nav-item">
                         <Link
@@ -127,7 +125,6 @@ const Navbar = () => {
                           Blockchain Solutions Development
                         </Link>
                       </li>
-
                       <li className="nav-item">
                         <Link
                           to="/services/fullstack-platform-development"
@@ -155,8 +152,9 @@ const Navbar = () => {
                       {t("home.navbar.case")}
                     </Link>
                   </li>
-                  <li>
-                    <Lang></Lang>
+                  {/* Language selector for desktop view */}
+                  <li className="nav-item lang-desktop">
+                    <Lang />
                   </li>
                 </ul>
 
@@ -168,8 +166,8 @@ const Navbar = () => {
                       onClick={() => setCollapsed(true)}
                       className="default-btn"
                     >
-                      <i className="flaticon-right"></i>{" "}
-                      {t("home.button.contact")} <span></span>
+                      <i className="flaticon-right"></i> Contact Us{" "}
+                      <span></span>
                     </Link>
                   </div>
                 </div>

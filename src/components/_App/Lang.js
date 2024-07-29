@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
+import GlobeImage from "../../images/lang.png"
 
 const Lang = ({ title }) => {
   const { languages, changeLanguage, language } = useI18next()
@@ -25,10 +26,15 @@ const Lang = ({ title }) => {
       <h1 className="lang-title">
         <Link to="/">{title}</Link>
       </h1>
-      <button
-        className="lang-button bx bx-globe"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <button className="lang-button" onClick={() => setIsOpen(!isOpen)}>
+        <div className="globe">
+          <img
+            src={GlobeImage}
+            alt="Language"
+            className="lang-image"
+            width="20px"
+          />
+        </div>
         {shortNames[language]} <i className="bx bx-chevron-down"></i>
       </button>
       {isOpen && (

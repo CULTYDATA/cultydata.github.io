@@ -5120,3 +5120,17 @@
     max-width: 635px;
   }
 } /*# sourceMappingURL=responsive.css.map */
+
+@media (max-width: 768px) {
+  .lang-mobile {
+    display: block;
+  }
+
+  .lang-desktop {
+    display: none;
+  }
+  .lang-dropdown {
+    top: 24px;
+    z-index: 100;
+  }
+}
