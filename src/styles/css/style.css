@@ -8401,6 +8401,12 @@ Testimonials Area CSS
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.globe img {
+  animation-name: rotateme;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 
 /*================================================
 Partner Area CSS
@@ -11288,10 +11294,16 @@ New Team css
   text-align: center;
 }
 
+.lang-mobile {
+  display: none;
+}
+
+.lang-desktop {
+  display: block;
+}
+
 .lang-container {
   position: relative;
-  margin-left: 14px;
-  margin-right: 14px;
 }
 
 .lang-title {
@@ -11299,6 +11311,7 @@ New Team css
 }
 
 .lang-button {
+  gap: 4px;
   margin-top: 24px;
   background: none;
   border: none;
@@ -11314,20 +11327,7 @@ New Team css
 .lang-button i {
   font-size: 18px;
   position: relative;
-  top: 2px;
   display: inline-block;
-  margin-left: -4px;
-  margin-right: -3px;
-}
-
-.lang-button a i {
-  color: #03271f;
-  font-size: 18px;
-  position: relative;
-  top: 2px;
-  display: inline-block;
-  margin-left: -4px;
-  margin-right: -3px;
 }
 
 .lang-dropdown {
