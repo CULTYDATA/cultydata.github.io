@@ -2,29 +2,22 @@ import React from "react"
 import ServiceSidebar from "./ServiceSidebar"
 import details1 from "../../images/services/blockchain1.svg"
 import { Link } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const BlockchainSolutionsDevelopment = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="services-details-area ptb-50">
         <div className="container">
           <div className="row">
-           
             <div className="col-lg-8 col-md-12">
-              
-
               <div className="services-details-desc">
-              
-                <h3>Service Offering</h3>
-                <p>
-                  Our team excels in the design and development of blockchain
-                  solutions customized to meet your specific business
-                  requirements. From tokenized asset platforms to decentralized
-                  applications (DApps) and seamless blockchain integration, we
-                  cover all aspects of blockchain technology.
-                </p>
+                <h3>{t("service.bcsd.service")}</h3>
+                <p>{t("service.bcsd.service.desc")}</p>
 
-                <h3>Business Domain</h3>
+                <h3>{t("service.bcsd.domain")}</h3>
 
                 <div className="row">
                   <div className="col-lg-4 col-sm-6 col-md-6">
@@ -32,7 +25,7 @@ const BlockchainSolutionsDevelopment = () => {
                       <div className="icon">
                         <i className="flaticon-analytics"></i>
                       </div>
-                      Finance
+                      {t("service.bcsd.domain.finance")}
                     </div>
                   </div>
 
@@ -41,7 +34,7 @@ const BlockchainSolutionsDevelopment = () => {
                       <div className="icon">
                         <i className="flaticon-share"></i>
                       </div>
-                      Supply Chain
+                      {t("service.bcsd.domain.supplyChain")}
                     </div>
                   </div>
 
@@ -50,41 +43,34 @@ const BlockchainSolutionsDevelopment = () => {
                       <div className="icon">
                         <i className="flaticon-earth-day"></i>
                       </div>
-                      Environmental Sustainability
+                      {t("service.bcsd.domain.envSustain")}
                     </div>
                   </div>
                 </div>
                 <div className="services-details-image">
-                <img src={details1} alt="about" />
-                <span className="sub-title padding-top">
-                  Blockchain Solutions Development
-                </span>
-              </div>
-                <h3>Use Case Examples</h3>
+                  <img src={details1} alt={t("service.bcsd.title")} />
+                  <span className="sub-title padding-top">
+                    {t("service.bcsd.title")}
+                  </span>
+                </div>
+                <h3>{t("service.bcsd.useCases")}</h3>
                 <ul className="features">
                   <li>
-                    <span>
-                      A blockchain-based platform for trading digital assets,
-                      ensuring secure and transparent transactions.
-                    </span>
+                    <span>{t("service.bcsd.useCase1")}</span>
                   </li>
                   <li>
-                    <span>
-                      Notarization use case with multiple actors to issue,
-                      certify and consume claimed data.
-                    </span>
+                    <span>{t("service.bcsd.useCase2")}</span>
                   </li>
                 </ul>
-                <h3>Comprehensive Support</h3>
+                <h3>{t("service.bcsd.support")}</h3>
                 <p>
-                  Our feature team ensures end-to-end delivery for your
-                  blockchain projects.{" "}
+                  {t("service.bcsd.support.desc")}
                   <Link
                     to="/services/comprehensive-support"
                     className="learn-more-btn"
                   >
                     <i className="flaticon-right"></i>
-                    Learn More
+                    {t("home.button.learnMore")}
                   </Link>
                 </p>
               </div>
@@ -92,7 +78,7 @@ const BlockchainSolutionsDevelopment = () => {
 
             <div className="col-lg-4 col-md-12">
               <ServiceSidebar />
-            </div> 
+            </div>
           </div>
         </div>
       </section>

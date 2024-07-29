@@ -1,17 +1,21 @@
-import React from "react";
-import starIcon from "../../images/shape/icon.svg";
-import contact from "../../images/contact1.jpg";
+import React from "react"
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
+import starIcon from "../../images/shape/icon.svg"
+import contact from "../../images/contact1.jpg"
 
 const ContactForm = () => {
+  const { t } = useTranslation()
+
   return (
     <section className="contact-area ptb-40">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">
             <img src={starIcon} alt="contact" />
-            Get in Touch
+            {t("contactForm.subTitle")}
           </span>
-          <h2>Ready to Get Started?</h2>
+          <h2>{t("contactForm.title")}</h2>
         </div>
 
         <div className="row">
@@ -45,7 +49,7 @@ const ContactForm = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm

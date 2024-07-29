@@ -7,6 +7,8 @@ import PageBanner from "../../components/Common/PageBanner"
 import Footer from "../../components/_App/Footer"
 import BlockchainSolutionsDevelopment from "../../components/ServiceDetails/BlockchainSolutionsDevelopment"
 
+import { graphql } from "gatsby"
+
 const BlockchainSolutionsDevelopmentPage = () => {
   return (
     <Layout>
@@ -36,3 +38,17 @@ const BlockchainSolutionsDevelopmentPage = () => {
 export const Head = () => <Seo title="Blockchain Solutions Development" />
 
 export default BlockchainSolutionsDevelopmentPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

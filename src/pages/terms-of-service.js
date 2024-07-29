@@ -5,6 +5,7 @@ import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import Footer from "../components/_App/Footer"
 import termsImg from "../images/terms-of-service.jpg"
+import { graphql } from "gatsby"
 
 const TermsOfServicePage = () => {
   return (
@@ -138,3 +139,17 @@ const TermsOfServicePage = () => {
 export const Head = () => <Seo title="Terms Of Service" />
 
 export default TermsOfServicePage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

@@ -5,21 +5,23 @@ import starIcon from "../../images/shape/icon.svg"
 import project1 from "../../images/projects/project1.jpg"
 import project2 from "../../images/projects/project2.jpg"
 
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 const OurProjects = ({ showAll }) => {
+  const { t } = useTranslation()
   const projects = [
     {
       img: project1,
       link: "/case-studies/carbonplace",
       title: "Carbonplace",
-      description:
-        "Enterprise-grade trading platform on private blockchain for tokenized carbon credits",
+      description: t("home.project.p1.txt"),
     },
     {
       img: project2,
       link: "/case-studies/shared-kyc-solution",
       title: "Shared KYC Solution",
-      description:
-        "Decentralized KYC solution for investment fund asset managers",
+
+      description: t("home.project.p2.txt"),
     },
   ]
 
@@ -32,9 +34,9 @@ const OurProjects = ({ showAll }) => {
           <div className="section-title">
             <span className="sub-title">
               <img src={starIcon} alt="icon" />
-              Recent Projects
+              {t("home.project.subTitle")}
             </span>
-            <h2>Our Groundbreaking Projects</h2>
+            <h2> {t("home.project.title")}</h2>
           </div>
 
           <div className="row justify-content-center">
@@ -67,7 +69,7 @@ const OurProjects = ({ showAll }) => {
             <div className="case-study-more-btn">
               <Link to="/case-studies" className="default-btn">
                 <i className="flaticon-right"></i>
-                Load More <span></span>
+                {t("home.button.loadMore")} <span></span>
               </Link>
             </div>
           )}

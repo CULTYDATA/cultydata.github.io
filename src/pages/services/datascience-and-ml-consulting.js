@@ -6,6 +6,7 @@ import PageBanner from "../../components/Common/PageBanner"
 import DataScienceandMLConsulting from "../../components/ServiceDetails/DataScienceandMLConsulting"
 
 import Footer from "../../components/_App/Footer"
+import { graphql } from "gatsby"
 
 const DataScienceandMLConsultingPage = () => {
   return (
@@ -43,3 +44,17 @@ export const Head = () => (
 )
 
 export default DataScienceandMLConsultingPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`
