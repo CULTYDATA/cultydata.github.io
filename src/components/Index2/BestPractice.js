@@ -1,13 +1,15 @@
 import React, { useState } from "react"
 
-import serviceIcon1 from "../../images/services/core-service-1.png"
-import serviceIcon1Hover from "../../images/services/core-service-1-hover.png"
-import serviceIcon2 from "../../images/services/core-service-2.png"
-import serviceIcon2Hover from "../../images/services/core-service-2-hover.png"
+import serviceIcon1 from "../../images/services/1.svg"
+import serviceIcon1Hover from "../../images/services/11.svg"
+import serviceIcon2 from "../../images/services/2.svg"
+import serviceIcon2Hover from "../../images/services/22.svg"
 import serviceIcon3 from "../../images/services/core-service-3.png"
 import serviceIcon3Hover from "../../images/services/core-service-3-hover.png"
-import serviceIcon4 from "../../images/services/core-service-4.png"
-import serviceIcon4Hover from "../../images/services/core-service-4-hover.png"
+import serviceIcon4 from "../../images/services/3.svg"
+import serviceIcon4Hover from "../../images/services/33.svg"
+import serviceIcon5 from "../../images/services/4.svg"
+import serviceIcon5Hover from "../../images/services/44.svg"
 import starIcon from "../../images/shape/icon.svg"
 
 const BestPractice = () => {
@@ -145,15 +147,15 @@ const BestPractice = () => {
           <div className="col-lg-4 col-md-6 col-sm-12">
             <button
               className="single-process-box"
-              onMouseEnter={() => handleMouseEnter("serviceIcon4")}
+              onMouseEnter={() => handleMouseEnter("serviceIcon5")}
               onMouseLeave={handleMouseLeave}
             >
               <div className="icon">
                 <img
                   src={
-                    hoveredIcon === "serviceIcon4"
-                      ? serviceIcon4Hover
-                      : serviceIcon4
+                    hoveredIcon === "serviceIcon5"
+                      ? serviceIcon5Hover
+                      : serviceIcon5
                   }
                   alt="services"
                   className="service-icon"
