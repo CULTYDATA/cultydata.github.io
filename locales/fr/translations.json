@@ -11,6 +11,9 @@
   "home.navbar.services": "Services",
   "home.navbar.case": "Projets",
 
+  "aboutUs.pageTitle": "À Propos de Nous",
+  "team.pageTitle": "Équipe",
+
   "home.mainBanner.title": "Concrétisez votre vision produit : Du concept à la plateforme évolutive",
   "home.mainBanner.txt.1": "Bien venue chez",
   "home.mainBanner.txt.2": "Cultydata Studio",
@@ -226,5 +229,33 @@
   "caseStudy.sharedKYC.keyAchievements": "Principaux Accomplissements",
   "caseStudy.sharedKYC.achievement1": "Mise en œuvre des initiatives de décentralisation KYC basées sur la blockchain privée.",
   "caseStudy.sharedKYC.valueAddition": "Ajout de Valeur",
-  "caseStudy.sharedKYC.valueDescription": "Amélioration de l'efficacité des processus d'intégration des clients grâce à une approche décentralisée."
+  "caseStudy.sharedKYC.valueDescription": "Amélioration de l'efficacité des processus d'intégration des clients grâce à une approche décentralisée.",
+
+  "caseStudies.client": "Client :",
+  "caseStudies.location": "Lieu :",
+  "caseStudies.technologies": "Technologies :",
+  "caseStudies.completed": "Terminé :",
+  "caseStudies.website": "Site Web :",
+
+  "contactInfo.addressTitle": "Notre Adresse",
+  "contactInfo.address": "175 5th Ave, NY 10010, Paris",
+  "contactInfo.contactTitle": "Contact",
+  "contactInfo.email": "E-mail :",
+  "contactInfo.hoursTitle": "Heures d'Ouverture",
+  "contactInfo.weekdays": "Lundi - Vendredi : 09:00 - 20:00",
+  "contactInfo.weekends": "Dimanche & Samedi : 10:30 - 22:00",
+
+  "contactForm.subTitle": "Entrer en Contact",
+  "contactForm.title": "Prêt à Commencer?",
+
+  "privacyPolicy.title": "Politique de Confidentialité",
+  "privacyPolicy.pageTitle": "Vos Données, Notre Priorité : Confidentialité et Sécurité",
+  "privacyPolicy.section1.title": "Protection Complète des Données",
+  "privacyPolicy.section1.text": "Chez Cultydata Studio, nous mettons en œuvre des mesures rigoureuses de protection des données pour protéger vos informations sensibles. Nos politiques sont conformes au RGPD et à d'autres réglementations internationales sur la protection des données, garantissant que vos données sont traitées avec le plus grand soin et respect de la confidentialité.",
+  "privacyPolicy.section2.title": "Utilisation Transparente des Données",
+  "privacyPolicy.section2.text": "Nous croyons en la transparence totale concernant la collecte et l'utilisation des données. Notre politique de confidentialité détaillée décrit comment nous collectons, traitons et stockons les données, vous donnant une visibilité et un contrôle complets sur vos informations.",
+  "privacyPolicy.section3.title": "Infrastructure Sécurisée",
+  "privacyPolicy.section3.text": "Notre infrastructure cloud est construite avec la sécurité au cœur. Nous employons des normes de cryptage de pointe, des audits de sécurité réguliers et des contrôles d'accès robustes pour protéger contre l'accès non autorisé et les menaces potentielles.",
+  "privacyPolicy.section4.title": "Conformité Continue",
+  "privacyPolicy.section4.text": "Nous restons à jour avec l'évolution des lois sur la protection des données et des normes de l'industrie, mettant continuellement à jour nos pratiques pour garantir une conformité continue et les plus hauts niveaux de sécurité des données pour nos clients."
 }

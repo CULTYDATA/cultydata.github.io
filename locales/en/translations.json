@@ -11,6 +11,9 @@
   "home.navbar.services": "Services",
   "home.navbar.case": "Case Studies",
 
+  "aboutUs.pageTitle": "About Us",
+  "team.pageTitle": "Team",
+
   "home.mainBanner.title": "Empowering Your Digital Vision: From Concept to Scale-Ready Platform",
   "home.mainBanner.txt.1": "Welcome to",
   "home.mainBanner.txt.2": "Cultydata Studio",
@@ -227,5 +230,33 @@
   "caseStudy.sharedKYC.keyAchievements": "Key Achievements",
   "caseStudy.sharedKYC.achievement1": "Implemented KYC decentralization initiatives based on private blockchain.",
   "caseStudy.sharedKYC.valueAddition": "Value Addition",
-  "caseStudy.sharedKYC.valueDescription": "Improved efficiency in client onboarding processes through a decentralized approach."
+  "caseStudy.sharedKYC.valueDescription": "Improved efficiency in client onboarding processes through a decentralized approach.",
+
+  "caseStudies.client": "Client:",
+  "caseStudies.location": "Location:",
+  "caseStudies.technologies": "Technologies:",
+  "caseStudies.completed": "Completed:",
+  "caseStudies.website": "Website:",
+
+  "contactInfo.addressTitle": "Our Address",
+  "contactInfo.address": "175 5th Ave, NY 10010, Paris",
+  "contactInfo.contactTitle": "Contact",
+  "contactInfo.email": "E-mail:",
+  "contactInfo.hoursTitle": "Hours of Operation",
+  "contactInfo.weekdays": "Monday - Friday: 09:00 - 20:00",
+  "contactInfo.weekends": "Sunday & Saturday: 10:30 - 22:00",
+
+  "contactForm.subTitle": "Get in Touch",
+  "contactForm.title": "Ready to Get Started?",
+
+  "privacyPolicy.title": "Privacy Policy",
+  "privacyPolicy.pageTitle": "Your Data, Our Priority: Privacy and Security",
+  "privacyPolicy.section1.title": "Comprehensive Data Protection",
+  "privacyPolicy.section1.text": "At Cultydata Studio, we implement rigorous data protection measures to safeguard your sensitive information. Our policies comply with GDPR and other international data protection regulations, ensuring your data is handled with the utmost care and respect for privacy.",
+  "privacyPolicy.section2.title": "Transparent Data Usage",
+  "privacyPolicy.section2.text": "We believe in full transparency regarding data collection and usage. Our detailed privacy policy outlines how we collect, process, and store data, giving you complete visibility and control over your information.",
+  "privacyPolicy.section3.title": "Secure Infrastructure",
+  "privacyPolicy.section3.text": "Our cloud infrastructure is built with security at its core. We employ industry-leading encryption standards, regular security audits, and robust access controls to protect against unauthorized access and potential threats.",
+  "privacyPolicy.section4.title": "Continuous Compliance",
+  "privacyPolicy.section4.text": "We stay abreast of evolving data protection laws and industry standards, continuously updating our practices to ensure ongoing compliance and the highest levels of data security for our clients."
 }
