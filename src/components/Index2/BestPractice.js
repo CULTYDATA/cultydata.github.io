@@ -1,13 +1,17 @@
 import React, { useState } from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
-import serviceIcon1 from "../../images/services/core-service-1.png"
-import serviceIcon1Hover from "../../images/services/core-service-1-hover.png"
-import serviceIcon2 from "../../images/services/core-service-2.png"
-import serviceIcon2Hover from "../../images/services/core-service-2-hover.png"
-import serviceIcon3 from "../../images/services/core-service-3.png"
-import serviceIcon3Hover from "../../images/services/core-service-3-hover.png"
-import serviceIcon4 from "../../images/services/core-service-4.png"
-import serviceIcon4Hover from "../../images/services/core-service-4-hover.png"
+import serviceIcon1 from "../../images/services/bp-1.svg"
+import serviceIcon1Hover from "../../images/services/bp-1-hover.svg"
+import serviceIcon2 from "../../images/services/bp-2.svg"
+import serviceIcon2Hover from "../../images/services/bp-2-hover.svg"
+import serviceIcon3 from "../../images/services/bp-3.png"
+import serviceIcon3Hover from "../../images/services/bp-3-hover.png"
+import serviceIcon4 from "../../images/services/bp-4.png"
+import serviceIcon4Hover from "../../images/services/bp-4-hover.png"
+
+import serviceIcon5 from "../../images/services/bp-5.svg"
+import serviceIcon5Hover from "../../images/services/bp-5-hover.svg"
+
 import starIcon from "../../images/shape/icon.svg"
 
 const BestPractice = () => {
@@ -52,8 +56,8 @@ const BestPractice = () => {
       desc2: t("home.bestPractice.svc4.desc2"),
     },
     {
-      img: serviceIcon4,
-      hoverImg: serviceIcon4Hover,
+      img: serviceIcon5,
+      hoverImg: serviceIcon5Hover,
       title: t("home.bestPractice.svc5.title"),
       desc1: t("home.bestPractice.svc5.desc1"),
       desc2: t("home.bestPractice.svc5.desc2"),
