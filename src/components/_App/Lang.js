@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link, useI18next } from "gatsby-plugin-react-i18next"
 
 const Lang = ({ title }) => {
-  const { languages, originalPath, changeLanguage, language } = useI18next()
+  const { languages, changeLanguage, language } = useI18next()
   const [isOpen, setIsOpen] = useState(false)
 
   const handleLanguageChange = lng => {
@@ -34,8 +34,10 @@ const Lang = ({ title }) => {
       {isOpen && (
         <ul className="lang-dropdown">
           {languages.map(lng => (
-            <li key={lng} onClick={() => handleLanguageChange(lng)}>
-              {languageNames[lng]}
+            <li key={lng}>
+              <button onClick={() => handleLanguageChange(lng)}>
+                {languageNames[lng]}
+              </button>
             </li>
           ))}
         </ul>

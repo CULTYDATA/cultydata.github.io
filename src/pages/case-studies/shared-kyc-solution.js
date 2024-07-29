@@ -6,6 +6,7 @@ import PageBanner from "../../components/Common/PageBanner"
 
 import Footer from "../../components/_App/Footer"
 import SharedKYCDetails from "../../components/CaseStudiesDetails/SharedKYCDetails"
+import { graphql } from "gatsby"
 
 const CaseDetailsPage = () => {
   return (
@@ -36,3 +37,17 @@ const CaseDetailsPage = () => {
 export const Head = () => <Seo title="Case Details" />
 
 export default CaseDetailsPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

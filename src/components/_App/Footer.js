@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from "gatsby"
 import logo from "../../images/full-logo.svg"
-// import footerMap from "../../images/footer-map.png"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const Footer = () => {
+  const { t } = useTranslation()
   const currentYear = new Date().getFullYear()
 
   return (
@@ -15,10 +16,7 @@ const Footer = () => {
               <Link to="/" className="logo">
                 <img src={logo} alt="logo" />
               </Link>
-              <p>
-                Cultydata Studio: Where Tech Expertise Meets Startup
-                Acceleration
-              </p>
+              <p>{t("footer.description")}</p>
 
               <ul className="social-link">
                 <li>
@@ -37,21 +35,21 @@ const Footer = () => {
 
           <div className="col-lg-2 col-sm-6">
             <div className="single-footer-widget pl-5">
-              <h3>Explore</h3>
+              <h3>{t("footer.explore")}</h3>
 
               <ul className="footer-links-list">
                 <li>
-                  <Link to="/">Home</Link>
+                  <Link to="/">{t("footer.home")}</Link>
                 </li>
                 <li>
-                  <Link to="/about-us">About</Link>
+                  <Link to="/about-us">{t("footer.about")}</Link>
                 </li>
 
                 <li>
-                  <Link to="/blog">Our Blog</Link>
+                  <Link to="/blog">{t("footer.blog")}</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link>
+                  <Link to="/contact">{t("footer.contact")}</Link>
                 </li>
               </ul>
             </div>
@@ -59,17 +57,17 @@ const Footer = () => {
 
           <div className="col-lg-2 col-sm-6">
             <div className="single-footer-widget">
-              <h3>Resources</h3>
+              <h3>{t("footer.resources")}</h3>
 
               <ul className="footer-links-list">
                 <li>
-                  <Link to="/services">Our Services</Link>
+                  <Link to="/services">{t("footer.services")}</Link>
                 </li>
                 <li>
-                  <Link to="/testimonials">Testimonials</Link>
+                  <Link to="/testimonials">{t("footer.testimonials")}</Link>
                 </li>
                 <li>
-                  <Link to="/team">Team</Link>
+                  <Link to="/team">{t("footer.team")}</Link>
                 </li>
               </ul>
             </div>
@@ -77,12 +75,12 @@ const Footer = () => {
 
           <div className="col-lg-4 col-sm-6">
             <div className="single-footer-widget">
-              <h3>Address</h3>
+              <h3>{t("footer.address")}</h3>
 
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-map"></i>
-                  175 5th Ave, NY 10010, Paris
+                  {t("footer.addressDetails")}
                 </li>
 
                 <li>
@@ -99,16 +97,13 @@ const Footer = () => {
         <div className="footer-bottom-area">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
-              <p>
-                Copyright © {currentYear} <b className="bold-text">Cultydata</b>
-                . All rights reserved.
-              </p>
+              <p>{t("footer.copyright", { year: currentYear })}</p>
             </div>
 
             <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <Link to="/privacy-policy">Privacy Policy</Link>
+                  <Link to="/privacy-policy">{t("footer.privacyPolicy")}</Link>
                 </li>
               </ul>
             </div>

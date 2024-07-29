@@ -5,8 +5,12 @@ import { Link } from "gatsby"
 import logo from "../../images/full-logo.svg"
 import Lang from "./Lang"
 
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 const Navbar = () => {
   const [collapsed, setCollapsed] = useRecoilState(collapsedState)
+
+  const { t } = useTranslation()
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed)
@@ -64,7 +68,7 @@ const Navbar = () => {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <Link to="/" className="nav-link">
-                      Home
+                      {t("home.navbar.home")}
                     </Link>
                   </li>
 
@@ -74,7 +78,8 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      About Us <i className="bx bx-chevron-down"></i>
+                      {t("home.navbar.about")}{" "}
+                      <i className="bx bx-chevron-down"></i>
                     </Link>
                     <ul className="dropdown-menu">
                       <li className="nav-item">
@@ -84,7 +89,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          About Us
+                          {t("home.navbar.about")}
                         </Link>
                       </li>
 
@@ -107,7 +112,8 @@ const Navbar = () => {
                       onClick={e => e.preventDefault()}
                       className="nav-link"
                     >
-                      Services <i className="bx bx-chevron-down"></i>
+                      {t("home.navbar.services")}{" "}
+                      <i className="bx bx-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
@@ -146,23 +152,12 @@ const Navbar = () => {
                   </li>
                   <li className="nav-item">
                     <Link to="/case-studies" className="nav-link">
-                      Case Studies
+                      {t("home.navbar.case")}
                     </Link>
                   </li>
-                  <li >
-                    <Lang></Lang> 
+                  <li>
+                    <Lang></Lang>
                   </li>
-
-                  {/* <li className="nav-item">
-                    <Link
-                      to="/blog"
-                      activeClassName="active"
-                      onClick={() => setCollapsed(true)}
-                      className="nav-link"
-                    >
-                      Blog
-                    </Link>
-                  </li> */}
                 </ul>
 
                 <div className="others-option d-flex align-items-center">
@@ -173,8 +168,8 @@ const Navbar = () => {
                       onClick={() => setCollapsed(true)}
                       className="default-btn"
                     >
-                      <i className="flaticon-right"></i> Contact Us{" "}
-                      <span></span>
+                      <i className="flaticon-right"></i>{" "}
+                      {t("home.button.contact")} <span></span>
                     </Link>
                   </div>
                 </div>

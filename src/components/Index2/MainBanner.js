@@ -6,14 +6,14 @@ import shape2 from "../../images/shape/shape2.png"
 
 import lineborder from "../../images/line-round.svg"
 
-import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const MainBanner = () => {
   React.useEffect(() => {
     AOS.init()
   }, [])
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <>
@@ -28,7 +28,7 @@ const MainBanner = () => {
                   data-aos-delay="100"
                   style={{ fontSize: "45px" }}
                 >
-                  {t('home.mainBanner.title')}
+                  {t("home.mainBanner.title")}
                 </h1>
 
                 <p
@@ -36,8 +36,9 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  {t('home.mainBanner.txt.1')} <b className="bold-text">{t('home.mainBanner.txt.2')}</b>{t('home.mainBanner.txt.3')}
-                  
+                  {t("home.mainBanner.txt.1")}{" "}
+                  <b className="bold-text">{t("home.mainBanner.txt.2")}</b>
+                  {t("home.mainBanner.txt.3")}
                 </p>
 
                 <div
@@ -48,7 +49,7 @@ const MainBanner = () => {
                 >
                   <Link to="/about-us" className="default-btn">
                     <i className="flaticon-right"></i>
-                    Learn More <span></span>
+                    {t("home.button.learnMore")} <span></span>
                   </Link>
                 </div>
               </div>

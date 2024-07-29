@@ -6,11 +6,11 @@ import PageBanner from "../components/Common/PageBanner"
 import ContactInfo from "../components/Contact/ContactInfo"
 import ContactForm from "../components/Contact/ContactForm"
 import Footer from "../components/_App/Footer"
+import { graphql } from "gatsby"
 
 const ContactPage = () => {
   return (
     <Layout>
-
       <Navbar />
 
       <PageBanner
@@ -25,7 +25,6 @@ const ContactPage = () => {
       <ContactForm />
 
       <Footer />
-
     </Layout>
   )
 }
@@ -38,3 +37,17 @@ const ContactPage = () => {
 export const Head = () => <Seo title="Contact" />
 
 export default ContactPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

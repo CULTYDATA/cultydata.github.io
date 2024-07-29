@@ -6,6 +6,7 @@ import PageBanner from "../../components/Common/PageBanner"
 
 import Footer from "../../components/_App/Footer"
 import ComprehensiveSupport from "../../components/ServiceDetails/ComprehensiveSupport"
+import { graphql } from "gatsby"
 
 const ComprehensiveSupportPage = () => {
   return (
@@ -42,3 +43,17 @@ export const Head = () => (
 )
 
 export default ComprehensiveSupportPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

@@ -1,13 +1,15 @@
 import React from "react"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const CaseStudiesSidebar = ({
   client,
-
   location,
   technologies,
   completedDate,
   website,
 }) => {
+  const { t } = useTranslation()
+
   return (
     <div className="case-studies-sidebar-sticky">
       <div className="case-studies-details-info">
@@ -16,8 +18,7 @@ const CaseStudiesSidebar = ({
             <div className="icon">
               <i className="bx bx-user-pin"></i>
             </div>
-            <span>Client:</span>
-
+            <span>{t("caseStudies.client")}</span>
             {client}
           </li>
 
@@ -25,7 +26,7 @@ const CaseStudiesSidebar = ({
             <div className="icon">
               <i className="bx bx-map"></i>
             </div>
-            <span>Location:</span>
+            <span>{t("caseStudies.location")}</span>
             {location}
           </li>
 
@@ -33,7 +34,7 @@ const CaseStudiesSidebar = ({
             <div className="icon">
               <i className="bx bx-purchase-tag"></i>
             </div>
-            <span>Technologies:</span>
+            <span>{t("caseStudies.technologies")}</span>
             {technologies.join(", ")}
           </li>
 
@@ -41,7 +42,7 @@ const CaseStudiesSidebar = ({
             <div className="icon">
               <i className="bx bx-check"></i>
             </div>
-            <span>Completed:</span>
+            <span>{t("caseStudies.completed")}</span>
             {completedDate}
           </li>
 
@@ -49,7 +50,7 @@ const CaseStudiesSidebar = ({
             <div className="icon">
               <i className="bx bx-globe"></i>
             </div>
-            <span>Website:</span>
+            <span>{t("caseStudies.website")}</span>
             <a href={website.url} target="_blank" rel="noreferrer">
               {website.name}
             </a>

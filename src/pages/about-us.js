@@ -4,21 +4,24 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import AboutUsContent from "../components/AboutUs/AboutUsContent"
-
 import Footer from "../components/_App/Footer"
 import WhyChooseUs from "../components/AboutUs/WhyChooseUs"
 import OurValueProposition from "../components/AboutUs/OurValueProposition"
+import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const AboutUsPage = () => {
+  const { t } = useTranslation()
+
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="About Us"
-        homePageText="Home"
+        pageTitle={t("aboutUs.pageTitle")}
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        activePageText="About Us"
+        activePageText={t("aboutUs.pageTitle")}
       />
 
       <AboutUsContent />
@@ -29,11 +32,20 @@ const AboutUsPage = () => {
   )
 }
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="About Us" />
 
 export default AboutUsPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

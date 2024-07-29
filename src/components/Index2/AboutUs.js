@@ -7,10 +7,14 @@ import icon1 from "../../images/icons/icon1.png"
 import icon2 from "../../images/icons/icon2.png"
 import img2 from "../../images/about/about-us2.png"
 
+import { useTranslation } from "gatsby-plugin-react-i18next"
+
 const AboutUs = () => {
   React.useEffect(() => {
     AOS.init()
   }, [])
+
+  const { t } = useTranslation()
   return (
     <>
       <section className="about-area ptb-50">
@@ -35,35 +39,33 @@ const AboutUs = () => {
                 <div className="content">
                   <span className="sub-title justify-content-center">
                     <img src={starIcon} alt="banner" />
-                    About Us
+                    {t("home.aboutUs.subTitle")}
                   </span>
-                  <h2>
-                    Cultydata Studio: Where Tech Expertise Meets Startup
-                    Acceleration
-                  </h2>
+                  <h2>{t("home.aboutUs.title")}</h2>
                   <p>
-                    At <b className="bold-text">Cultydata Studio</b>, we are
-                    dedicated to turning your digital vision into reality. Our
-                    team of experts brings a wealth of experience and
-                    cross-disciplinary skills to deliver cutting-edge solutions.
+                    {t("home.aboutUs.txt.1")}
+                    <b className="bold-text"> {t("home.aboutUs.txt.2")}</b>{" "}
+                    {t("home.aboutUs.txt.3")}
                   </p>
 
                   <ul className="features-list">
                     <li>
                       <img src={icon1} alt="banner" width="20%" />
-                      <h3>50 Years</h3>
-                      <p>Combined experience</p>
+                      <h3> {t("home.aboutUs.txt.4")}</h3>
+                      <p> {t("home.aboutUs.txt.5")}</p>
                     </li>
 
                     <li>
                       <img src={icon2} alt="banner" width="20%" />
-                      <h3>100%</h3>
-                      <p>Satisfaction rate</p>
+                      <h3> {t("home.aboutUs.txt.6")}</h3>
+                      <p> {t("home.aboutUs.txt.7")}</p>
                     </li>
                   </ul>
 
                   <Link to="/about-us" className="default-btn">
-                    <i className="flaticon-right"></i>More About Us<span></span>
+                    <i className="flaticon-right"></i>
+                    {t("home.button.moreAboutUs")}
+                    <span></span>
                   </Link>
                 </div>
               </div>

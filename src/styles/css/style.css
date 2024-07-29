@@ -2236,6 +2236,7 @@ Solutions Area CSS
 }
 
 .single-solutions-box {
+  height: 90%;
   margin-bottom: 30px;
   padding: 50px 30px;
   border-radius: 5px;
@@ -11241,31 +11242,24 @@ New Team css
   left: 30px;
 }
 
-
 .sec-img-one {
-  
-  width: 60%; 
-  height: 65%; 
-  
+  width: 60%;
+  height: 65%;
 }
 
 .sec-img-two {
-  
-  width: 25%; 
-  height: 25%; 
+  width: 25%;
+  height: 25%;
   vertical-align: bottom;
   position: relative;
   right: 100px;
-  
 }
-
-
 
 .single-process-box .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; 
+  height: 100px;
 }
 
 .single-process-box {
@@ -11277,17 +11271,17 @@ New Team css
 }
 
 .single-process-box h3 {
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
 .single-process-box ul {
-  text-align: left; 
+  text-align: left;
   padding-left: 20px;
 }
 
 .service-icon {
   width: 80px;
-  height: auto; 
+  height: auto;
 }
 
 .section-title {
@@ -11345,16 +11339,27 @@ New Team css
   z-index: 1;
   list-style: none;
   padding: 0;
-
   min-width: 130px;
+  background: #ffffff;
 }
 
 .lang-dropdown li {
-  padding: 8px 16px;
-  cursor: pointer;
+  padding: 0;
 }
 
-.lang-dropdown li:hover,
-.lang-dropdown li.active {
+.lang-dropdown button {
+  padding: 8px 16px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #03271f;
+}
+
+.lang-dropdown button:hover,
+.lang-dropdown button:focus,
+.lang-dropdown button.active {
   color: #35796a;
+  outline: none;
 }

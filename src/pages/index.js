@@ -11,14 +11,13 @@ import Testimonials from "../components/Index2/Testimonials"
 import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
 
-
 import OurEngagementModel from "../components/Index2/OurEngagementModel"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
 import TeamMembers from "../components/Index2/TeamMembers"
 import OurProjects from "../components/Index2/OurProjects"
-import ServicesOne from "../components/Services/ServicesOne"
+import OurServices from "../components/Index2/OurServices"
 
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby"
 import BestPractice from "../components/Index2/BestPractice"
 
 const IndexPage = () => {
@@ -29,9 +28,7 @@ const IndexPage = () => {
       <MainBanner />
       <AboutUs />
 
-      <ServicesOne />
-
-      
+      <OurServices />
 
       <OurEngagementModel />
 
@@ -39,7 +36,6 @@ const IndexPage = () => {
 
       <BestPractice />
 
-      
       <OurProjects showAll={false} />
 
       <Testimonials />
@@ -63,8 +59,8 @@ export const Head = () => <Seo title="Home" />
 export default IndexPage
 
 export const query = graphql`
-  query($language: String!) {
-    locales: allLocale(filter: {language: {eq: $language}}) {
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
           ns
@@ -74,4 +70,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

@@ -6,6 +6,7 @@ import PageBanner from "../components/Common/PageBanner"
 import TestimonialsStyleOne from "../components/Testimonials/TestimonialsStyleOne"
 import TestimonialsStyleTwo from "../components/Testimonials/TestimonialsStyleTwo"
 import Footer from "../components/_App/Footer"
+import { graphql } from "gatsby"
 
 const TestimonialsPage = () => {
   return (
@@ -36,3 +37,17 @@ const TestimonialsPage = () => {
 export const Head = () => <Seo title="Testimonials" />
 
 export default TestimonialsPage
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`

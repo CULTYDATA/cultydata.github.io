@@ -1,4 +1,5 @@
 import React from "react"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import CaseStudiesSidebar from "./CaseStudiesSidebar"
 import details1 from "../../images/projects/tradding11.svg"
 
@@ -11,45 +12,31 @@ const caseStudyData = {
 }
 
 const CarbonplaceDetails = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <section className="case-studies-details-area ptb-50">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-md-12">
-             
               <div className="case-studies-details-desc">
-                <h3>Carbonplace</h3>
-                <p>
-                  Designed and deployed an enterprise-grade trading platform on
-                  a private blockchain (Hyperledger Besu) for tokenized carbon
-                  credits.
-                </p>
+                <h3>{t("caseStudy.client")}</h3>
+                <p>{t("caseStudy.description")}</p>
                 <div className="content">
-                  <h3>Key Achievements</h3>
+                  <h3>{t("caseStudy.keyAchievements")}</h3>
                   <ul>
-                    <li>
-                      Facilitated work organization across a globally
-                      distributed team.
-                    </li>
-                    <li>
-                      Transitioned CarbonPlace from POC to MVP, expanding from 4
-                      banks to a 9-bank consortium and securing $45 million in
-                      funding.
-                    </li>
+                    <li>{t("caseStudy.achievement1")}</li>
+                    <li>{t("caseStudy.achievement2")}</li>
                   </ul>
                 </div>
 
                 <div className="case-studies-details-image">
-                <img src={details1} alt="about" />
-              </div>
+                  <img src={details1} alt={t("caseStudy.client")} />
+                </div>
 
-                <h3>Value Addition</h3>
-                <p>
-                  Created a scalable and secure blockchain-based trading
-                  platform that supports a significant number of financial
-                  institutions.
-                </p>
+                <h3>{t("caseStudy.valueAddition")}</h3>
+                <p>{t("caseStudy.valueDescription")}</p>
               </div>
             </div>
 
