@@ -216,6 +216,14 @@
   "service.comprehensiveSupport.useCase1": "Fourniture d'une plateforme numérique complète pour une startup, couvrant le design, le développement et le déploiement, suivie d'une remise fluide à leur équipe interne.",
   "service.comprehensiveSupport.useCase2": "Soutien à une institution financière dans la création et le déploiement d'une nouvelle application, y compris une intégration approfondie de QA et de sécurité, avec un soutien continu pour la maintenance post-lancement.",
 
+  "services.sidebar.blockchain": "Blockchain Solutions Development",
+  "services.sidebar.fullstack": "Full Stack Platform Development",
+  "services.sidebar.datascience": "Data Science and Machine Learning Consulting",
+  "services.sidebar.contactInfo": "Infos de Contact",
+  "services.sidebar.location": "Lieu:",
+  "services.sidebar.paris": "Paris",
+  "services.sidebar.email": "E-mail:",
+
   "caseStudy.client": "Carbonplace",
   "caseStudy.description": "Conçu et déployé une plateforme de trading de qualité entreprise sur une blockchain privée (Hyperledger Besu) pour des crédits carbone tokenisés.",
   "caseStudy.keyAchievements": "Principaux Accomplissements",
