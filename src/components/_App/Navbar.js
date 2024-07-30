@@ -166,7 +166,8 @@ const Navbar = () => {
                       onClick={() => setCollapsed(true)}
                       className="default-btn"
                     >
-                      <i className="flaticon-right"></i> Contact Us{" "}
+                      <i className="flaticon-right"></i>{" "}
+                      {t("home.button.contact")}
                       <span></span>
                     </Link>
                   </div>
