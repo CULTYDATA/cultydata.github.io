@@ -3,26 +3,25 @@ import Layout from "../components/_App/layout"
 import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
-import TestimonialsStyleOne from "../components/Testimonials/TestimonialsStyleOne"
-import TestimonialsStyleTwo from "../components/Testimonials/TestimonialsStyleTwo"
+import Testimonials from "../components/Index2/Testimonials"
 import Footer from "../components/_App/Footer"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const TestimonialsPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
         pageTitle="Testimonials"
-        homePageText="Home"
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
         activePageText="Testimonials"
       />
 
-      <TestimonialsStyleOne />
-
-      <TestimonialsStyleTwo />
+      <Testimonials />
 
       <Footer />
     </Layout>

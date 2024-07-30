@@ -53,15 +53,18 @@ const BlockchainSolutionsDevelopment = () => {
                     {t("service.bcsd.title")}
                   </span>
                 </div>
+
                 <h3>{t("service.bcsd.useCases")}</h3>
-                <ul className="features">
-                  <li>
-                    <span>{t("service.bcsd.useCase1")}</span>
-                  </li>
-                  <li>
-                    <span>{t("service.bcsd.useCase2")}</span>
-                  </li>
-                </ul>
+                <div className="content">
+                  <ul>
+                    <li>
+                      <span>{t("service.bcsd.useCase1")}</span>
+                    </li>
+                    <li>
+                      <span>{t("service.bcsd.useCase2")}</span>
+                    </li>
+                  </ul>
+                </div>
                 <h3>{t("service.bcsd.support")}</h3>
                 <p>
                   {t("service.bcsd.support.desc")}

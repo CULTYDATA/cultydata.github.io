@@ -55,7 +55,7 @@ const OurServices = () => {
                   <p>{service.text}</p>
 
                   <Link className="view-details-btn" to={service.link}>
-                    View Details
+                    {t("home.button.viewDetails")}
                   </Link>
                 </div>
               </div>

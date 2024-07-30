@@ -3608,7 +3608,7 @@ Services Details Area CSS
 .services-details-desc .content ul li {
   margin-bottom: 12px;
   font-weight: 600;
-  color: #6b6b84;
+  color: #03271f;
   position: relative;
   padding-left: 20px;
 }
@@ -5460,7 +5460,7 @@ CaseStudy/Projects Details Area CSS
 .case-studies-details-desc .content ul li {
   margin-bottom: 12px;
   font-weight: 600;
-  color: #6b6b84;
+  color: #03271f;
   position: relative;
   padding-left: 20px;
 }
@@ -11362,4 +11362,9 @@ New Team css
 .lang-dropdown button.active {
   color: #35796a;
   outline: none;
+}
+
+.hyper-link:hover {
+  text-decoration: underline;
+  color: #0c7264;
 }

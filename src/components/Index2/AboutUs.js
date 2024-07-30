@@ -44,7 +44,7 @@ const AboutUs = () => {
                   <h2>{t("home.aboutUs.title")}</h2>
                   <p>
                     {t("home.aboutUs.txt.1")}
-                    <b className="bold-text"> {t("home.aboutUs.txt.2")}</b>{" "}
+                    <b className="bold-text"> {t("home.aboutUs.txt.2")}</b>
                     {t("home.aboutUs.txt.3")}
                   </p>
 

@@ -124,14 +124,16 @@ const ComprehensiveSupport = () => {
                 </div>
 
                 <h3>{t("service.comprehensiveSupport.useCases")}</h3>
-                <ul className="features">
-                  <li>
-                    <span>{t("service.comprehensiveSupport.useCase1")}</span>
-                  </li>
-                  <li>
-                    <span>{t("service.comprehensiveSupport.useCase2")}</span>
-                  </li>
-                </ul>
+                <div className="content">
+                  <ul>
+                    <li>
+                      <span>{t("service.comprehensiveSupport.useCase1")}</span>
+                    </li>
+                    <li>
+                      <span>{t("service.comprehensiveSupport.useCase2")}</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-lg-4 col-md-12">
