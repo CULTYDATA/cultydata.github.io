@@ -102,7 +102,7 @@ const Footer = () => {
 
             <div className="col-lg-6 col-md-6">
               <ul>
-                <li>
+                <li className="hyper-link">
                   <Link to="/privacy-policy">{t("footer.privacyPolicy")}</Link>
                 </li>
               </ul>

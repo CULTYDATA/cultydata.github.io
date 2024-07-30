@@ -53,11 +53,13 @@ const FullStackPlatformDevelopment = () => {
                 </div>
 
                 <h3>{t("service.fspd.useCases")}</h3>
-                <ul className="features">
-                  <li>
-                    <span>{t("service.fspd.useCase1")}</span>
-                  </li>
-                </ul>
+                <div className="content">
+                  <ul>
+                    <li>
+                      <span>{t("service.fspd.useCase1")}</span>
+                    </li>
+                  </ul>
+                </div>
 
                 <h3>{t("service.fspd.support")}</h3>
                 <p>

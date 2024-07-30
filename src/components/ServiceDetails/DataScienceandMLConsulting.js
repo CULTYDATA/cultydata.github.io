@@ -52,14 +52,16 @@ const DataScienceandMLConsulting = () => {
                 </div>
 
                 <h3>{t("service.dsml.useCases")}</h3>
-                <ul className="features">
-                  <li>
-                    <span>{t("service.dsml.useCase1")}</span>
-                  </li>
-                  <li>
-                    <span>{t("service.dsml.useCase2")}</span>
-                  </li>
-                </ul>
+                <div className="content">
+                  <ul>
+                    <li>
+                      <span>{t("service.dsml.useCase1")}</span>
+                    </li>
+                    <li>
+                      <span>{t("service.dsml.useCase2")}</span>
+                    </li>
+                  </ul>
+                </div>
 
                 <h3>{t("service.dsml.support")}</h3>
                 <p>
