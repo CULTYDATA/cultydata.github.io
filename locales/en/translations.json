@@ -14,6 +14,14 @@
   "aboutUs.pageTitle": "About Us",
   "team.pageTitle": "Team",
 
+  "services.svc1.blockchain": "Blockchain Solutions Development",
+  "services.svc2.fullstack": "Full Stack Platform Development",
+  "services.svc3.datascience": "Data Science and",
+  "services.svc3.machinelearning": "Machine Learning Consulting",
+  "services.comprehensive.txt1": "Comprehensive Feature Team for",
+  "services.comprehensive.txt2": "End-to-End Delivery",
+  "services.comprehensive.combined": "Comprehensive Feature Team for End-to-End Delivery",
+
   "home.mainBanner.title": "Empowering Your Digital Vision: From Concept to Scale-Ready Platform",
   "home.mainBanner.txt.1": "Welcome to",
   "home.mainBanner.txt.2": "Cultydata Studio",
@@ -31,8 +39,8 @@
 
   "home.services.subTitle": "Our Services",
   "home.services.title": "Cutting-Edge Technology Services",
-  "home.services.svc.1.title": " Blockchain Solutions Development",
-  "home.services.svc.1.txt": "  We design and develop custom blockchain solutions, including tokenized asset platforms, DApps, and seamless blockchain integration.",
+  "home.services.svc.1.title": "Blockchain Solutions Development",
+  "home.services.svc.1.txt": "We design and develop custom blockchain solutions, including tokenized asset platforms, DApps, and seamless blockchain integration.",
   "home.services.svc.2.title": "Full-Stack Platform Development",
   "home.services.svc.2.txt": " We provide end-to-end development services for Web2 and Web3 platforms, covering front-end and back-end development, API integration, and cloud deployment.",
   "home.services.svc.3.title": "Data Science and Machine Learning Consulting",
@@ -217,9 +225,6 @@
   "service.comprehensiveSupport.useCase1": "Delivered a complete digital platform for a startup, covering design, development, and deployment, followed by a seamless handover to their internal team.",
   "service.comprehensiveSupport.useCase2": "Supported a financial institution in building and deploying a new application, including extensive QA and security integration, with ongoing support for post-launch maintenance.",
 
-  "services.sidebar.blockchain": "Blockchain Solutions Development",
-  "services.sidebar.fullstack": "Full Stack Platform Development",
-  "services.sidebar.datascience": "Data Science and Machine Learning Consulting",
   "services.sidebar.contactInfo": "Contact Info",
   "services.sidebar.location": "Location:",
   "services.sidebar.paris": "Paris",

@@ -1,7 +1,6 @@
 import React from "react"
 import starIcon from "../../images/shape/icon.svg"
 import client1 from "../../images/testimonials/client1.jpg"
-import shape from "../../images/shape/shape1.svg"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Autoplay } from "swiper"
 import { useTranslation } from "gatsby-plugin-react-i18next"
@@ -66,10 +65,6 @@ const Testimonials = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
-
-      <div className="shape-img1">
-        <img src={shape} alt="testimonial" />
       </div>
     </div>
   )

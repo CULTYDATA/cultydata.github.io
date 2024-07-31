@@ -7,23 +7,27 @@ import PageBanner from "../../components/Common/PageBanner"
 import Footer from "../../components/_App/Footer"
 import ComprehensiveSupport from "../../components/ServiceDetails/ComprehensiveSupport"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ComprehensiveSupportPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
         pageTitle={
-          <span>
-            Comprehensive Feature Team for <br /> End-to-End Delivery
-          </span>
+          <>
+            {t("services.comprehensive.txt1")}
+            <br />
+            {t("services.comprehensive.txt2")}
+          </>
         }
-        homePageText="Home"
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        sectionPageText="Services"
+        sectionPageText={t("home.navbar.services")}
         sectionUrl="/services"
-        activePageText="Comprehensive Feature Team for End-to-End Delivery"
+        activePageText={t("services.comprehensive.combined")}
       />
 
       <ComprehensiveSupport />
@@ -32,7 +36,6 @@ const ComprehensiveSupportPage = () => {
     </Layout>
   )
 }
-
 /**
  * Head export to define metadata for the page
  *

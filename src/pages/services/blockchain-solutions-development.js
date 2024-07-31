@@ -6,21 +6,23 @@ import PageBanner from "../../components/Common/PageBanner"
 
 import Footer from "../../components/_App/Footer"
 import BlockchainSolutionsDevelopment from "../../components/ServiceDetails/BlockchainSolutionsDevelopment"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 import { graphql } from "gatsby"
 
 const BlockchainSolutionsDevelopmentPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Blockchain Solutions Development"
-        homePageText="Home"
+        pageTitle={t("services.svc1.blockchain")}
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        sectionPageText="Services"
+        sectionPageText={t("home.navbar.services")}
         sectionUrl="/services"
-        activePageText="Blockchain Solutions Development"
+        activePageText={t("services.svc1.blockchain")}
       />
 
       <BlockchainSolutionsDevelopment />
