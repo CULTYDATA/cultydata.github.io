@@ -7,19 +7,21 @@ import PageBanner from "../../components/Common/PageBanner"
 import Footer from "../../components/_App/Footer"
 import SharedKYCDetails from "../../components/CaseStudiesDetails/SharedKYCDetails"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const CaseDetailsPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
         pageTitle="Shared KYC Solutions"
-        homePageText="Home"
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        sectionPageText="Case Studies"
+        sectionPageText={t("home.navbar.case")}
         sectionUrl="/case-studies"
-        activePageText="Case Studies Details"
+        activePageText="Shared KYC Solutions"
       />
 
       <SharedKYCDetails />

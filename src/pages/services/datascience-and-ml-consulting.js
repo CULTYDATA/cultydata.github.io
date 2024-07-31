@@ -7,24 +7,31 @@ import DataScienceandMLConsulting from "../../components/ServiceDetails/DataScie
 
 import Footer from "../../components/_App/Footer"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const DataScienceandMLConsultingPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
         pageTitle={
-          <span>
-            Data Science and <br />
-            Machine Learning Consulting
-          </span>
+          <>
+            {t("services.svc3.datascience")}
+            <br />
+            {t("services.svc3.machinelearning")}
+          </>
         }
-        homePageText="Home"
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        sectionPageText="Services"
+        sectionPageText={t("home.navbar.services")}
         sectionUrl="/services"
-        activePageText="Data Science and Machine Learning Consulting"
+        activePageText={
+          t("services.svc3.datascience") +
+          " " +
+          t("services.svc3.machinelearning")
+        }
       />
 
       <DataScienceandMLConsulting />

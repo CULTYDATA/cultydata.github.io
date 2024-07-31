@@ -14,6 +14,14 @@
   "aboutUs.pageTitle": "À Propos de Nous",
   "team.pageTitle": "Équipe",
 
+  "services.svc1.blockchain": "Développement de solutions blockchain",
+  "services.svc2.fullstack": "Développement de plateformes Full Stack",
+  "services.svc3.datascience": "Science des données et",
+  "services.svc3.machinelearning": "Conseil en apprentissage automatique",
+  "services.comprehensive.txt1": "Équipe de fonctionnalités complètes pour",
+  "services.comprehensive.txt2": "Livraison de bout en bout",
+  "services.comprehensive.combined": "Équipe de fonctionnalités complètes pour livraison de bout en bout",
+
   "home.mainBanner.title": "Concrétisez votre vision produit: Du concept à la plateforme évolutive",
   "home.mainBanner.txt.1": "Bien venue chez",
   "home.mainBanner.txt.2": "Cultydata Studio",
@@ -216,9 +224,6 @@
   "service.comprehensiveSupport.useCase1": "Fourniture d'une plateforme numérique complète pour une startup, couvrant le design, le développement et le déploiement, suivie d'une remise fluide à leur équipe interne.",
   "service.comprehensiveSupport.useCase2": "Soutien à une institution financière dans la création et le déploiement d'une nouvelle application, y compris une intégration approfondie de QA et de sécurité, avec un soutien continu pour la maintenance post-lancement.",
 
-  "services.sidebar.blockchain": "Blockchain Solutions Development",
-  "services.sidebar.fullstack": "Full Stack Platform Development",
-  "services.sidebar.datascience": "Data Science and Machine Learning Consulting",
   "services.sidebar.contactInfo": "Infos de Contact",
   "services.sidebar.location": "Lieu:",
   "services.sidebar.paris": "Paris",

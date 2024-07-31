@@ -14,7 +14,7 @@ const ServiceSidebar = () => {
               to="/services/blockchain-solutions-development"
               activeClassName="active"
             >
-              {t("services.sidebar.blockchain")}
+              {t("services.svc1.blockchain")}
             </Link>
           </li>
           <li>
@@ -22,7 +22,7 @@ const ServiceSidebar = () => {
               to="/services/fullstack-platform-development"
               activeClassName="active"
             >
-              {t("services.sidebar.fullstack")}
+              {t("services.svc2.fullstack")}
             </Link>
           </li>
           <li>
@@ -30,7 +30,8 @@ const ServiceSidebar = () => {
               to="/services/datascience-and-ml-consulting"
               activeClassName="active"
             >
-              {t("services.sidebar.datascience")}
+              {t("services.svc3.datascience")}{" "}
+              {t("services.svc3.machinelearning")}
             </Link>
           </li>
         </ul>

@@ -7,19 +7,21 @@ import FullStackPlatformDevelopment from "../../components/ServiceDetails/FullSt
 
 import Footer from "../../components/_App/Footer"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const FullStackPlatformDevelopmentPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
-        pageTitle="Full Stack Platform Development"
-        homePageText="Home"
+        pageTitle={t("services.svc2.fullstack")}
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        sectionPageText="Services"
+        sectionPageText={t("home.navbar.services")}
         sectionUrl="/services"
-        activePageText="Full Stack Platform Development"
+        activePageText={t("services.svc2.fullstack")}
       />
 
       <FullStackPlatformDevelopment />

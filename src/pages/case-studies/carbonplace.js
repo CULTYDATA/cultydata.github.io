@@ -7,19 +7,21 @@ import PageBanner from "../../components/Common/PageBanner"
 import Footer from "../../components/_App/Footer"
 import CarbonplaceDetails from "../../components/CaseStudiesDetails/CarbonplaceDetails"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const CaseDetailsPage = () => {
+  const { t } = useTranslation()
   return (
     <Layout>
       <Navbar />
 
       <PageBanner
         pageTitle="Carbonplace"
-        homePageText="Home"
+        homePageText={t("home.navbar.home")}
         homePageUrl="/"
-        sectionPageText="Case Studies"
+        sectionPageText={t("home.navbar.case")}
         sectionUrl="/case-studies"
-        activePageText="Case Studies Details"
+        activePageText="Carbonplace"
       />
 
       <CarbonplaceDetails />

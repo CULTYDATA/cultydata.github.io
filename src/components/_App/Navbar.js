@@ -122,7 +122,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Blockchain Solutions Development
+                          {t("services.svc1.blockchain")}
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -132,7 +132,7 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Full-Stack Platform Development
+                          {t("services.svc2.fullstack")}
                         </Link>
                       </li>
                       <li className="nav-item">
@@ -142,7 +142,8 @@ const Navbar = () => {
                           onClick={() => setCollapsed(true)}
                           className="nav-link"
                         >
-                          Data Science and Machine Learning Consulting
+                          {t("services.svc3.datascience")}{" "}
+                          {t("services.svc3.machinelearning")}
                         </Link>
                       </li>
                     </ul>
