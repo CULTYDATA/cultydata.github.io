@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
 
   return (
     <>
-      <section className="featured-services-area pt-100 pb-70">
+      <section className="featured-services-area ptb-50">
         <div className="container">
           <div className="section-title">
             <h2>{t("whyChooseUs.title")}</h2>

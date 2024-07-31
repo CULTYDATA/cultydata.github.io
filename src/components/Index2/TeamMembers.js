@@ -10,7 +10,7 @@ const TeamMembers = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="scientist-area ptb-50">
+    <section className="scientist-area">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">
@@ -29,19 +29,18 @@ const TeamMembers = () => {
                 <img src={team1} alt={t("teamMembers.member1.name")} />
 
                 <div className="hover-content">
-                  <p className="hover-description">
+                  <span className="hover-description">
                     {t("teamMembers.member1.description")}
-                  </p>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
-                      className="d-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bx bxl-linkedin"></i>
-                    </a>
-                  </li>
+                  </span>
+
+                  <a
+                    href="https://www.linkedin.com/"
+                    className="d-block"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div className="content">
@@ -58,20 +57,18 @@ const TeamMembers = () => {
                 <img src={team2} alt={t("teamMembers.member2.name")} />
 
                 <div className="hover-content">
-                  <p className="hover-description">
+                  <span className="hover-description">
                     {t("teamMembers.member2.description")}
-                  </p>
+                  </span>
 
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
-                      className="d-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bx bxl-linkedin"></i>
-                    </a>
-                  </li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    className="d-block"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div className="content">
@@ -88,20 +85,18 @@ const TeamMembers = () => {
                 <img src={team3} alt={t("teamMembers.member3.name")} />
 
                 <div className="hover-content">
-                  <p className="hover-description">
+                  <span className="hover-description">
                     {t("teamMembers.member3.description")}
-                  </p>
+                  </span>
 
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
-                      className="d-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bx bxl-linkedin"></i>
-                    </a>
-                  </li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    className="d-block"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div className="content">
@@ -118,20 +113,18 @@ const TeamMembers = () => {
                 <img src={team4} alt={t("teamMembers.member4.name")} />
 
                 <div className="hover-content">
-                  <p className="hover-description">
+                  <span className="hover-description">
                     {t("teamMembers.member4.description")}
-                  </p>
+                  </span>
 
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/"
-                      className="d-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bx bxl-linkedin"></i>
-                    </a>
-                  </li>
+                  <a
+                    href="https://www.linkedin.com/"
+                    className="d-block"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="bx bxl-linkedin"></i>
+                  </a>
                 </div>
               </div>
               <div className="content">

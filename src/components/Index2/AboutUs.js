@@ -17,7 +17,7 @@ const AboutUs = () => {
   const { t } = useTranslation()
   return (
     <>
-      <section className="about-area ptb-50">
+      <section className="about-area ptb-40">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">

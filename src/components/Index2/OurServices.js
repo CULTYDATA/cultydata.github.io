@@ -32,7 +32,7 @@ const OurServices = () => {
 
   return (
     <>
-      <section className="solutions-area pt-100 pb-70">
+      <section className="solutions-area pt-70 pb-40">
         <div className="container">
           <div className="section-title">
             <span className="sub-title">

@@ -27,7 +27,7 @@ const OurEngagementModel = () => {
   ]
 
   return (
-    <section className="solutions-area pt-100 pb-70">
+    <section className="solutions-area ptb-40">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">
