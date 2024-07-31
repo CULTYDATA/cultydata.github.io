@@ -27,7 +27,11 @@ const ComprehensiveSupportPage = () => {
         homePageUrl="/"
         sectionPageText={t("home.navbar.services")}
         sectionUrl="/services"
-        activePageText={t("services.comprehensive.combined")}
+        activePageText={
+          t("services.comprehensive.txt1") +
+          " " +
+          t("services.comprehensive.txt2")
+        }
       />
 
       <ComprehensiveSupport />
