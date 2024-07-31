@@ -20,7 +20,6 @@
   "services.svc3.machinelearning": "Conseil en apprentissage automatique",
   "services.comprehensive.txt1": "Équipe de fonctionnalités complètes pour",
   "services.comprehensive.txt2": "Livraison de bout en bout",
-  "services.comprehensive.combined": "Équipe de fonctionnalités complètes pour livraison de bout en bout",
 
   "home.mainBanner.title": "Concrétisez votre vision produit: Du concept à la plateforme évolutive",
   "home.mainBanner.txt.1": "Bien venue chez",
@@ -43,7 +42,7 @@
   "home.services.svc.1.txt": "Nous concevons et développons des solutions blockchain personnalisées, y compris des plateformes d'actifs tokenisés, des DApps et une intégration blockchain fluide.",
   "home.services.svc.2.title": "Développement de Plateformes Full-Stack",
   "home.services.svc.2.txt": "Nous fournissons des services de développement de bout en bout pour les plateformes Web2 et Web3, couvrant le développement front-end et back-end, l'intégration d'API et le déploiement dans le cloud.",
-  "home.services.svc.3.title": "Consultation en Data Science et Machine Learning",
+  "home.services.svc.3.title": "Science des données et Conseil en apprentissage automatique",
   "home.services.svc.3.txt": "Nous offrons une consultation experte en data science et machine learning, en nous concentrant sur l'analyse prédictive, l'analyse des séries chronologiques et le développement d'algorithmes personnalisés.",
 
   "home.engModel.subtitle": "Notre Modèle d'Engagement",
