@@ -18,7 +18,7 @@ const Testimonials = () => {
   ]
 
   return (
-    <div className="testimonials-area bg-fefbf1 pt-70">
+    <div className="testimonials-area bg-fefbf1 ptb-40">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">

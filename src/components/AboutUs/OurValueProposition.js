@@ -12,7 +12,7 @@ const OurValueProposition = () => {
 
   return (
     <>
-      <section className="services-area pt-100 pb-70">
+      <section className="services-area ptb-40">
         <div className="container">
           <div className="section-title">
             <h2>{t("ourValueProposition.title")}</h2>

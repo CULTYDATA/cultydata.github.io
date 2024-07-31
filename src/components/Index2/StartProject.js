@@ -7,7 +7,7 @@ const StartProject = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="project-start-area ptb-100">
+    <section className="project-start-area ptb-40">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">

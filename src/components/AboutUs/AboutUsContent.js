@@ -7,7 +7,7 @@ const AboutUsContent = () => {
 
   return (
     <>
-      <section className="about-area ptb-100">
+      <section className="about-area ptb-50">
         <div className="container-fluid">
           <div className="overview-box">
             <div className="overview-image">

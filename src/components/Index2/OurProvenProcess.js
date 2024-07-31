@@ -9,7 +9,7 @@ const OurProvenProcess = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="history-area ptb-50">
+    <div className="history-area ptb-40">
       <div className="container">
         <div className="section-title">
           <span className="sub-title">
