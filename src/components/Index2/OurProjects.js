@@ -13,14 +13,13 @@ const OurProjects = ({ showAll }) => {
     {
       img: project1,
       link: "/case-studies/carbonplace",
-      title: "Carbonplace",
+      title: t("home.project.p1.title"),
       description: t("home.project.p1.txt"),
     },
     {
       img: project2,
       link: "/case-studies/shared-kyc-solution",
-      title: "Shared KYC Solution",
-
+      title: t("home.project.p2.title"),
       description: t("home.project.p2.txt"),
     },
   ]

@@ -74,7 +74,9 @@
 
   "home.project.subTitle": "Projets récents",
   "home.project.title": "Nos projets révolutionnaires",
+  "home.project.p1.title": "Carbonplace",
   "home.project.p1.txt": "Plateforme de trading de qualité entreprise sur blockchain privée pour les crédits carbone tokenisés",
+  "home.project.p2.title": "KYC décentralisés",
   "home.project.p2.txt": "Solution KYC décentralisée pour les gestionnaires d'actifs de fonds d'investissement",
 
   "testimonials.subTitle": "Témoignages",
@@ -96,7 +98,7 @@
   "teamMembers.subTitle": "Membres de l'équipe",
   "teamMembers.title": "L'Expertise de Notre Équipe",
   "teamMembers.description": "Rencontrez nos experts Full-Stack, Cross-Technology avec un esprit entrepreneurial",
-  "teamMembers.member1.name": "Sarah Chen",
+  "teamMembers.member1.name": "Mohamed Alaoui",
   "teamMembers.member1.position": "CEO",
   "teamMembers.member1.description": "Avec plus de 15 ans d'expérience dans l'entrepreneuriat technologique, Sarah dirige notre équipe avec des stratégies visionnaires et une passion pour l'innovation. Son expertise en IA et en apprentissage automatique alimente notre approche de pointe des solutions numériques.",
   "teamMembers.member2.name": "Dr. Raj Patel",
@@ -110,7 +112,8 @@
   "teamMembers.member4.description": "L'expertise full-stack d'Alex et sa maîtrise du développement agile alimentent nos processus de développement efficaces et innovants. Son engagement envers un code propre et évolutif est l'épine dorsale de notre excellence technique.",
 
   "startProject.title": "Commencez votre voyage numérique dès aujourd'hui!",
-  "startProject.description": "Prêt à lancer votre projet numérique en toute confiance ? Contactez Cultydata Studio aujourd'hui!",
+  "startProject.description": "Prêt à lancer votre projet numérique en toute confiance ?",
+  "startProject.button": "Contactez Cultydata Studio!",
 
   "footer.description": "Cultydata Studio : Où l'expertise technologique rencontre l'accélération des startups",
   "footer.explore": "Explorer",
@@ -123,9 +126,12 @@
   "footer.testimonials": "Témoignages",
   "footer.team": "Équipe",
   "footer.address": "Adresse",
-  "footer.addressDetails": "175 5th Ave, NY 10010, Paris",
   "footer.copyright": "Droits d'auteur © {{year}} Cultydata. Tous les droits sont réservés.",
   "footer.privacyPolicy": "Politique de confidentialité",
+
+  "general.addressDetails": "11 Bis Impasse Du Quai Voltaire, 78230 LePecq, France",
+  "general.mailto": "mailto:mohamed.alaoui@cultydata.com",
+  "general.email": "mohamed.alaoui@cultydata.com",
 
   "aboutUs.title": "Bienvenue chez Cultydata Studio : Votre partenaire en transformation digitale",
   "aboutUs.description": "Bienvenue chez Cultydata Studio, où nous transformons vos aspirations digitales en réalités tangibles et évolutives. En tant qu'agence de type incubateur de premier plan, nous nous spécialisons dans l'accompagnement des startups à travers le parcours complexe du développement de produits digitaux. Notre mission est de combler le fossé entre les concepts innovants et les plateformes prêtes pour le marché, en tirant parti de notre vaste expertise technologique et de notre savoir-faire en accélération de startups.",

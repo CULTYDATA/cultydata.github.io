@@ -17,7 +17,7 @@ const ContactInfo = () => {
                 <i className="bx bx-map"></i>
               </div>
               <h3>{t("contactInfo.addressTitle")}</h3>
-              <p>{t("contactInfo.address")}</p>
+              <p>{t("general.addressDetails")}</p>
             </div>
           </div>
 
@@ -30,10 +30,7 @@ const ContactInfo = () => {
                 <i className="bx bx-phone-call"></i>
               </div>
               <h3>{t("contactInfo.contactTitle")}</h3>
-              <p>
-                {t("contactInfo.email")}{" "}
-                <a href="mailto:connect@cultydata.com">connect@cultydata.com</a>
-              </p>
+              <p><a href={t("general.mailto")}>{t("general.email")}</a></p>
             </div>
           </div>
 

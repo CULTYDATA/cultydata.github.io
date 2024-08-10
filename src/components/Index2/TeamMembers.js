@@ -1,6 +1,6 @@
 import React from "react"
 import starIcon from "../../images/shape/icon.svg"
-import team1 from "../../images/team/team5.jpg"
+import team1 from "../../images/team/Mohamed-Alaoui-photo-buste.jpg"
 import team2 from "../../images/team/team6.jpg"
 import team3 from "../../images/team/team7.jpg"
 import team4 from "../../images/team/team7.jpg"
@@ -34,7 +34,7 @@ const TeamMembers = () => {
                   </span>
 
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/mohamed-alaoui-simon/"
                     className="d-block"
                     target="_blank"
                     rel="noreferrer"
@@ -50,7 +50,7 @@ const TeamMembers = () => {
             </div>
           </div>
 
-          {/* Team member 2 */}
+          {/* Team member 2 
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
@@ -76,9 +76,9 @@ const TeamMembers = () => {
                 <span>{t("teamMembers.member2.position")}</span>
               </div>
             </div>
-          </div>
+          </div>*/}
 
-          {/* Team member 3 */}
+          {/* Team member 3 
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
@@ -104,9 +104,9 @@ const TeamMembers = () => {
                 <span>{t("teamMembers.member3.position")}</span>
               </div>
             </div>
-          </div>
+          </div>*/}
 
-          {/* Team member 4 */}
+          {/* Team member 4
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
@@ -132,7 +132,7 @@ const TeamMembers = () => {
                 <span>{t("teamMembers.member4.position")}</span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
