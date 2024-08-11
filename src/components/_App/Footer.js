@@ -16,7 +16,7 @@ const Footer = () => {
               <Link to="/" className="logo">
                 <img src={logo} alt="logo" />
               </Link>
-              <p>{t("footer.description")}</p>
+              <p className="slogan">{t("footer.description")}</p>
 
               <ul className="social-link">
                 <li>
@@ -80,13 +80,13 @@ const Footer = () => {
               <ul className="footer-contact-info">
                 <li>
                   <i className="bx bx-map"></i>
-                  {t("footer.addressDetails")}
+                  {t("general.addressDetails")}
                 </li>
 
                 <li>
                   <i className="bx bx-envelope"></i>
-                  <a href="mailto:connect@cultydata.com">
-                    connect@cultydata.com
+                  <a href={t("general.mailto")}>
+                    {t("general.email")}
                   </a>
                 </li>
               </ul>

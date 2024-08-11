@@ -19,33 +19,21 @@ const ContactForm = () => {
         </div>
 
         <div className="row">
-          <div className="col-lg-6 col-md-12">
+
+
+          <div class="contact-form">
+            <iframe class="resp-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSc27_7WIkLPXPcarNRiFDHkM6M9bSP2jTvVjowXGYoQ2uJzag/viewform?embedded=true">
+              Loading…
+            </iframe>
+          </div>
+
+
+          {/*<div className="col-lg-6 col-md-12">
             <div className="contact-image">
               <img src={contact} alt="contact" />
             </div>
-          </div>
+          </div>*/}
 
-          <div className="col-lg-6 col-md-12">
-            <div className="contact-form">
-              <iframe
-                title="Google Form"
-                src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jljGBVUOEVLVVlOVDA4UVU1UFBHVzFSR1hSNTc2Sy4u&embed=true"
-                width="100%"
-                height="480"
-                frameBorder="0"
-                marginHeight="0"
-                marginWidth="0"
-                style={{
-                  border: "none",
-                  maxWidth: "100%",
-                  maxHeight: "100vh",
-                }}
-                allowFullScreen
-              >
-                Loading…
-              </iframe>
-            </div>
-          </div>
         </div>
       </div>
     </section>

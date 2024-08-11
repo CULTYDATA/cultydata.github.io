@@ -21,7 +21,7 @@ const StartProject = () => {
               <h2>{t("startProject.title")}</h2>
               <p>{t("startProject.description")}</p>
               <Link to="/contact" className="default-btn">
-                <i className="flaticon-web"></i> {t("home.button.getStarted")}
+                <i className="flaticon-web"></i> {t("startProject.button")}
                 <span></span>
               </Link>
             </div>

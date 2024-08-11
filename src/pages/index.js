@@ -38,7 +38,7 @@ const IndexPage = () => {
 
       <OurProjects showAll={false} />
 
-      <Testimonials />
+      {/* <Testimonials /> */}
 
       <TeamMembers />
 
