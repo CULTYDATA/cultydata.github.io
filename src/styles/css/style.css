@@ -12631,8 +12631,8 @@ New Team css
 /* NewTeam.css */
 
 .scientist-area {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .section-title {
@@ -12981,7 +12981,7 @@ Team Section Three
 =================================================*/
 .team-section {
   text-align: center;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .section-title {
