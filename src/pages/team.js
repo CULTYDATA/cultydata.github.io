@@ -7,6 +7,9 @@ import Footer from "../components/_App/Footer"
 import TeamMembers from "../components/Index2/TeamMembers"
 import { graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
+import TeamSectionOne from "../components/Team/TeamSectionOne"
+import TeamSectionTwo from "../components/Team/TeamSectionTwo"
+import TeamSectionThree from "../components/Team/TeamSectionThree"
 
 const TeamPage = () => {
   const { t } = useTranslation()
@@ -22,7 +25,9 @@ const TeamPage = () => {
         activePageText={t("team.pageTitle")}
       />
 
-      <TeamMembers />
+      <TeamSectionOne />
+      <TeamSectionTwo />
+      <TeamSectionThree />
 
       <Footer />
     </Layout>

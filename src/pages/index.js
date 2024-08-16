@@ -13,12 +13,12 @@ import Footer from "../components/_App/Footer"
 
 import OurEngagementModel from "../components/Index2/OurEngagementModel"
 import OurProvenProcess from "../components/Index2/OurProvenProcess"
-import TeamMembers from "../components/Index2/TeamMembers"
 import OurProjects from "../components/Index2/OurProjects"
 import OurServices from "../components/Index2/OurServices"
 
 import { graphql } from "gatsby"
 import BestPractice from "../components/Index2/BestPractice"
+import TeamSectionThree from "../components/Team/TeamSectionThree"
 
 const IndexPage = () => {
   return (
@@ -40,7 +40,7 @@ const IndexPage = () => {
 
       {/* <Testimonials /> */}
 
-      <TeamMembers />
+      <TeamSectionThree />
 
       <StartProject />
 

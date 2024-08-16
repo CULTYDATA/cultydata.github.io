@@ -1,9 +1,7 @@
 import React from "react"
 import starIcon from "../../images/shape/icon.svg"
 import team1 from "../../images/team/Mohamed-Alaoui-photo-buste.jpg"
-import team2 from "../../images/team/team6.jpg"
-import team3 from "../../images/team/team7.jpg"
-import team4 from "../../images/team/team7.jpg"
+
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const TeamMembers = () => {
@@ -15,10 +13,10 @@ const TeamMembers = () => {
         <div className="section-title">
           <span className="sub-title">
             <img src={starIcon} alt="testimonials" />
-            {t("teamMembers.subTitle")}
+            {t("team.subTitle")}
           </span>
-          <h2>{t("teamMembers.title")}</h2>
-          <p>{t("teamMembers.description")}</p>
+          <h2>{t("team.title")}</h2>
+          <p>{t("team.description")}</p>
         </div>
 
         <div className="row">
@@ -26,11 +24,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team1} alt={t("teamMembers.member1.name")} />
+                <img src={team1} alt={t("team.member1.name")} />
 
                 <div className="hover-content">
                   <span className="hover-description">
-                    {t("teamMembers.member1.description")}
+                    {t("team.member1.description")}
                   </span>
 
                   <a
@@ -44,8 +42,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>{t("teamMembers.member1.name")}</h3>
-                <span>{t("teamMembers.member1.position")}</span>
+                <h3>{t("team.member1.name")}</h3>
+                <span>{t("team.member1.position")}</span>
               </div>
             </div>
           </div>
@@ -54,11 +52,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team2} alt={t("teamMembers.member2.name")} />
+                <img src={team2} alt={t("team.member2.name")} />
 
                 <div className="hover-content">
                   <span className="hover-description">
-                    {t("teamMembers.member2.description")}
+                    {t("team.member2.description")}
                   </span>
 
                   <a
@@ -72,8 +70,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>{t("teamMembers.member2.name")}</h3>
-                <span>{t("teamMembers.member2.position")}</span>
+                <h3>{t("team.member2.name")}</h3>
+                <span>{t("team.member2.position")}</span>
               </div>
             </div>
           </div>*/}
@@ -82,11 +80,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team3} alt={t("teamMembers.member3.name")} />
+                <img src={team3} alt={t("team.member3.name")} />
 
                 <div className="hover-content">
                   <span className="hover-description">
-                    {t("teamMembers.member3.description")}
+                    {t("team.member3.description")}
                   </span>
 
                   <a
@@ -100,8 +98,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>{t("teamMembers.member3.name")}</h3>
-                <span>{t("teamMembers.member3.position")}</span>
+                <h3>{t("team.member3.name")}</h3>
+                <span>{t("team.member3.position")}</span>
               </div>
             </div>
           </div>*/}
@@ -110,11 +108,11 @@ const TeamMembers = () => {
           <div className="col-lg-3 col-sm-6">
             <div className="single-scientist-item-box">
               <div className="image">
-                <img src={team4} alt={t("teamMembers.member4.name")} />
+                <img src={team4} alt={t("team.member4.name")} />
 
                 <div className="hover-content">
                   <span className="hover-description">
-                    {t("teamMembers.member4.description")}
+                    {t("team.member4.description")}
                   </span>
 
                   <a
@@ -128,8 +126,8 @@ const TeamMembers = () => {
                 </div>
               </div>
               <div className="content">
-                <h3>{t("teamMembers.member4.name")}</h3>
-                <span>{t("teamMembers.member4.position")}</span>
+                <h3>{t("team.member4.name")}</h3>
+                <span>{t("team.member4.position")}</span>
               </div>
             </div>
           </div> */}

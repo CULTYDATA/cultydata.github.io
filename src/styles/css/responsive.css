@@ -899,7 +899,10 @@
     text-align: center;
   }
 
-  .history-timeline.history-timeline-style-two .timeline-block .timeline-content .content {
+  .history-timeline.history-timeline-style-two
+    .timeline-block
+    .timeline-content
+    .content {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 0;
@@ -1472,26 +1475,56 @@
     margin-top: 5px;
   }
 
-  .courses-details-desc .tab-content .courses-curriculum ul li a .courses-meta .questions {
+  .courses-details-desc
+    .tab-content
+    .courses-curriculum
+    ul
+    li
+    a
+    .courses-meta
+    .questions {
     font-size: 13.5px;
     margin-top: 7px;
   }
 
-  .courses-details-desc .tab-content .courses-curriculum ul li a .courses-meta .duration {
+  .courses-details-desc
+    .tab-content
+    .courses-curriculum
+    ul
+    li
+    a
+    .courses-meta
+    .duration {
     font-size: 13.5px;
     margin-top: 7px;
   }
 
-  .courses-details-desc .tab-content .courses-curriculum ul li a .courses-meta .status {
+  .courses-details-desc
+    .tab-content
+    .courses-curriculum
+    ul
+    li
+    a
+    .courses-meta
+    .status {
     font-size: 13.5px;
     margin-top: 7px;
   }
 
-  .courses-details-desc .tab-content .courses-instructor .single-advisor-box .advisor-content {
+  .courses-details-desc
+    .tab-content
+    .courses-instructor
+    .single-advisor-box
+    .advisor-content {
     margin-top: 25px;
   }
 
-  .courses-details-desc .tab-content .courses-instructor .single-advisor-box .advisor-content h3 {
+  .courses-details-desc
+    .tab-content
+    .courses-instructor
+    .single-advisor-box
+    .advisor-content
+    h3 {
     font-size: 19px;
   }
 
@@ -1535,7 +1568,12 @@
     margin-bottom: 15px;
   }
 
-  .courses-details-desc .tab-content .courses-review-comments .user-review .review-rating span {
+  .courses-details-desc
+    .tab-content
+    .courses-review-comments
+    .user-review
+    .review-rating
+    span {
     display: block !important;
     top: 0;
     font-size: 17px;
@@ -1773,7 +1811,9 @@
     font-size: 15px;
   }
 
-  .case-studies-details-image-slides.owl-theme .owl-nav [class*="owl-"].owl-next {
+  .case-studies-details-image-slides.owl-theme
+    .owl-nav
+    [class*="owl-"].owl-next {
     left: auto;
     right: 10px;
   }
@@ -1816,6 +1856,9 @@
   .single-scientist-box .content span {
     font-size: 15px;
   }
+  .partners-item-box {
+    width: 100%;
+  }
 
   .scientist-box-list {
     padding-right: 0;
@@ -1853,6 +1896,24 @@
 
   .single-scientist-item-box .content span {
     font-size: 15px;
+  }
+
+  .team-member-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .team-horizontal-layout {
+    gap: 40px;
+  }
+
+  .team-member {
+    margin: 10px;
+  }
+  .text-container {
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
   }
 
   .testimonials-area.bg-f1f8fb {
@@ -2351,18 +2412,33 @@
     font-size: 20px;
   }
 
-  .products-details-tabs .tab-content .tab-pane .products-review-comments .user-review {
+  .products-details-tabs
+    .tab-content
+    .tab-pane
+    .products-review-comments
+    .user-review {
     padding-left: 0;
   }
 
-  .products-details-tabs .tab-content .tab-pane .products-review-comments .user-review img {
+  .products-details-tabs
+    .tab-content
+    .tab-pane
+    .products-review-comments
+    .user-review
+    img {
     position: relative;
     left: 0;
     top: 0;
     margin-bottom: 15px;
   }
 
-  .products-details-tabs .tab-content .tab-pane .products-review-comments .user-review .review-rating span {
+  .products-details-tabs
+    .tab-content
+    .tab-pane
+    .products-review-comments
+    .user-review
+    .review-rating
+    span {
     display: block !important;
     top: 0;
     font-size: 17px;
@@ -2374,7 +2450,12 @@
     font-size: 20px;
   }
 
-  .products-details-tabs .tab-content .tab-pane .review-form-wrapper form button {
+  .products-details-tabs
+    .tab-content
+    .tab-pane
+    .review-form-wrapper
+    form
+    button {
     margin-top: 20px;
     padding: 12px 45px;
     font-size: 15px;
@@ -3732,7 +3813,10 @@
     font-size: 22px;
   }
 
-  .history-timeline.history-timeline-style-two .timeline-block .timeline-content .content {
+  .history-timeline.history-timeline-style-two
+    .timeline-block
+    .timeline-content
+    .content {
     margin-top: 30px;
     margin-bottom: 0;
     padding-left: 0;
@@ -3870,7 +3954,12 @@
   .scientist-area.bg-color::before {
     display: none;
   }
-
+  .team-horizontal-layout {
+    gap: 40px;
+  }
+  .team-member {
+    margin: 10px;
+  }
   .single-scientist-box .content {
     padding-bottom: 0;
   }
@@ -3909,6 +3998,10 @@
   .scientist-section-title h2 {
     font-size: 35px;
   }
+
+  /* .partners-item-box {
+    width: 40%;
+  } */
 
   .vector-shape4,
   .vector-shape5,
@@ -5449,6 +5542,10 @@
     margin-top: 0;
   }
 
+  /* .partners-item-box {
+    width: 100%;
+  } */
+
   .vector-shape4,
   .vector-shape5 {
     display: none;
@@ -5702,8 +5799,16 @@
     padding-bottom: 10px !important;
   }
 
-  .navbar-style-two .navbar .navbar-nav .nav-item:nth-last-child(1) .dropdown-menu,
-  .navbar-style-two .navbar .navbar-nav .nav-item:nth-last-child(2) .dropdown-menu {
+  .navbar-style-two
+    .navbar
+    .navbar-nav
+    .nav-item:nth-last-child(1)
+    .dropdown-menu,
+  .navbar-style-two
+    .navbar
+    .navbar-nav
+    .nav-item:nth-last-child(2)
+    .dropdown-menu {
     left: auto;
     right: 0;
   }
