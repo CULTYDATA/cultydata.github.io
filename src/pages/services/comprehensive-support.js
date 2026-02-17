@@ -46,7 +46,10 @@ const ComprehensiveSupportPage = () => {
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
 export const Head = () => (
-  <Seo title="Comprehensive Feature Team for End-to-End Delivery" />
+  <Seo
+    title="AI-Augmented Feature Team"
+    description="A complete feature team — design, architecture, dev, QA, DevSecOps — augmented by AI agents. From first commit to final handover."
+  />
 )
 
 export default ComprehensiveSupportPage

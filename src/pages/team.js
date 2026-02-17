@@ -33,7 +33,12 @@ const TeamPage = () => {
   )
 }
 
-export const Head = () => <Seo title="Team" />
+export const Head = () => (
+  <Seo
+    title="Team"
+    description="3 senior engineers + specialized AI agents. Few in number, our agents multiply our capacity."
+  />
+)
 
 export default TeamPage
 

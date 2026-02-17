@@ -50,7 +50,12 @@ const IndexPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () => (
+  <Seo
+    title="Home"
+    description="We build AI-augmented organizations for startups and scale-ups. Senior engineers + AI agents. We build, we ship, we hand over."
+  />
+)
 
 export default IndexPage
 

@@ -47,7 +47,10 @@ const DataScienceandMLConsultingPage = () => {
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
 export const Head = () => (
-  <Seo title="Data Science and Machine Learning Consulting" />
+  <Seo
+    title="Data Science & Machine Learning"
+    description="Predictive analytics, time series models, and custom ML pipelines. We turn your data into actionable decisions."
+  />
 )
 
 export default DataScienceandMLConsultingPage

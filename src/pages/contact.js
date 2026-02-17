@@ -33,7 +33,12 @@ const ContactPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Contact" />
+export const Head = () => (
+  <Seo
+    title="Contact"
+    description="Ready to build your AI-augmented organization? Get in touch with Cultydata Studio."
+  />
+)
 
 export default ContactPage
 

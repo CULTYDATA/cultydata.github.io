@@ -36,7 +36,12 @@ const CaseDetailsPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Case Details" />
+export const Head = () => (
+  <Seo
+    title="Shared KYC Solution"
+    description="Decentralized KYC solution on private blockchain for investment fund asset managers."
+  />
+)
 
 export default CaseDetailsPage
 

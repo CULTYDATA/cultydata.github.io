@@ -29,7 +29,12 @@ const CaseStudiesPage = () => {
   )
 }
 
-export const Head = () => <Seo title="Case Studies" />
+export const Head = () => (
+  <Seo
+    title="Case Studies"
+    description="Enterprise blockchain trading platforms, decentralized KYC solutions. See what we delivered for our clients."
+  />
+)
 
 export default CaseStudiesPage
 

@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Cultydata`,
-    description: `Cultydata`,
+    title: `Cultydata Studio`,
+    description: `We build AI-augmented organizations for startups and scale-ups. Senior engineers + AI agents. We build, we ship, we hand over.`,
     author: `@Cultydata`,
-    siteUrl: `https://rewy-gatsby.envytheme.com`,
+    siteUrl: `https://cultydata.github.io/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -36,10 +36,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Cultydata Studio`,
+        short_name: `Cultydata`,
         start_url: `/`,
-        background_color: `#663399`,
+        background_color: `#03271f`,
         // This will impact how browsers show your PWA/website
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
@@ -62,11 +62,6 @@ module.exports = {
           nsSeparator: false
         },
         pages: [
-          {
-            matchPath: '/:lang?/blog/:uid',
-            getLanguageFromPath: true,
-            excludeLanguages: ['es']
-          },
           {
             matchPath: '/preview',
             languages: ['en']
