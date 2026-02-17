@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import TeamSectionOne from "../components/Team/TeamSectionOne"
 import TeamSectionTwo from "../components/Team/TeamSectionTwo"
+import AIAgents from "../components/Team/AIAgents"
 
 const TeamPage = () => {
   const { t } = useTranslation()
@@ -25,6 +26,7 @@ const TeamPage = () => {
 
       <TeamSectionOne />
       <TeamSectionTwo />
+      <AIAgents />
 
       <Footer />
     </Layout>

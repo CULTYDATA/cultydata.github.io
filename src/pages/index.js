@@ -16,6 +16,8 @@ import OurServices from "../components/Index2/OurServices"
 
 import { graphql } from "gatsby"
 import BestPractice from "../components/Index2/BestPractice"
+import OurApproach from "../components/Index2/OurApproach"
+
 const IndexPage = () => {
   return (
     <Layout>
@@ -23,6 +25,8 @@ const IndexPage = () => {
 
       <MainBanner />
       <AboutUs />
+
+      <OurApproach />
 
       <OurServices />
 
