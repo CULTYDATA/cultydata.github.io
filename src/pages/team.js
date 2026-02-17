@@ -4,12 +4,11 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import PageBanner from "../components/Common/PageBanner"
 import Footer from "../components/_App/Footer"
-import TeamMembers from "../components/Index2/TeamMembers"
 import { graphql } from "gatsby"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 import TeamSectionOne from "../components/Team/TeamSectionOne"
 import TeamSectionTwo from "../components/Team/TeamSectionTwo"
-import TeamSectionThree from "../components/Team/TeamSectionThree"
+import AIAgents from "../components/Team/AIAgents"
 
 const TeamPage = () => {
   const { t } = useTranslation()
@@ -27,14 +26,19 @@ const TeamPage = () => {
 
       <TeamSectionOne />
       <TeamSectionTwo />
-      <TeamSectionThree />
+      <AIAgents />
 
       <Footer />
     </Layout>
   )
 }
 
-export const Head = () => <Seo title="Team" />
+export const Head = () => (
+  <Seo
+    title="Team"
+    description="3 senior engineers + specialized AI agents. Few in number, our agents multiply our capacity."
+  />
+)
 
 export default TeamPage
 

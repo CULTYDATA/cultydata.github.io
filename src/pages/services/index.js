@@ -35,7 +35,12 @@ const ServicesPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Services" />
+export const Head = () => (
+  <Seo
+    title="Services"
+    description="Blockchain solutions, full-stack platforms, data science and ML. AI-augmented feature teams for end-to-end delivery."
+  />
+)
 
 export default ServicesPage
 

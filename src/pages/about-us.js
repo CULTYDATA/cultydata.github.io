@@ -32,7 +32,12 @@ const AboutUsPage = () => {
   )
 }
 
-export const Head = () => <Seo title="About Us" />
+export const Head = () => (
+  <Seo
+    title="About Us"
+    description="A lean team of senior engineers augmented by AI agents. We build production-ready platforms, then transfer full ownership to your team."
+  />
+)
 
 export default AboutUsPage
 

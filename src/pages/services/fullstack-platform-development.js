@@ -36,7 +36,12 @@ const FullStackPlatformDevelopmentPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Full Stack Platform Development" />
+export const Head = () => (
+  <Seo
+    title="Full-Stack Platforms"
+    description="Web2 and Web3 platform development from frontend to backend. API design, cloud deployment, end-to-end delivery."
+  />
+)
 
 export default FullStackPlatformDevelopmentPage
 
