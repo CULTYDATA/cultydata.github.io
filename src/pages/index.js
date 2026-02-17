@@ -6,8 +6,6 @@ import MainBanner from "../components/Index2/MainBanner"
 
 import AboutUs from "../components/Index2/AboutUs"
 
-import Testimonials from "../components/Index2/Testimonials"
-
 import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
 
@@ -18,8 +16,6 @@ import OurServices from "../components/Index2/OurServices"
 
 import { graphql } from "gatsby"
 import BestPractice from "../components/Index2/BestPractice"
-import TeamSectionThree from "../components/Team/TeamSectionThree"
-
 const IndexPage = () => {
   return (
     <Layout>
@@ -37,10 +33,6 @@ const IndexPage = () => {
       <BestPractice />
 
       <OurProjects showAll={false} />
-
-      {/* <Testimonials /> */}
-
-      <TeamSectionThree />
 
       <StartProject />
 
