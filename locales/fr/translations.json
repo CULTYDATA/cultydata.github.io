@@ -287,5 +287,10 @@
   "privacyPolicy.section3.title": "Infrastructure sécurisée",
   "privacyPolicy.section3.text": "Chiffrement aux standards de l'industrie, audits de sécurité réguliers et contrôles d'accès stricts contre les accès non autorisés.",
   "privacyPolicy.section4.title": "Conformité continue",
-  "privacyPolicy.section4.text": "Nous mettons à jour nos pratiques en continu pour rester conformes aux évolutions des lois de protection des données et aux standards de l'industrie."
+  "privacyPolicy.section4.text": "Nous mettons à jour nos pratiques en continu pour rester conformes aux évolutions des lois de protection des données et aux standards de l'industrie.",
+
+  "seo.home.title": "Accueil",
+  "seo.home.description": "Nous construisons des organisations augmentées par l'IA pour startups et scale-ups. Ingénieurs seniors + agents IA. On construit, on livre, on transfère.",
+  "seo.team.title": "Équipe",
+  "seo.team.description": "3 ingénieurs seniors + agents IA spécialisés. Peu nombreux, nos agents multiplient notre capacité."
 }
