@@ -45,12 +45,15 @@ const ComprehensiveSupportPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => (
-  <Seo
-    title="AI-Augmented Feature Team"
-    description="A complete feature team — design, architecture, dev, QA, DevSecOps — augmented by AI agents. From first commit to final handover."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.service.comprehensive.title")}
+      description={t("seo.service.comprehensive.description")}
+    />
+  )
+}
 
 export default ComprehensiveSupportPage
 

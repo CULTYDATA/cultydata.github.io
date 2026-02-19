@@ -49,12 +49,15 @@ const PrivacyPolicyPage = () => {
   )
 }
 
-export const Head = () => (
-  <Seo
-    title="Privacy Policy"
-    description="Cultydata Studio privacy policy. GDPR-compliant data protection, transparent data usage, and secure infrastructure."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.privacyPolicy.title")}
+      description={t("seo.privacyPolicy.description")}
+    />
+  )
+}
 
 export default PrivacyPolicyPage
 

@@ -6,6 +6,7 @@ import PageBanner from "../components/Common/PageBanner"
 import Footer from "../components/_App/Footer"
 import termsImg from "../images/terms-of-service.jpg"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const TermsOfServicePage = () => {
   return (
@@ -136,7 +137,15 @@ const TermsOfServicePage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Terms Of Service" />
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.termsOfService.title")}
+      description={t("seo.termsOfService.description")}
+    />
+  )
+}
 
 export default TermsOfServicePage
 
