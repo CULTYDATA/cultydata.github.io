@@ -48,8 +48,8 @@ const DataScienceandMLConsultingPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Data Science & Machine Learning"
-    description="Predictive analytics, time series models, and custom ML pipelines. We turn your data into actionable decisions."
+    titleKey="meta.services.dataml.title"
+    descriptionKey="meta.services.dataml.description"
   />
 )
 

@@ -38,8 +38,8 @@ const CaseDetailsPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Carbonplace"
-    description="Enterprise-grade trading platform on Hyperledger Besu for tokenized carbon credits. 9-bank consortium, $45M raised."
+    titleKey="meta.caseStudies.carbonplace.title"
+    descriptionKey="meta.caseStudies.carbonplace.description"
   />
 )
 

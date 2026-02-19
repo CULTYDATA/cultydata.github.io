@@ -37,8 +37,8 @@ const ServicesPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Services"
-    description="Blockchain solutions, full-stack platforms, data science and ML. AI-augmented feature teams for end-to-end delivery."
+    titleKey="meta.services.title"
+    descriptionKey="meta.services.description"
   />
 )
 

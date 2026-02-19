@@ -31,8 +31,8 @@ const CaseStudiesPage = () => {
 
 export const Head = () => (
   <Seo
-    title="Case Studies"
-    description="Enterprise blockchain trading platforms, decentralized KYC solutions. See what we delivered for our clients."
+    titleKey="meta.caseStudies.title"
+    descriptionKey="meta.caseStudies.description"
   />
 )
 

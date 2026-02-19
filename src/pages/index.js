@@ -52,8 +52,8 @@ const IndexPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Home"
-    description="We build AI-augmented organizations for startups and scale-ups. Senior engineers + AI agents. We build, we ship, we hand over."
+    titleKey="meta.home.title"
+    descriptionKey="meta.home.description"
   />
 )
 
