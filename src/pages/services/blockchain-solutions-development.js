@@ -37,12 +37,15 @@ const BlockchainSolutionsDevelopmentPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => (
-  <Seo
-    title="Blockchain Solutions"
-    description="Custom blockchain platforms for consortiums. Tokenized assets, DApps, smart contracts on private or public chain."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.service.blockchain.title")}
+      description={t("seo.service.blockchain.description")}
+    />
+  )
+}
 
 export default BlockchainSolutionsDevelopmentPage
 

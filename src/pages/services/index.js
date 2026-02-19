@@ -8,6 +8,7 @@ import StartProject from "../../components/Index2/StartProject"
 import Footer from "../../components/_App/Footer"
 import OurServices from "../../components/Index2/OurServices"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ServicesPage = () => {
   return (
@@ -35,12 +36,15 @@ const ServicesPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => (
-  <Seo
-    title="Services"
-    description="Blockchain solutions, full-stack platforms, data science and ML. AI-augmented feature teams for end-to-end delivery."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.services.title")}
+      description={t("seo.services.description")}
+    />
+  )
+}
 
 export default ServicesPage
 

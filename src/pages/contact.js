@@ -7,6 +7,7 @@ import ContactInfo from "../components/Contact/ContactInfo"
 import ContactForm from "../components/Contact/ContactForm"
 import Footer from "../components/_App/Footer"
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const ContactPage = () => {
   return (
@@ -33,12 +34,15 @@ const ContactPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => (
-  <Seo
-    title="Contact"
-    description="Ready to build your AI-augmented organization? Get in touch with Cultydata Studio."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.contact.title")}
+      description={t("seo.contact.description")}
+    />
+  )
+}
 
 export default ContactPage
 

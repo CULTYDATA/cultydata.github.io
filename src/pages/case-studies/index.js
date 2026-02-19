@@ -29,12 +29,15 @@ const CaseStudiesPage = () => {
   )
 }
 
-export const Head = () => (
-  <Seo
-    title="Case Studies"
-    description="Enterprise blockchain trading platforms, decentralized KYC solutions. See what we delivered for our clients."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.caseStudies.title")}
+      description={t("seo.caseStudies.description")}
+    />
+  )
+}
 
 export default CaseStudiesPage
 

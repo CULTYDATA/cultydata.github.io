@@ -33,12 +33,15 @@ const TeamPage = () => {
   )
 }
 
-export const Head = () => (
-  <Seo
-    title="Team"
-    description="3 senior engineers + specialized AI agents. Few in number, our agents multiply our capacity."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.team.title")}
+      description={t("seo.team.description")}
+    />
+  )
+}
 
 export default TeamPage
 

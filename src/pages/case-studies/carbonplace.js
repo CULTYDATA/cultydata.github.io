@@ -36,12 +36,15 @@ const CaseDetailsPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => (
-  <Seo
-    title="Carbonplace"
-    description="Enterprise-grade trading platform on Hyperledger Besu for tokenized carbon credits. 9-bank consortium, $45M raised."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.caseStudy.carbonplace.title")}
+      description={t("seo.caseStudy.carbonplace.description")}
+    />
+  )
+}
 
 export default CaseDetailsPage
 
