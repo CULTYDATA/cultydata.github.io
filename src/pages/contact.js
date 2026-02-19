@@ -35,8 +35,8 @@ const ContactPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Contact"
-    description="Ready to build your AI-augmented organization? Get in touch with Cultydata Studio."
+    titleKey="meta.contact.title"
+    descriptionKey="meta.contact.description"
   />
 )
 

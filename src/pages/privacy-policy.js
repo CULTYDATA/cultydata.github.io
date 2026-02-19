@@ -51,8 +51,8 @@ const PrivacyPolicyPage = () => {
 
 export const Head = () => (
   <Seo
-    title="Privacy Policy"
-    description="Cultydata Studio privacy policy. GDPR-compliant data protection, transparent data usage, and secure infrastructure."
+    titleKey="meta.privacyPolicy.title"
+    descriptionKey="meta.privacyPolicy.description"
   />
 )
 

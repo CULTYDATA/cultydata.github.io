@@ -38,8 +38,8 @@ const CaseDetailsPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Shared KYC Solution"
-    description="Decentralized KYC solution on private blockchain for investment fund asset managers."
+    titleKey="meta.caseStudies.sharedKyc.title"
+    descriptionKey="meta.caseStudies.sharedKyc.description"
   />
 )
 

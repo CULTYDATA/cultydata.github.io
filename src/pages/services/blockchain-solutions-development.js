@@ -39,8 +39,8 @@ const BlockchainSolutionsDevelopmentPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Blockchain Solutions"
-    description="Custom blockchain platforms for consortiums. Tokenized assets, DApps, smart contracts on private or public chain."
+    titleKey="meta.services.blockchain.title"
+    descriptionKey="meta.services.blockchain.description"
   />
 )
 

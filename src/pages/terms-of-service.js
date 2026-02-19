@@ -136,7 +136,7 @@ const TermsOfServicePage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Terms Of Service" />
+export const Head = () => <Seo titleKey="meta.termsOfService.title" />
 
 export default TermsOfServicePage
 

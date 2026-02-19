@@ -38,8 +38,8 @@ const FullStackPlatformDevelopmentPage = () => {
  */
 export const Head = () => (
   <Seo
-    title="Full-Stack Platforms"
-    description="Web2 and Web3 platform development from frontend to backend. API design, cloud deployment, end-to-end delivery."
+    titleKey="meta.services.fullstack.title"
+    descriptionKey="meta.services.fullstack.description"
   />
 )
 
