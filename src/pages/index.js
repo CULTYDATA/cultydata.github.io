@@ -15,6 +15,7 @@ import OurProjects from "../components/Index2/OurProjects"
 import OurServices from "../components/Index2/OurServices"
 
 import { graphql } from "gatsby"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 import BestPractice from "../components/Index2/BestPractice"
 import OurApproach from "../components/Index2/OurApproach"
 
@@ -50,12 +51,15 @@ const IndexPage = () => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => (
-  <Seo
-    title="Home"
-    description="We build AI-augmented organizations for startups and scale-ups. Senior engineers + AI agents. We build, we ship, we hand over."
-  />
-)
+export const Head = () => {
+  const { t } = useTranslation()
+  return (
+    <Seo
+      title={t("seo.home.title")}
+      description={t("seo.home.description")}
+    />
+  )
+}
 
 export default IndexPage
 
