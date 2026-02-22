@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import serviceIcon1 from "../../images/services/blockchain-icon.png"
 import serviceIcon2 from "../../images/services/datascience-icon.png"
 import serviceIcon3 from "../../images/services/fullstack-icon.png"
-import starIcon from "../../images/shape/icon.svg"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const OurServices = () => {
@@ -31,39 +30,27 @@ const OurServices = () => {
   ]
 
   return (
-    <>
-      <section className="solutions-area pt-70 pb-40">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title">
-              <img src={starIcon} alt="banner" />
-              {t("home.services.subTitle")}
-            </span>
-            <h2> {t("home.services.title")}</h2>
-          </div>
-
-          <div className="row">
-            {services.map((service, index) => (
-              <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
-                <div className="single-solutions-box">
-                  <div className="icon">
-                    <img src={service.icon} alt="about" width="20%" />
-                  </div>
-                  <h3>
-                    <Link to={service.link}>{service.title}</Link>
-                  </h3>
-                  <p>{service.text}</p>
-
-                  <Link className="view-details-btn" to={service.link}>
-                    {t("home.button.viewDetails")}
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
+    <section className="services-minimal">
+      <div className="container">
+        <div className="services-minimal-header">
+          <h2>{t("home.services.title")}</h2>
         </div>
-      </section>
-    </>
+
+        <div className="row">
+          {services.map((service, index) => (
+            <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
+              <Link to={service.link} className="service-card">
+                <div className="service-card-icon">
+                  <img src={service.icon} alt={service.title} />
+                </div>
+                <h3>{service.title}</h3>
+                <p>{service.text}</p>
+              </Link>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

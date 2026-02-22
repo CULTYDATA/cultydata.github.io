@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import starIcon from "../../images/shape/icon.svg"
 
 import project1 from "../../images/projects/project1.jpg"
 import project2 from "../../images/projects/project2.jpg"
@@ -27,54 +26,38 @@ const OurProjects = ({ showAll }) => {
   const displayedProjects = showAll ? projects : projects.slice(0, 3)
 
   return (
-    <>
-      <section className="solutions-area pt-40 pb-100">
-        <div className="container">
-          <div className="section-title">
-            <span className="sub-title">
-              <img src={starIcon} alt="icon" />
-              {t("home.project.subTitle")}
-            </span>
-            <h2> {t("home.project.title")}</h2>
-          </div>
+    <section className="projects-minimal">
+      <div className="container">
+        <div className="projects-minimal-header">
+          <h2>{t("home.project.title")}</h2>
+        </div>
 
-          <div className="row justify-content-center">
-            {displayedProjects.map((project, index) => (
-              <div className="col-lg-4 col-md-6" key={index}>
-                <div className="single-projects-box">
-                  <div className="image">
-                    <img
-                      src={project.img}
-                      alt="Project"
-                      className="fixed-size-image"
-                    />
-
-                    <Link to={project.link} className="link-btn">
-                      <i className="bx bx-plus"></i>
-                    </Link>
-                  </div>
-
-                  <div className="content">
-                    <h3>
-                      <Link to={project.link}>{project.title}</Link>
-                    </h3>
-                    <span>{project.description}</span>
-                  </div>
+        <div className="row justify-content-center">
+          {displayedProjects.map((project, index) => (
+            <div className="col-lg-5 col-md-6" key={index}>
+              <Link to={project.link} className="project-card">
+                <div className="project-card-image">
+                  <img src={project.img} alt={project.title} />
                 </div>
-              </div>
-            ))}
-          </div>
-          {!showAll && (
-            <div className="case-study-more-btn">
-              <Link to="/case-studies" className="default-btn">
-                <i className="flaticon-right"></i>
-                {t("home.button.loadMore")} <span></span>
+                <div className="project-card-content">
+                  <h3>{project.title}</h3>
+                  <span>{project.description}</span>
+                </div>
               </Link>
             </div>
-          )}
+          ))}
         </div>
-      </section>
-    </>
+
+        {!showAll && (
+          <div className="text-center" style={{ marginTop: "40px" }}>
+            <Link to="/case-studies" className="default-btn">
+              <i className="flaticon-right"></i>
+              {t("home.button.loadMore")} <span></span>
+            </Link>
+          </div>
+        )}
+      </div>
+    </section>
   )
 }
 

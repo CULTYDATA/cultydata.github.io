@@ -2945,6 +2945,46 @@ $value_nine: 1550px;
             padding-right: 15px;
         }
     }
+
+    /* Simplified Landing Page - Mobile */
+    .hero-minimal {
+        padding: 140px 0 80px;
+
+        .hero-minimal-content {
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 17px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    .approach-minimal,
+    .services-minimal,
+    .engagement-minimal,
+    .projects-minimal,
+    .cta-minimal {
+        padding: 60px 0;
+    }
+    .approach-minimal .approach-minimal-header,
+    .services-minimal .services-minimal-header,
+    .engagement-minimal .engagement-minimal-header,
+    .projects-minimal .projects-minimal-header {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 28px;
+        }
+    }
+    .cta-minimal .cta-minimal-content {
+        h2 {
+            font-size: 28px;
+        }
+    }
+    .project-card .project-card-image img {
+        height: 180px;
+    }
 }
 
 /* Min width 576px to Max width 767px */
