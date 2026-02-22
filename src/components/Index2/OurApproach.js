@@ -1,5 +1,4 @@
 import React from "react"
-import starIcon from "../../images/shape/icon.svg"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const OurApproach = () => {
@@ -24,13 +23,9 @@ const OurApproach = () => {
   ]
 
   return (
-    <section className="services-area ptb-50 bg-f1f8fb">
+    <section className="approach-minimal">
       <div className="container">
-        <div className="section-title text-center">
-          <span className="sub-title">
-            <img src={starIcon} alt="approach" />
-            {t("approach.subTitle")}
-          </span>
+        <div className="approach-minimal-header">
           <h2>{t("approach.title")}</h2>
           <p>{t("approach.description")}</p>
         </div>
@@ -38,17 +33,13 @@ const OurApproach = () => {
         <div className="row justify-content-center">
           {items.map((item, index) => (
             <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
-              <div className="single-process-box">
-                <div className="icon">
-                  <i
-                    className={item.icon}
-                    style={{ fontSize: "48px", color: "#35796a" }}
-                  ></i>
-                </div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.desc}</p>
-                </div>
+              <div className="approach-card">
+                <i
+                  className={item.icon}
+                  style={{ fontSize: "40px", color: "#37786a" }}
+                ></i>
+                <h3>{item.title}</h3>
+                <p>{item.desc}</p>
               </div>
             </div>
           ))}

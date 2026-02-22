@@ -13164,3 +13164,266 @@ Go Top CSS
     transform: translateY(-5px);
   }
 }
+
+/*================================================
+Simplified Landing Page Components
+=================================================*/
+
+/* Hero Minimal */
+.hero-minimal {
+  padding: 200px 0 140px;
+  text-align: center;
+  background-color: $white-color;
+
+  .hero-minimal-content {
+    max-width: 700px;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.2;
+      margin-bottom: 24px;
+      color: $black-color;
+    }
+
+    p {
+      font-size: 20px;
+      color: $optional-color;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+  }
+}
+
+/* Approach Minimal */
+.approach-minimal {
+  padding: 100px 0;
+  background-color: #f8faf9;
+
+  .approach-minimal-header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 60px;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+      color: $black-color;
+    }
+
+    p {
+      font-size: 18px;
+      color: $optional-color;
+    }
+  }
+
+  .approach-card {
+    text-align: center;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+
+    i {
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: $black-color;
+    }
+
+    p {
+      font-size: 16px;
+      color: $optional-color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Services Minimal */
+.services-minimal {
+  padding: 100px 0;
+  background-color: $white-color;
+
+  .services-minimal-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 36px;
+      color: $black-color;
+    }
+  }
+
+  .service-card {
+    display: block;
+    text-align: center;
+    padding: 50px 30px;
+    margin-bottom: 30px;
+    border: 1px solid #eef0ef;
+    border-radius: 8px;
+    transition: $transition;
+    text-decoration: none;
+
+    &:hover {
+      border-color: $main-color;
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    .service-card-icon {
+      margin-bottom: 24px;
+
+      img {
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+      }
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: $black-color;
+    }
+
+    p {
+      font-size: 16px;
+      color: $optional-color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Engagement Minimal */
+.engagement-minimal {
+  padding: 100px 0;
+  background-color: #f8faf9;
+
+  .engagement-minimal-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 36px;
+      color: $black-color;
+    }
+  }
+
+  .engagement-card {
+    text-align: center;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+    background-color: $white-color;
+    border-radius: 8px;
+    border: 1px solid #eef0ef;
+    transition: $transition;
+
+    &:hover {
+      border-color: $main-color;
+    }
+
+    i {
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: $black-color;
+    }
+
+    p {
+      font-size: 16px;
+      color: $optional-color;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Projects Minimal */
+.projects-minimal {
+  padding: 100px 0;
+  background-color: $white-color;
+
+  .projects-minimal-header {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h2 {
+      font-size: 36px;
+      color: $black-color;
+    }
+  }
+
+  .project-card {
+    display: block;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eef0ef;
+    transition: $transition;
+    text-decoration: none;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
+      .project-card-image img {
+        transform: scale(1.03);
+      }
+    }
+
+    .project-card-image {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        transition: $transition;
+      }
+    }
+
+    .project-card-content {
+      padding: 24px;
+
+      h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: $black-color;
+      }
+
+      span {
+        font-size: 15px;
+        color: $optional-color;
+      }
+    }
+  }
+}
+
+/* CTA Minimal */
+.cta-minimal {
+  padding: 100px 0;
+  background-color: #f8faf9;
+
+  .cta-minimal-content {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+      color: $black-color;
+    }
+
+    p {
+      font-size: 18px;
+      color: $optional-color;
+      margin-bottom: 32px;
+    }
+  }
+}

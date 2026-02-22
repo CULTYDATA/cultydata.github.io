@@ -4,18 +4,14 @@ import Seo from "../components/_App/seo"
 import Navbar from "../components/_App/Navbar"
 import MainBanner from "../components/Index2/MainBanner"
 
-import AboutUs from "../components/Index2/AboutUs"
-
 import StartProject from "../components/Index2/StartProject"
 import Footer from "../components/_App/Footer"
 
 import OurEngagementModel from "../components/Index2/OurEngagementModel"
-import OurProvenProcess from "../components/Index2/OurProvenProcess"
 import OurProjects from "../components/Index2/OurProjects"
 import OurServices from "../components/Index2/OurServices"
 
 import { graphql } from "gatsby"
-import BestPractice from "../components/Index2/BestPractice"
 import OurApproach from "../components/Index2/OurApproach"
 
 const IndexPage = () => {
@@ -24,17 +20,12 @@ const IndexPage = () => {
       <Navbar />
 
       <MainBanner />
-      <AboutUs />
 
       <OurApproach />
 
       <OurServices />
 
       <OurEngagementModel />
-
-      <OurProvenProcess />
-
-      <BestPractice />
 
       <OurProjects showAll={false} />
 
@@ -53,7 +44,7 @@ const IndexPage = () => {
 export const Head = () => (
   <Seo
     title="Home"
-    description="We build AI-augmented organizations for startups and scale-ups. Senior engineers + AI agents. We build, we ship, we hand over."
+    description="Cultydata Studio builds AI-augmented organizations for startups and scale-ups. Senior engineers + AI agents. We build, ship, and hand over."
   />
 )
 
