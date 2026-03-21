@@ -1,5 +1,4 @@
 import React from "react"
-import starIcon from "../../images/shape/icon.svg"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const AIAgents = () => {
@@ -33,48 +32,23 @@ const AIAgents = () => {
   ]
 
   return (
-    <section className="services-area ptb-50">
+    <section className="qk-ai-agents">
       <div className="container">
-        <div className="section-title text-center">
-          <span className="sub-title">
-            <img src={starIcon} alt="ai agents" />
-            {t("team.aiAgents.subTitle")}
-          </span>
+        <div className="qk-section-header qk-section-header--centered">
+          <span className="qk-label">{t("team.aiAgents.subTitle")}</span>
           <h2>{t("team.aiAgents.title")}</h2>
           <p>{t("team.aiAgents.description")}</p>
         </div>
 
-        <div className="row justify-content-center">
+        <div className="qk-ai-agents__grid">
           {agents.map((agent, index) => (
-            <div className="col-lg-3 col-md-6 col-sm-6" key={index}>
-              <div
-                className="single-process-box"
-                style={{
-                  textAlign: "center",
-                  borderColor: "#35796a",
-                  borderStyle: "dashed",
-                }}
-              >
-                <div style={{ marginBottom: "15px" }}>
-                  <i
-                    className={agent.icon}
-                    style={{ fontSize: "52px", color: "#35796a" }}
-                  ></i>
-                </div>
-                <h3 style={{ fontSize: "20px" }}>{agent.name}</h3>
-                <span
-                  style={{
-                    display: "block",
-                    color: "#35796a",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    marginBottom: "10px",
-                  }}
-                >
-                  {agent.role}
-                </span>
-                <p style={{ fontSize: "14px" }}>{agent.desc}</p>
+            <div className="qk-card qk-card--ai" key={index}>
+              <div className="qk-ai-agents__icon">
+                <i className={agent.icon} />
               </div>
+              <h3>{agent.name}</h3>
+              <span className="qk-ai-agents__role">{agent.role}</span>
+              <p>{agent.desc}</p>
             </div>
           ))}
         </div>

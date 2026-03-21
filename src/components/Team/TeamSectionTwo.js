@@ -1,5 +1,4 @@
 import React from "react"
-import starIcon from "../../images/shape/icon.svg"
 import team1 from "../../images/team/mo.png"
 import team2 from "../../images/team/dawood.png"
 import { useTranslation } from "gatsby-plugin-react-i18next"
@@ -7,72 +6,52 @@ import { useTranslation } from "gatsby-plugin-react-i18next"
 const TeamSectionTwo = () => {
   const { t } = useTranslation()
 
+  const partners = [
+    {
+      img: team1,
+      name: t("team.partners.member1.name"),
+      position: t("team.partners.member1.position"),
+      company: t("team.partners.member1.description"),
+      link: t("team.partners.member1.socialLink"),
+    },
+    {
+      img: team2,
+      name: t("team.partners.member2.name"),
+      position: t("team.partners.member2.position"),
+      company: t("team.partners.member2.description"),
+      link: t("team.partners.member2.socialLink"),
+    },
+  ]
+
   return (
-    <section className="scientist-area">
+    <section className="qk-team-partners">
       <div className="container">
-        <div className="section-title">
-          <span className="sub-title">
-            <img src={starIcon} alt="testimonials" />
-            {t("team.partners.subTitle")}
-          </span>
+        <div className="qk-section-header">
+          <span className="qk-label">{t("team.partners.subTitle")}</span>
           <h2>{t("team.partners.title")}</h2>
         </div>
 
-        <div className="row justify-content-center">
-          {/* Team member 1 */}
-          <div className="col-lg-3 col-sm-6">
-            <div className="single-scientist-item-box">
-              <div className="image">
-                <img src={team1} alt={t("team.partners.member1.name")} />
-
-                <ul className="social">
-                  <li>
-                    <a
-                      href={t("team.partners.member1.socialLink")}
-                      className="d-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bx bxl-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
+        <div className="qk-team-partners__grid">
+          {partners.map((partner, index) => (
+            <div className="qk-team-card" key={index}>
+              <div className="qk-team-card__image">
+                <img src={partner.img} alt={partner.name} />
+                <a
+                  href={partner.link}
+                  className="qk-team-card__linkedin"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i className="bx bxl-linkedin"></i>
+                </a>
               </div>
-              <div className="content">
-                <h3>{t("team.partners.member1.name")}</h3>
-                <span>{t("team.partners.member1.description")}</span>
-                <br />
-                <span>{t("team.partners.member1.position")}</span>
+              <div className="qk-team-card__info">
+                <h3>{partner.name}</h3>
+                <span>{partner.company}</span>
+                <span>{partner.position}</span>
               </div>
             </div>
-          </div>
-
-          <div className="col-lg-3 col-sm-6">
-            <div className="single-scientist-item-box">
-              <div className="image">
-                <img src={team2} alt={t("team.partners.member2.name")} />
-
-                <ul className="social">
-                  <li>
-                    <a
-                      href={t("team.partners.member2.socialLink")}
-                      className="d-block"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <i className="bx bxl-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="content">
-                <h3>{t("team.partners.member2.name")}</h3>
-                <span>{t("team.partners.member2.description")}</span>
-                <br />
-                <span>{t("team.partners.member2.position")}</span>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

@@ -6,14 +6,15 @@ const StartProject = () => {
   const { t } = useTranslation()
 
   return (
-    <section className="cta-minimal">
+    <section className="qk-cta">
+      <div className="qk-cta__circle-decor" aria-hidden="true" />
       <div className="container">
-        <div className="cta-minimal-content">
+        <div className="qk-cta__content">
+          <span className="qk-label">{t("startProject.label")}</span>
           <h2>{t("startProject.title")}</h2>
           <p>{t("startProject.description")}</p>
-          <Link to="/contact" className="default-btn">
-            <i className="flaticon-web"></i> {t("startProject.button")}
-            <span></span>
+          <Link to="/contact" className="qk-btn qk-btn--cta">
+            {t("startProject.button")}
           </Link>
         </div>
       </div>

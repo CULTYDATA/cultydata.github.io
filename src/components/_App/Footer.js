@@ -8,106 +8,69 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="footer-area bg-color">
+    <footer className="qk-footer">
+      <div className="qk-footer__circle-decor" aria-hidden="true" />
       <div className="container">
-        <div className="row">
-          <div className="col-lg-4 col-sm-6">
-            <div className="single-footer-widget">
-              <Link to="/" className="logo">
-                <img src={logo} alt="logo" />
-              </Link>
-              <p className="slogan">{t("footer.description")}</p>
-
-              <ul className="social-link">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/company/cultydata/about/"
-                    className="d-block"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="bx bxl-linkedin"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+        <div className="qk-footer__main">
+          <div className="qk-footer__brand">
+            <Link to="/" className="qk-footer__logo">
+              <img src={logo} alt="Cultydata Studio" />
+            </Link>
+            <p className="qk-footer__tagline">{t("footer.description")}</p>
+            <ul className="qk-footer__social">
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/cultydata/about/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <i className="bx bxl-linkedin"></i>
+                </a>
+              </li>
+            </ul>
           </div>
 
-          <div className="col-lg-2 col-sm-6">
-            <div className="single-footer-widget pl-5">
-              <h3>{t("footer.explore")}</h3>
-
-              <ul className="footer-links-list">
-                <li>
-                  <Link to="/">{t("footer.home")}</Link>
-                </li>
-                <li>
-                  <Link to="/about-us">{t("footer.about")}</Link>
-                </li>
-
-                <li>
-                  <Link to="/contact">{t("footer.contact")}</Link>
-                </li>
-              </ul>
-            </div>
+          <div className="qk-footer__nav">
+            <h4>{t("footer.explore")}</h4>
+            <ul>
+              <li><Link to="/">{t("footer.home")}</Link></li>
+              <li><Link to="/about-us">{t("footer.about")}</Link></li>
+              <li><Link to="/team">{t("footer.team")}</Link></li>
+              <li><Link to="/contact">{t("footer.contact")}</Link></li>
+            </ul>
           </div>
 
-          <div className="col-lg-2 col-sm-6">
-            <div className="single-footer-widget">
-              <h3>{t("footer.resources")}</h3>
-
-              <ul className="footer-links-list">
-                <li>
-                  <Link to="/services">{t("footer.services")}</Link>
-                </li>
-                <li>
-                  <Link to="/team">{t("footer.team")}</Link>
-                </li>
-              </ul>
-            </div>
+          <div className="qk-footer__nav">
+            <h4>{t("footer.resources")}</h4>
+            <ul>
+              <li><Link to="/services/blockchain-solutions-development">{t("services.svc1.blockchain")}</Link></li>
+              <li><Link to="/services/fullstack-platform-development">{t("services.svc2.fullstack")}</Link></li>
+              <li><Link to="/services/datascience-and-ml-consulting">{t("services.svc3.datascience")} {t("services.svc3.machinelearning")}</Link></li>
+              <li><Link to="/case-studies">{t("home.navbar.case")}</Link></li>
+            </ul>
           </div>
 
-          <div className="col-lg-4 col-sm-6">
-            <div className="single-footer-widget">
-              <h3>{t("footer.address")}</h3>
-
-              <ul className="footer-contact-info">
-                <li>
-                  <i className="bx bx-map"></i>
-                  {t("general.addressDetails")}
-                </li>
-
-                <li>
-                  <i className="bx bx-envelope"></i>
-                  <a href={t("general.mailto")}>
-                    {t("general.email")}
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <div className="qk-footer__contact">
+            <h4>{t("footer.address")}</h4>
+            <ul>
+              <li>
+                <i className="bx bx-map"></i>
+                {t("general.addressDetails")}
+              </li>
+              <li>
+                <i className="bx bx-envelope"></i>
+                <a href={t("general.mailto")}>{t("general.email")}</a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="footer-bottom-area">
-          <div className="row align-items-center">
-            <div className="col-lg-6 col-md-6">
-              <p>{t("footer.copyright", { year: currentYear })}</p>
-            </div>
-
-            <div className="col-lg-6 col-md-6">
-              <ul>
-                <li className="hyper-link">
-                  <Link to="/privacy-policy">{t("footer.privacyPolicy")}</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="qk-footer__bottom">
+          <p>{t("footer.copyright", { year: currentYear })}</p>
+          <Link to="/privacy-policy">{t("footer.privacyPolicy")}</Link>
         </div>
       </div>
-
-      {/* <div className="footer-map">
-        <img src={footerMap} alt="map" />
-      </div> */}
     </footer>
   )
 }

@@ -1,67 +1,48 @@
 import React from "react"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
-import serviceIcon1 from "../../images/services/comp.png"
-import serviceIcon2 from "../../images/services/exp.png"
-import serviceIcon3 from "../../images/services/adapt.png"
-
 const WhyChooseUs = () => {
   const { t } = useTranslation()
 
+  const features = [
+    {
+      icon: "bx bx-run",
+      title: t("whyChooseUs.feature1.title"),
+      description: t("whyChooseUs.feature1.description"),
+    },
+    {
+      icon: "bx bx-code-block",
+      title: t("whyChooseUs.feature2.title"),
+      description: t("whyChooseUs.feature2.description"),
+    },
+    {
+      icon: "bx bx-target-lock",
+      title: t("whyChooseUs.feature3.title"),
+      description: t("whyChooseUs.feature3.description"),
+    },
+  ]
+
   return (
-    <>
-      <section className="featured-services-area ptb-50">
-        <div className="container">
-          <div className="section-title">
-            <h2>{t("whyChooseUs.title")}</h2>
-          </div>
-
-          <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-featured-services-box">
-                <div className="icon">
-                  <img
-                    src={serviceIcon1}
-                    alt={t("whyChooseUs.feature1.alt")}
-                    width="80%"
-                  />
-                </div>
-                <h3>{t("whyChooseUs.feature1.title")}</h3>
-                <p>{t("whyChooseUs.feature1.description")}</p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="single-featured-services-box">
-                <div className="icon">
-                  <img
-                    src={serviceIcon2}
-                    alt={t("whyChooseUs.feature2.alt")}
-                    width="80%"
-                  />
-                </div>
-                <h3>{t("whyChooseUs.feature2.title")}</h3>
-                <p>{t("whyChooseUs.feature2.description")}</p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-              <div className="single-featured-services-box">
-                <div className="icon">
-                  <img
-                    src={serviceIcon3}
-                    alt={t("whyChooseUs.feature3.alt")}
-                    width="90%"
-                  />
-                </div>
-                <h3>{t("whyChooseUs.feature3.title")}</h3>
-                <p>{t("whyChooseUs.feature3.description")}</p>
-              </div>
-            </div>
-          </div>
+    <section className="qk-why-us">
+      <div className="container">
+        <div className="qk-section-header qk-section-header--centered">
+          <h2>{t("whyChooseUs.title")}</h2>
         </div>
-      </section>
-    </>
+
+        <div className="qk-why-us__grid">
+          {features.map((feature, index) => (
+            <div className="qk-card" key={index}>
+              <span className="qk-card__number">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <i className={feature.icon} />
+              <h3>{feature.title}</h3>
+              <p>{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   )
 }
 

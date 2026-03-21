@@ -6,40 +6,36 @@ const OurEngagementModel = () => {
 
   const models = [
     {
-      icon: "bx bx-conversation",
       title: t("home.engModel.techConsulting.title"),
       description: t("home.engModel.techConsulting.desc"),
     },
     {
-      icon: "bx bx-transfer",
       title: t("home.engModel.bot.title"),
       description: t("home.engModel.bot.desc"),
+      featured: true,
     },
     {
-      icon: "bx bx-rocket",
       title: t("home.engModel.startupAccel.title"),
       description: t("home.engModel.startupAccel.desc"),
     },
   ]
 
   return (
-    <section className="engagement-minimal">
+    <section className="qk-engagement">
       <div className="container">
-        <div className="engagement-minimal-header">
+        <div className="qk-section-header qk-section-header--centered">
+          <span className="qk-label">{t("home.engModel.subtitle")}</span>
           <h2>{t("home.engModel.title")}</h2>
         </div>
 
-        <div className="row justify-content-center">
+        <div className="qk-engagement__grid">
           {models.map((model, index) => (
-            <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
-              <div className="engagement-card">
-                <i
-                  className={model.icon}
-                  style={{ fontSize: "36px", color: "#37786a" }}
-                ></i>
-                <h3>{model.title}</h3>
-                <p>{model.description}</p>
-              </div>
+            <div
+              className={`qk-card ${model.featured ? "qk-card--featured" : ""}`}
+              key={index}
+            >
+              <h3>{model.title}</h3>
+              <p>{model.description}</p>
             </div>
           ))}
         </div>
