@@ -14,21 +14,18 @@ const Navbar = () => {
     setCollapsed(!collapsed)
   }
 
-  const handleLogoClick = () => {
-    window.location.reload()
-    setCollapsed(true)
-  }
-
   React.useEffect(() => {
-    let elementId = document.getElementById("navbar")
-    document.addEventListener("scroll", () => {
+    const elementId = document.getElementById("navbar")
+    const handleScroll = () => {
       if (window.scrollY > 170) {
         elementId.classList.add("is-sticky")
       } else {
         elementId.classList.remove("is-sticky")
       }
-    })
-  })
+    }
+    document.addEventListener("scroll", handleScroll)
+    return () => document.removeEventListener("scroll", handleScroll)
+  }, [])
 
   const classOne = collapsed
     ? "collapse navbar-collapse"
@@ -38,147 +35,135 @@ const Navbar = () => {
     : "navbar-toggler navbar-toggler-right"
 
   return (
-    <>
-      <div id="navbar" className="navbar-area">
-        <div className="rewy-nav">
-          <div className="container-fluid">
-            <nav className="navbar navbar-expand-lg navbar-light">
-              <Link href="/" onClick={handleLogoClick} className="navbar-brand">
-                <img src={logo} alt="logo" />
-              </Link>
+    <div id="navbar" className="qk-navbar">
+      <div className="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="Cultydata Studio" />
+          </Link>
 
-              <button
-                onClick={toggleNavbar}
-                className={classTwo}
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="icon-bar top-bar"></span>
-                <span className="icon-bar middle-bar"></span>
-                <span className="icon-bar bottom-bar"></span>
-              </button>
+          <button
+            onClick={toggleNavbar}
+            className={classTwo}
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded={!collapsed}
+            aria-label="Toggle navigation"
+          >
+            <span className="icon-bar top-bar"></span>
+            <span className="icon-bar middle-bar"></span>
+            <span className="icon-bar bottom-bar"></span>
+          </button>
 
-              <div className={classOne} id="navbarSupportedContent">
-                <ul className="navbar-nav">
-                  {/* Language selector for mobile view */}
-                  <li className="nav-item lang-mobile">
-                    <Lang />
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/" className="nav-link">
-                      {t("home.navbar.home")}
-                    </Link>
-                  </li>
+          <div className={classOne} id="navbarSupportedContent">
+            <ul className="navbar-nav">
+              <li className="nav-item lang-mobile">
+                <Lang />
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/"
+                  activeClassName="active"
+                  onClick={() => setCollapsed(true)}
+                  className="nav-link"
+                >
+                  {t("home.navbar.home")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/about-us"
+                  activeClassName="active"
+                  onClick={() => setCollapsed(true)}
+                  className="nav-link"
+                >
+                  {t("home.navbar.about")}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="#"
+                  onClick={e => e.preventDefault()}
+                  className="nav-link"
+                >
+                  {t("home.navbar.services")}{" "}
+                  <i className="bx bx-chevron-down"></i>
+                </Link>
+                <ul className="dropdown-menu">
                   <li className="nav-item">
                     <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      {t("home.navbar.about")}{" "}
-                      <i className="bx bx-chevron-down"></i>
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/about-us"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          {t("home.navbar.about")}
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/team"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          {t("team.pageTitle")}
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      to="#"
-                      onClick={e => e.preventDefault()}
-                      className="nav-link"
-                    >
-                      {t("home.navbar.services")}{" "}
-                      <i className="bx bx-chevron-down"></i>
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          to="/services/blockchain-solutions-development"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          {t("services.svc1.blockchain")}
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/fullstack-platform-development"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          {t("services.svc2.fullstack")}
-                        </Link>
-                      </li>
-                      <li className="nav-item">
-                        <Link
-                          to="/services/datascience-and-ml-consulting"
-                          activeClassName="active"
-                          onClick={() => setCollapsed(true)}
-                          className="nav-link"
-                        >
-                          {t("services.svc3.datascience")}{" "}
-                          {t("services.svc3.machinelearning")}
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/case-studies" className="nav-link">
-                      {t("home.navbar.case")}
-                    </Link>
-                  </li>
-                  {/* Language selector for desktop view */}
-                  <li className="nav-item lang-desktop">
-                    <Lang />
-                  </li>
-                </ul>
-
-                <div className="others-option d-flex align-items-center">
-                  <div className="option-item">
-                    <Link
-                      to="/contact"
+                      to="/services/blockchain-solutions-development"
                       activeClassName="active"
                       onClick={() => setCollapsed(true)}
-                      className="default-btn"
+                      className="nav-link"
                     >
-                      <i className="flaticon-right"></i>{" "}
-                      {t("home.button.contact")}
-                      <span></span>
+                      {t("services.svc1.blockchain")}
                     </Link>
-                  </div>
-                </div>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/services/fullstack-platform-development"
+                      activeClassName="active"
+                      onClick={() => setCollapsed(true)}
+                      className="nav-link"
+                    >
+                      {t("services.svc2.fullstack")}
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/services/datascience-and-ml-consulting"
+                      activeClassName="active"
+                      onClick={() => setCollapsed(true)}
+                      className="nav-link"
+                    >
+                      {t("services.svc3.datascience")}{" "}
+                      {t("services.svc3.machinelearning")}
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link
+                      to="/services/comprehensive-support"
+                      activeClassName="active"
+                      onClick={() => setCollapsed(true)}
+                      className="nav-link"
+                    >
+                      {t("services.comprehensive.txt1")}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/case-studies"
+                  activeClassName="active"
+                  onClick={() => setCollapsed(true)}
+                  className="nav-link"
+                >
+                  {t("home.navbar.case")}
+                </Link>
+              </li>
+              <li className="nav-item lang-desktop">
+                <Lang />
+              </li>
+            </ul>
+
+            <div className="others-option d-flex align-items-center">
+              <div className="option-item">
+                <Link
+                  to="/contact"
+                  activeClassName="active"
+                  onClick={() => setCollapsed(true)}
+                  className="qk-btn qk-btn--primary qk-btn--sm"
+                >
+                  {t("home.button.contact")}
+                </Link>
               </div>
-            </nav>
+            </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </>
+    </div>
   )
 }
 

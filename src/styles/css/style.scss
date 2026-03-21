@@ -68,15 +68,31 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 
-@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap");
 
-$font-family: "Sulphur Point", sans-serif;
-$main-color: #37786a;
+$font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+$mono-font: "JetBrains Mono", monospace;
+$main-color: #0a0a0a;
 $white-color: #ffffff;
-$black-color: #03271f;
-$optional-color: #6b6b84;
-$font-size: 17px;
-$transition: 0.5s;
+$black-color: #0a0a0a;
+$optional-color: #525252;
+$font-size: 16px;
+$transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Quantum Kandinsky palette
+$gray-100: #f5f5f5;
+$gray-200: #e5e5e5;
+$gray-300: #d4d4d4;
+$gray-400: #a3a3a3;
+$gray-500: #737373;
+$gray-600: #525252;
+$gray-700: #404040;
+$gray-800: #262626;
+$gray-900: #171717;
+$accent-blue: #2563eb;
+$accent-red: #dc2626;
+$accent-yellow: #eab308;
+$accent-purple: #7c3aed;
 
 body {
   padding: 0;
@@ -13166,264 +13182,1163 @@ Go Top CSS
 }
 
 /*================================================
-Simplified Landing Page Components
+Quantum Kandinsky Design System
 =================================================*/
 
-/* Hero Minimal */
-.hero-minimal {
-  padding: 200px 0 140px;
-  text-align: center;
-  background-color: $white-color;
+/* -- Atoms: Labels -- */
+.qk-label {
+  font-family: $mono-font;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $gray-400;
+  display: inline-block;
+  margin-bottom: 12px;
+}
 
-  .hero-minimal-content {
-    max-width: 700px;
-    margin: 0 auto;
+/* -- Atoms: Buttons -- */
+.qk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font-family: $font-family;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: $transition;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  white-space: nowrap;
 
+  &--primary {
+    background: $black-color;
+    color: $white-color;
+    border-color: $black-color;
+
+    &:hover {
+      background: $white-color;
+      color: $black-color;
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: $black-color;
+    border-color: $black-color;
+
+    &:hover {
+      background: $black-color;
+      color: $white-color;
+    }
+  }
+
+  &--cta {
+    background: $accent-blue;
+    color: $white-color;
+    border-color: $accent-blue;
+
+    &:hover {
+      background: lighten($accent-blue, 8%);
+      border-color: lighten($accent-blue, 8%);
+    }
+  }
+
+  &--sm {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+/* -- Molecules: Section Headers -- */
+.qk-section-header {
+  margin-bottom: 48px;
+  max-width: 640px;
+
+  h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    color: $black-color;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 17px;
+    color: $gray-600;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  &--centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* -- Molecules: Cards -- */
+.qk-card {
+  padding: 28px;
+  border: 1px solid $gray-200;
+  border-radius: 12px;
+  background: $white-color;
+  transition: $transition;
+
+  &:hover {
+    border-color: $black-color;
+  }
+
+  .qk-card__number {
+    font-family: $mono-font;
+    font-size: 14px;
+    color: $gray-400;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  i {
+    font-size: 32px;
+    color: $black-color;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $black-color;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    color: $gray-600;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &--ai {
+    border-style: dashed;
+    border-color: $gray-300;
+    border-left: 3px solid $accent-purple;
+
+    .qk-card__number {
+      color: $accent-purple;
+    }
+
+    i {
+      color: $accent-purple;
+    }
+
+    &:hover {
+      border-color: $accent-purple;
+      border-left-color: $accent-purple;
+    }
+  }
+
+  &--featured {
+    border-top: 3px solid $black-color;
+    background: $gray-100;
+  }
+}
+
+/* -- Navbar -- */
+.qk-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+  transition: $transition;
+
+  &.is-sticky {
+    background: $white-color;
+    border-bottom: 1px solid $gray-200;
+    box-shadow: none;
+  }
+
+  .navbar-brand {
+    img {
+      max-width: 160px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      font-size: 14px;
+      font-weight: 500;
+      color: $gray-700;
+      padding: 8px 16px;
+
+      &:hover,
+      &.active {
+        color: $black-color;
+      }
+
+      i {
+        font-size: 12px;
+      }
+    }
+
+    .dropdown-menu {
+      border: 1px solid $gray-200;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      padding: 8px 0;
+
+      .nav-link {
+        font-size: 14px;
+        padding: 8px 20px;
+
+        &:hover {
+          background: $gray-100;
+        }
+      }
+    }
+  }
+
+  .icon-bar {
+    background: $black-color;
+  }
+}
+
+/* -- Hero -- */
+.qk-hero {
+  padding: 160px 0 80px;
+  background: $white-color;
+  position: relative;
+  overflow: hidden;
+
+  .qk-hero__circle-decor {
+    position: absolute;
+    top: -120px;
+    right: -120px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 1px solid $gray-200;
+    pointer-events: none;
+  }
+
+  .qk-hero__content {
     h1 {
       font-size: 48px;
-      line-height: 1.2;
-      margin-bottom: 24px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
       color: $black-color;
+      margin: 0 0 20px;
     }
 
-    p {
-      font-size: 20px;
-      color: $optional-color;
-      margin-bottom: 40px;
+    .qk-hero__title-fade {
+      color: $gray-400;
+    }
+
+    > p {
+      font-size: 17px;
       line-height: 1.6;
-    }
-  }
-}
-
-/* Approach Minimal */
-.approach-minimal {
-  padding: 100px 0;
-  background-color: #f8faf9;
-
-  .approach-minimal-header {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 60px;
-
-    h2 {
-      font-size: 36px;
-      margin-bottom: 12px;
-      color: $black-color;
-    }
-
-    p {
-      font-size: 18px;
-      color: $optional-color;
+      color: $gray-600;
+      max-width: 480px;
+      margin: 0 0 32px;
     }
   }
 
-  .approach-card {
-    text-align: center;
-    padding: 40px 30px;
-    margin-bottom: 30px;
+  .qk-hero__actions {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+  }
 
-    i {
-      margin-bottom: 20px;
+  .qk-hero__proof {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    .qk-hero__proof-item {
+      strong {
+        display: block;
+        font-size: 28px;
+        font-weight: 800;
+        color: $black-color;
+        font-family: $mono-font;
+      }
+
+      span {
+        font-size: 12px;
+        color: $gray-400;
+        font-family: $mono-font;
+      }
+    }
+
+    .qk-hero__proof-divider {
+      width: 1px;
+      height: 40px;
+      background: $gray-200;
+    }
+  }
+
+  .qk-hero__visual {
+    .math-illustration {
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
       display: block;
     }
-
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      color: $black-color;
-    }
-
-    p {
-      font-size: 16px;
-      color: $optional-color;
-      margin-bottom: 0;
-    }
   }
 }
 
-/* Services Minimal */
-.services-minimal {
+/* -- Approach Section -- */
+.qk-approach {
   padding: 100px 0;
-  background-color: $white-color;
+  background: $gray-100;
 
-  .services-minimal-header {
-    text-align: center;
-    margin-bottom: 60px;
+  .qk-approach__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
 
-    h2 {
-      font-size: 36px;
-      color: $black-color;
-    }
+/* -- Services Section -- */
+.qk-services {
+  padding: 100px 0;
+  background: $white-color;
+
+  .qk-services__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .service-card {
-    display: block;
-    text-align: center;
-    padding: 50px 30px;
-    margin-bottom: 30px;
-    border: 1px solid #eef0ef;
-    border-radius: 8px;
-    transition: $transition;
+  .qk-service-row {
+    display: flex;
+    align-items: center;
+    padding: 20px 28px;
+    border: 1px solid $gray-200;
+    border-radius: 12px;
     text-decoration: none;
+    transition: $transition;
+    background: $white-color;
+    gap: 20px;
 
     &:hover {
-      border-color: $main-color;
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      border-color: $black-color;
+      border-left: 3px solid $black-color;
+
+      .qk-service-row__arrow {
+        color: $black-color;
+      }
     }
 
-    .service-card-icon {
-      margin-bottom: 24px;
+    .qk-service-row__number {
+      flex-shrink: 0;
+    }
+
+    .qk-service-row__icon {
+      flex-shrink: 0;
+      width: 40px;
 
       img {
-        width: 60px;
-        height: 60px;
-        object-fit: contain;
+        width: 100%;
+        height: auto;
+      }
+
+      &--ai {
+        i {
+          font-size: 32px;
+          color: $accent-purple;
+        }
       }
     }
 
-    h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: $black-color;
+    .qk-service-row__body {
+      flex: 1;
+      min-width: 0;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black-color;
+        margin: 0 0 2px;
+      }
+
+      p {
+        font-size: 14px;
+        color: $gray-500;
+        margin: 0;
+      }
     }
 
-    p {
-      font-size: 16px;
-      color: $optional-color;
-      margin-bottom: 0;
-    }
-  }
-}
-
-/* Engagement Minimal */
-.engagement-minimal {
-  padding: 100px 0;
-  background-color: #f8faf9;
-
-  .engagement-minimal-header {
-    text-align: center;
-    margin-bottom: 60px;
-
-    h2 {
-      font-size: 36px;
-      color: $black-color;
-    }
-  }
-
-  .engagement-card {
-    text-align: center;
-    padding: 40px 30px;
-    margin-bottom: 30px;
-    background-color: $white-color;
-    border-radius: 8px;
-    border: 1px solid #eef0ef;
-    transition: $transition;
-
-    &:hover {
-      border-color: $main-color;
-    }
-
-    i {
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    h3 {
+    .qk-service-row__arrow {
       font-size: 20px;
-      margin-bottom: 10px;
-      color: $black-color;
-    }
-
-    p {
-      font-size: 16px;
-      color: $optional-color;
-      margin-bottom: 0;
+      color: $gray-300;
+      transition: $transition;
+      flex-shrink: 0;
     }
   }
 }
 
-/* Projects Minimal */
-.projects-minimal {
+/* -- Engagement Section -- */
+.qk-engagement {
   padding: 100px 0;
-  background-color: $white-color;
+  background: $gray-100;
 
-  .projects-minimal-header {
-    text-align: center;
-    margin-bottom: 60px;
+  .qk-engagement__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 
-    h2 {
-      font-size: 36px;
-      color: $black-color;
+    .qk-card {
+      text-align: center;
     }
   }
+}
 
-  .project-card {
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #eef0ef;
-    transition: $transition;
+/* -- Projects Section -- */
+.qk-projects {
+  padding: 100px 0;
+  background: $white-color;
+
+  .qk-project-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin-bottom: 48px;
     text-decoration: none;
 
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    &--reversed {
+      direction: rtl;
 
-      .project-card-image img {
-        transform: scale(1.03);
+      > * {
+        direction: ltr;
       }
     }
 
-    .project-card-image {
+    .qk-project-row__image {
+      border-radius: 12px;
       overflow: hidden;
 
       img {
         width: 100%;
-        height: 220px;
-        object-fit: cover;
+        display: block;
         transition: $transition;
       }
     }
 
-    .project-card-content {
-      padding: 24px;
+    &:hover .qk-project-row__image img {
+      transform: scale(1.02);
+    }
 
+    .qk-project-row__info {
       h3 {
-        font-size: 20px;
-        margin-bottom: 8px;
+        font-size: 24px;
+        font-weight: 700;
         color: $black-color;
+        margin: 8px 0;
+        letter-spacing: -0.01em;
       }
 
-      span {
+      p {
         font-size: 15px;
-        color: $optional-color;
+        color: $gray-600;
+        margin: 0 0 16px;
+        line-height: 1.6;
+      }
+
+      .qk-project-row__link {
+        color: $black-color;
+        font-weight: 600;
+        font-size: 14px;
       }
     }
   }
 }
 
-/* CTA Minimal */
-.cta-minimal {
-  padding: 100px 0;
-  background-color: #f8faf9;
+/* -- CTA Section -- */
+.qk-cta {
+  padding: 80px 0;
+  background: $gray-900;
+  position: relative;
+  overflow: hidden;
 
-  .cta-minimal-content {
+  .qk-cta__circle-decor {
+    position: absolute;
+    bottom: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid $gray-800;
+    pointer-events: none;
+  }
+
+  .qk-cta__content {
     text-align: center;
-    max-width: 500px;
+    max-width: 520px;
     margin: 0 auto;
+
+    .qk-label {
+      color: $gray-500;
+    }
 
     h2 {
       font-size: 36px;
+      font-weight: 700;
+      color: $white-color;
       margin-bottom: 12px;
-      color: $black-color;
+      letter-spacing: -0.02em;
     }
 
     p {
-      font-size: 18px;
-      color: $optional-color;
+      font-size: 17px;
+      color: $gray-500;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+/* -- Footer -- */
+.qk-footer {
+  background: $black-color;
+  padding: 64px 0 0;
+  position: relative;
+  overflow: hidden;
+
+  .qk-footer__circle-decor {
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid $gray-800;
+    pointer-events: none;
+  }
+
+  .qk-footer__main {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 32px;
+    padding-bottom: 48px;
+  }
+
+  .qk-footer__brand {
+    .qk-footer__logo img {
+      max-width: 140px;
+      filter: brightness(0) invert(1);
+    }
+
+    .qk-footer__tagline {
+      font-size: 14px;
+      color: $gray-500;
+      line-height: 1.6;
+      margin: 16px 0;
+    }
+
+    .qk-footer__social {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 12px;
+
+      a {
+        color: $gray-500;
+        font-size: 20px;
+        transition: $transition;
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .qk-footer__nav {
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $white-color;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 8px;
+
+        a {
+          font-size: 13px;
+          color: $gray-500;
+          text-decoration: none;
+          transition: $transition;
+
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .qk-footer__contact {
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $white-color;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        font-size: 13px;
+        color: $gray-500;
+        margin-bottom: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 8px;
+
+        i {
+          font-size: 16px;
+          margin-top: 2px;
+          flex-shrink: 0;
+        }
+
+        a {
+          color: $gray-500;
+          text-decoration: none;
+
+          &:hover {
+            color: $white-color;
+          }
+        }
+      }
+    }
+  }
+
+  .qk-footer__bottom {
+    border-top: 1px solid $gray-800;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 13px;
+      color: $gray-500;
+      margin: 0;
+      font-family: $mono-font;
+    }
+
+    a {
+      font-size: 12px;
+      color: $gray-500;
+      text-decoration: none;
+      font-family: $mono-font;
+
+      &:hover {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+/* -- Page Banner (minimal) -- */
+.qk-page-banner {
+  padding: 140px 0 40px;
+  background: $white-color;
+  border-bottom: 1px solid $gray-200;
+
+  .qk-page-banner__content {
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      color: $black-color;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .qk-page-banner__breadcrumb {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 8px;
+      font-family: $mono-font;
+      font-size: 13px;
+
+      li {
+        color: $gray-400;
+
+        &::before {
+          content: "/";
+          margin-right: 8px;
+          color: $gray-300;
+        }
+
+        &:first-child::before {
+          display: none;
+        }
+
+        a {
+          color: $gray-400;
+          text-decoration: none;
+
+          &:hover {
+            color: $black-color;
+          }
+        }
+
+        &.active {
+          color: $black-color;
+        }
+      }
+    }
+  }
+}
+
+/* -- About Section -- */
+.qk-about {
+  padding: 80px 0;
+
+  .qk-about__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .qk-about__visual {
+    .math-illustration {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .qk-about__content {
+    h2 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: $black-color;
+      margin-bottom: 16px;
+    }
+
+    p {
+      font-size: 15px;
+      color: $gray-600;
+      line-height: 1.7;
+      margin-bottom: 24px;
+    }
+  }
+
+  .qk-about__features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    li {
+      font-size: 14px;
+      font-weight: 500;
+      color: $black-color;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      i {
+        color: $black-color;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+/* -- Team CEO Section -- */
+.qk-team-ceo {
+  padding: 60px 0;
+
+  .qk-team-ceo__card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    align-items: center;
+    padding: 32px;
+    border: 1px solid $gray-200;
+    border-radius: 12px;
+  }
+
+  .qk-team-ceo__image {
+    position: relative;
+    width: 180px;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+
+    .qk-team-ceo__linkedin {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      width: 32px;
+      height: 32px;
+      background: $black-color;
+      color: $white-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      transition: $transition;
+
+      &:hover {
+        background: $accent-blue;
+      }
+    }
+  }
+
+  .qk-team-ceo__info {
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: $black-color;
+      margin-bottom: 4px;
+    }
+
+    .qk-team-ceo__position {
+      font-family: $mono-font;
+      font-size: 13px;
+      color: $gray-400;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 15px;
+      color: $gray-600;
+      line-height: 1.7;
+      margin: 0;
+    }
+  }
+}
+
+/* -- Team Partners Section -- */
+.qk-team-partners {
+  padding: 60px 0;
+
+  .qk-team-partners__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 600px;
+  }
+
+  .qk-team-card {
+    border: 1px solid $gray-200;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: $transition;
+
+    &:hover {
+      border-color: $black-color;
+    }
+
+    .qk-team-card__image {
+      position: relative;
+
+      img {
+        width: 100%;
+        display: block;
+      }
+
+      .qk-team-card__linkedin {
+        position: absolute;
+        bottom: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        background: $black-color;
+        color: $white-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        transition: $transition;
+
+        &:hover {
+          background: $accent-blue;
+        }
+      }
+    }
+
+    .qk-team-card__info {
+      padding: 16px;
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        color: $black-color;
+        margin-bottom: 4px;
+      }
+
+      span {
+        display: block;
+        font-size: 13px;
+        color: $gray-500;
+      }
+    }
+  }
+}
+
+/* -- AI Agents Section -- */
+.qk-ai-agents {
+  padding: 80px 0;
+  background: $gray-100;
+
+  .qk-ai-agents__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .qk-ai-agents__icon {
+    margin-bottom: 12px;
+
+    i {
+      font-size: 40px;
+      color: $accent-purple;
+    }
+  }
+
+  .qk-ai-agents__role {
+    display: block;
+    font-family: $mono-font;
+    font-size: 12px;
+    color: $accent-purple;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+  }
+}
+
+/* -- Why Choose Us Section -- */
+.qk-why-us {
+  padding: 80px 0;
+  background: $gray-100;
+
+  .qk-why-us__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+/* -- Value Proposition Section -- */
+.qk-value-prop {
+  padding: 80px 0;
+
+  .qk-value-prop__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+/* -- Contact Form Section -- */
+.qk-contact-form {
+  padding: 80px 0;
+
+  .qk-contact-form__iframe-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .qk-contact-form__iframe {
+    width: 100%;
+    min-height: 600px;
+    border: 1px solid $gray-200;
+    border-radius: 12px;
+  }
+}
+
+/* -- Math Illustrations -- */
+.math-illustration {
+  width: 100%;
+  height: auto;
+}
+
+.kandinsky-decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ================================================
+   Responsive: Quantum Kandinsky
+   ================================================ */
+@media (max-width: 991px) {
+  .qk-hero {
+    padding: 120px 0 60px;
+
+    .qk-hero__content h1 {
+      font-size: 36px;
+    }
+
+    .qk-hero__proof {
+      gap: 24px;
+    }
+  }
+
+  .qk-approach .qk-approach__grid,
+  .qk-engagement .qk-engagement__grid,
+  .qk-why-us .qk-why-us__grid,
+  .qk-value-prop .qk-value-prop__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qk-ai-agents .qk-ai-agents__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .qk-projects .qk-project-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+    &--reversed {
+      direction: ltr;
+    }
+  }
+
+  .qk-about .qk-about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qk-team-ceo .qk-team-ceo__card {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    .qk-team-ceo__image {
+      margin: 0 auto;
+    }
+  }
+
+  .qk-footer .qk-footer__main {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .qk-section-header h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .qk-hero {
+    padding: 100px 0 40px;
+
+    .qk-hero__content h1 {
+      font-size: 28px;
+    }
+
+    .qk-hero__actions {
+      flex-direction: column;
       margin-bottom: 32px;
     }
+
+    .qk-hero__proof {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+
+      .qk-hero__proof-divider {
+        width: 40px;
+        height: 1px;
+      }
+    }
+
+    .qk-hero__circle-decor {
+      display: none;
+    }
+  }
+
+  .qk-approach .qk-approach__grid,
+  .qk-engagement .qk-engagement__grid,
+  .qk-why-us .qk-why-us__grid,
+  .qk-value-prop .qk-value-prop__grid,
+  .qk-ai-agents .qk-ai-agents__grid,
+  .qk-team-partners .qk-team-partners__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qk-service-row {
+    flex-wrap: wrap;
+
+    .qk-service-row__body p {
+      display: none;
+    }
+  }
+
+  .qk-footer .qk-footer__main {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .qk-footer .qk-footer__bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .qk-page-banner {
+    padding: 100px 0 24px;
+
+    .qk-page-banner__content h1 {
+      font-size: 28px;
+    }
+
+    .qk-page-banner__breadcrumb {
+      flex-wrap: wrap;
+    }
+  }
+
+  .qk-approach,
+  .qk-services,
+  .qk-engagement,
+  .qk-projects {
+    padding: 60px 0;
+  }
+
+  .qk-section-header {
+    margin-bottom: 32px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .qk-cta .qk-cta__content h2 {
+    font-size: 28px;
   }
 }

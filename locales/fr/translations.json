@@ -5,6 +5,7 @@
   "home.button.loadMore": "Voir plus",
   "home.button.getStarted": "Commencer",
   "home.button.viewDetails": "Voir les détails",
+  "home.button.viewCases": "Voir nos réalisations",
 
   "home.navbar.home": "Accueil",
   "home.navbar.about": "À propos",
@@ -18,11 +19,13 @@
   "services.svc2.fullstack": "Plateformes Full-Stack",
   "services.svc3.datascience": "Data Science &",
   "services.svc3.machinelearning": "Machine Learning",
-  "services.comprehensive.txt1": "Feature Team augmentée par l'IA pour",
-  "services.comprehensive.txt2": "une livraison de bout en bout",
+  "services.comprehensive.txt1": "Feature Team augmentée par l'IA",
+  "services.comprehensive.txt2": "Livraison de bout en bout",
 
-  "home.mainBanner.title": "On construit. On opère. On transfère.",
-  "home.mainBanner.subtitle": "Plateformes digitales pour startups et scale-ups. Ingénieurs seniors + agents IA.",
+  "home.mainBanner.label": "Builder augmenté par l'IA",
+  "home.mainBanner.title": "Nous construisons des organisations augmentées par l'IA.",
+  "home.mainBanner.titleFade": "Puis nous vous donnons les clés.",
+  "home.mainBanner.subtitle": "Une équipe senior de 3 ingénieurs augmentée par des agents IA spécialisés. On conçoit, on construit, on transfère — vous êtes propriétaire de tout.",
   "home.mainBanner.txt.1": "",
   "home.mainBanner.txt.2": "Cultydata Studio",
   "home.mainBanner.txt.3": " conçoit et livre des plateformes digitales pour startups et scale-ups. Une équipe resserrée d'ingénieurs seniors, augmentée par des agents IA. On construit, on opère, on transfère.",
@@ -32,8 +35,8 @@
   "home.aboutUs.txt.1": "",
   "home.aboutUs.txt.2": "Cultydata Studio",
   "home.aboutUs.txt.3": " livre des plateformes prêtes pour la production aux startups et scale-ups. Notre modèle : une petite équipe d'ingénieurs seniors augmentée par des agents IA spécialisés. On construit, on opère, on transfère — vous êtes propriétaire de tout.",
-  "home.aboutUs.txt.4": "50+ ans",
-  "home.aboutUs.txt.5": "d'expérience combinée",
+  "home.aboutUs.txt.4": "50+",
+  "home.aboutUs.txt.5": "Ans d'expérience combinée",
   "home.aboutUs.txt.6": "100%",
   "home.aboutUs.txt.7": "Propriété transférée",
 
@@ -45,6 +48,8 @@
   "home.services.svc.2.txt": "Plateformes Web2 et Web3. Du design d'API au déploiement cloud.",
   "home.services.svc.3.title": "Data & ML",
   "home.services.svc.3.txt": "Pipelines ML et modèles prédictifs. Des données brutes aux décisions.",
+  "home.services.svc.4.title": "Équipes augmentées par l'IA",
+  "home.services.svc.4.txt": "On met en place votre organisation IA. Agents + humains, structurés pour la livraison.",
 
   "home.engModel.subtitle": "Comment nous travaillons",
   "home.engModel.title": "Modèles d'engagement",
@@ -100,6 +105,7 @@
   "team.partners.member2.description": "AppNetWise",
   "team.partners.member2.socialLink": "https://www.linkedin.com/in/dawood/",
 
+  "startProject.label": "Commencer",
   "startProject.title": "Prêt à construire ?",
   "startProject.description": "Parlons de votre prochaine plateforme.",
   "startProject.button": "Nous contacter",
@@ -142,7 +148,7 @@
   "footer.copyright": "Copyright © {{year}} Cultydata. Tous droits réservés.",
   "footer.privacyPolicy": "Politique de confidentialité",
 
-  "general.addressDetails": "11 Bis Impasse Du Quai Voltaire, 78230 LePecq, France",
+  "general.addressDetails": "11 Bis Impasse Du Quai Voltaire, 78230 Le Pecq, France",
   "general.mailto": "mailto:mohamed.alaoui@cultydata.com",
   "general.email": "mohamed.alaoui@cultydata.com",
 

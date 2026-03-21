@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import serviceIcon1 from "../../images/services/blockchain-icon.png"
-import serviceIcon2 from "../../images/services/datascience-icon.png"
-import serviceIcon3 from "../../images/services/fullstack-icon.png"
+import serviceIcon1 from "../../images/services/blockchain1.svg"
+import serviceIcon2 from "../../images/services/fullstack1.svg"
+import serviceIcon3 from "../../images/services/datascience1.svg"
 import { useTranslation } from "gatsby-plugin-react-i18next"
 
 const OurServices = () => {
@@ -27,26 +27,50 @@ const OurServices = () => {
       text: t("home.services.svc.3.txt"),
       link: "/services/datascience-and-ml-consulting",
     },
+    {
+      icon: null,
+      title: t("home.services.svc.4.title"),
+      text: t("home.services.svc.4.txt"),
+      link: "/services/comprehensive-support",
+    },
   ]
 
   return (
-    <section className="services-minimal">
+    <section className="qk-services">
       <div className="container">
-        <div className="services-minimal-header">
+        <div className="qk-section-header">
+          <span className="qk-label">{t("home.services.subTitle")}</span>
           <h2>{t("home.services.title")}</h2>
         </div>
 
-        <div className="row">
+        <div className="qk-services__list">
           {services.map((service, index) => (
-            <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
-              <Link to={service.link} className="service-card">
-                <div className="service-card-icon">
+            <Link
+              to={service.link}
+              className="qk-service-row"
+              key={index}
+            >
+              <div className="qk-service-row__number">
+                <span className="qk-card__number">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </div>
+              {service.icon && (
+                <div className="qk-service-row__icon">
                   <img src={service.icon} alt={service.title} />
                 </div>
+              )}
+              {!service.icon && (
+                <div className="qk-service-row__icon qk-service-row__icon--ai">
+                  <i className="bx bx-bot" />
+                </div>
+              )}
+              <div className="qk-service-row__body">
                 <h3>{service.title}</h3>
                 <p>{service.text}</p>
-              </Link>
-            </div>
+              </div>
+              <span className="qk-service-row__arrow">→</span>
+            </Link>
           ))}
         </div>
       </div>

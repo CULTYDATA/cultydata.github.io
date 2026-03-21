@@ -5,6 +5,7 @@
   "home.button.loadMore": "Load More",
   "home.button.getStarted": "Get Started",
   "home.button.viewDetails": "View Details",
+  "home.button.viewCases": "See our work",
   "home.navbar.home": "Home",
   "home.navbar.about": "About",
   "home.navbar.services": "Services",
@@ -15,11 +16,13 @@
   "services.svc2.fullstack": "Full-Stack Platforms",
   "services.svc3.datascience": "Data Science &",
   "services.svc3.machinelearning": "Machine Learning",
-  "services.comprehensive.txt1": "AI-Augmented Feature Team for",
+  "services.comprehensive.txt1": "AI-Augmented Feature Team",
   "services.comprehensive.txt2": "End-to-End Delivery",
 
-  "home.mainBanner.title": "We build it. We run it. We hand it over.",
-  "home.mainBanner.subtitle": "Digital platforms for startups and scale-ups. Senior engineers + AI agents.",
+  "home.mainBanner.label": "AI-Augmented Builder",
+  "home.mainBanner.title": "We build AI-augmented organizations.",
+  "home.mainBanner.titleFade": "Then we hand you the keys.",
+  "home.mainBanner.subtitle": "A senior team of 3 engineers augmented by specialized AI agents. We design, build, and transfer — you own everything.",
   "home.mainBanner.txt.1": "",
   "home.mainBanner.txt.2": "Cultydata Studio",
   "home.mainBanner.txt.3": " builds and ships digital platforms for startups and scale-ups. A lean team of senior engineers, augmented by AI agents. We build it, we run it, we hand it over.",
@@ -29,8 +32,8 @@
   "home.aboutUs.txt.1": "",
   "home.aboutUs.txt.2": "Cultydata Studio",
   "home.aboutUs.txt.3": " delivers production-ready platforms for startups and scale-ups. Our model: a small team of senior engineers augmented by specialized AI agents. We build, operate, and transfer — you get full ownership.",
-  "home.aboutUs.txt.4": "50+ Years",
-  "home.aboutUs.txt.5": "Combined experience",
+  "home.aboutUs.txt.4": "50+",
+  "home.aboutUs.txt.5": "Years combined experience",
   "home.aboutUs.txt.6": "100%",
   "home.aboutUs.txt.7": "Ownership transferred",
 
@@ -42,6 +45,8 @@
   "home.services.svc.2.txt": "Web2 and Web3 platforms. From API design to cloud deployment.",
   "home.services.svc.3.title": "Data & ML",
   "home.services.svc.3.txt": "ML pipelines and predictive models. From raw data to decisions.",
+  "home.services.svc.4.title": "AI-Augmented Teams",
+  "home.services.svc.4.txt": "We set up your AI-powered organization. Agents + humans, structured for delivery.",
 
   "home.engModel.subtitle": "How We Work",
   "home.engModel.title": "Engagement Models",
@@ -97,6 +102,7 @@
   "team.partners.member2.description": "AppNetWise",
   "team.partners.member2.socialLink": "https://www.linkedin.com/in/dawood/",
 
+  "startProject.label": "Get Started",
   "startProject.title": "Ready to build?",
   "startProject.description": "Let's talk about your next platform.",
   "startProject.button": "Get in touch",
@@ -139,7 +145,7 @@
   "footer.copyright": "Copyright © {{year}} Cultydata. All rights reserved.",
   "footer.privacyPolicy": "Privacy Policy",
 
-  "general.addressDetails": "11 Bis Impasse Du Quai Voltaire, 78230 LePecq, France",
+  "general.addressDetails": "11 Bis Impasse Du Quai Voltaire, 78230 Le Pecq, France",
   "general.mailto": "mailto:mohamed.alaoui@cultydata.com",
   "general.email": "mohamed.alaoui@cultydata.com",
 
